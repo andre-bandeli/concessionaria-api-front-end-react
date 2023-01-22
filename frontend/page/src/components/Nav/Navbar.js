@@ -1,6 +1,4 @@
-import classes from '../Nav/Navbar.modules.scss'
 import MobileNavgation from './MobileNavigation'
-import Navgation from './Navigation'
 import { Link } from "react-router-dom";
 import usuario from './user.svg'
 
@@ -9,7 +7,6 @@ const Navbar = () => {
     return (
         <div className="Navbar">
             <ul>
-
                 <li className='menu'>
                     <h3>Menu</h3>
                     <MobileNavgation/>
@@ -24,9 +21,7 @@ const Navbar = () => {
                     <Link to="/login">
                         <h3>Área do cliente</h3>
                     </Link>
-                    
                 </li>
-
             </ul>
             
         </div>

@@ -102,7 +102,7 @@ export default function Produtos() {
 
 
   return (
-    <div className='produtos'>
+    <div className="produtos" id='produtos'>
 
         <div className="container">
 

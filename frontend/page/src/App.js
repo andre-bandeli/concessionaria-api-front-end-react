@@ -8,6 +8,7 @@ import Login from './login/Login';
 import ProdutoSingle from './produto_single/ProdutoSingle';
 import Motocicletas from './motocicletas/Motocicletas';
 import Veiculos from './veiculos/Veiculos';
+import Financiamentos from './financiamentos/Financiamentos';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/sobre" element={<Sobre />} />
+      <Route path="/financiamentos" element={<Financiamentos />} />
       <Route path="/login" element={<Login />} />
       <Route path="/motocicletas" element={<Motocicletas />} />
       <Route path="/veiculos" element={<Veiculos />} />

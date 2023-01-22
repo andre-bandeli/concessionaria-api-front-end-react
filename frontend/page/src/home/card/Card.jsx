@@ -1,5 +1,6 @@
 import React from 'react'
 import './card.scss'
+import { Link } from "react-router-dom";
 
 import moto from './moto.png'
 import carro from './carro.png'
@@ -18,9 +19,9 @@ export default function Card() {
                     <h3>Motocicletas 0 km e seminovas</h3>
                     <h4>Com pós venda e garantia de 2 anos, incluso revisões semenstrais</h4>
                     <button className='btn'>
-                        <a href="">
-                        ver todos
-                        </a>
+                        <Link to="/motocicletas">
+                                ver motociletas
+                        </Link>
                     </button>
                 </div>
 
@@ -32,9 +33,9 @@ export default function Card() {
                     <h3>Automoveis 0 km e seminovos</h3>
                     <h4>Com pós venda e garantia de 2 anos, incluso revisões semenstrais</h4>
                     <button className='btn'>
-                        <a href="">
-                        ver todos
-                        </a>
+                    <Link to="/veiculos">
+                                ver automoveis
+                        </Link>
                     </button>
                 </div>
                 <div className="imagem">

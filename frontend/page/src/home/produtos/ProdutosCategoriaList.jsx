@@ -1,3 +1,5 @@
+import './produtosCategoriaList.scss'
+
 
 export default function ProdutosCategoriaList({ id, title, active, setSelected }) {
     return (

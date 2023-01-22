@@ -45,6 +45,12 @@
             cursor: pointer;
             font-size: 15px;
             font-weight: bolder;
+            
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: bolder;
+            }
         }
     }
 }
