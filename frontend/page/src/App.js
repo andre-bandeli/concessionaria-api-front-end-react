@@ -7,6 +7,7 @@ import Sobre from './sobre/Sobre';
 import Login from './login/Login';
 import ProdutoSingle from './produto_single/ProdutoSingle';
 import Motocicletas from './motocicletas/Motocicletas';
+import Veiculos from './veiculos/Veiculos';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/sobre" element={<Sobre />} />
       <Route path="/login" element={<Login />} />
       <Route path="/motocicletas" element={<Motocicletas />} />
+      <Route path="/veiculos" element={<Veiculos />} />
       <Route path="/produto/list" element={<ProdutoSingle />} />
     </Routes>
   );

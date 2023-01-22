@@ -1,12 +1,12 @@
 import React from 'react'
 import './produtos.scss'
 import { useEffect, useState } from 'react';
-import moto from './moto.png'
+import moto from './carro.png'
 import { Link } from "react-router-dom";
 
 import PortfolioList from './ProdutosCategoriaList';
 
-export default function Produtos() {
+export default function Veiculos() {
 
     const[nome_modelo,setNome_modelo]=useState('')
     const[preco,setPreco]=useState('')
@@ -108,7 +108,7 @@ export default function Produtos() {
 
             <div className="title">
 
-                <h2>Motocicletas</h2>
+                <h2>Veiculos</h2>
                 <h3>Confira alguns de nossos modelos disponíveis</h3>
 
             </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './produtos.scss'
 import { useEffect, useState } from 'react';
-import moto from './moto.png'
+import moto from './carro.png'
 import { Link } from "react-router-dom";
 
 import PortfolioList from './ProdutosCategoriaList';
@@ -52,15 +52,6 @@ export default function Produtos() {
       })
     }
 
-    // useEffect(()=>{
-    //     fetch("http://127.0.0.1:8085/api/produto/list")
-    //     .then(res=>res.json())
-    //     .then((result)=>{
-    //       setProduto(result);
-    //     }
-    //   )
-    // },[])
-
     useEffect(() => {
         switch (selected) {
             case "motos":
@@ -102,17 +93,12 @@ export default function Produtos() {
 
 
   return (
-    <div className='produtos'>
+    <div className='produtos_veiculos'>
 
         <div className="container">
 
-            <div className="title">
-
-                <h2>Motocicletas</h2>
-                <h3>Confira alguns de nossos modelos disponíveis</h3>
-
-            </div>
             <div className='filter'>
+                <h2>Categorias</h2>
                 <ul>
                     {list.map((item) => (
                     <PortfolioList

@@ -1,14 +1,12 @@
-package com.br.produto.model;
+package com.br.produto.model.veiculos;
 
 import com.sun.istack.NotNull;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
-public class Produtos {
+@Table(name = "_veiculo")
+public class Veiculo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -17,7 +15,6 @@ public class Produtos {
     @NotNull
     private String nome_modelo;
 
-    @NotNull
     private String marca;
 
     @NotNull
@@ -25,7 +22,7 @@ public class Produtos {
 
     private String descricao;
 
-    public Produtos(Long id, String nome_modelo,String marca, Double preco, String descricao) {
+    public Veiculo(Long id, String nome_modelo, String marca, Double preco, String descricao) {
         this.id = id;
         this.nome_modelo = nome_modelo;
         this.marca = marca;
@@ -33,7 +30,7 @@ public class Produtos {
         this.descricao = descricao;
     }
 
-    public Produtos() {
+    public Veiculo() {
     }
 
     public Long getId() {

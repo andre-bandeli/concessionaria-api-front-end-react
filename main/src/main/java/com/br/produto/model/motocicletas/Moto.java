@@ -1,12 +1,12 @@
-package com.br.produto.model;
+package com.br.produto.model.motocicletas;
 
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
-public class Veiculos {
+@Table(name = "_moto")
+public class Moto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -15,6 +15,7 @@ public class Veiculos {
     @NotNull
     private String nome_modelo;
 
+    @NotNull
     private String marca;
 
     @NotNull
@@ -22,7 +23,7 @@ public class Veiculos {
 
     private String descricao;
 
-    public Veiculos(Long id, String nome_modelo, String marca, Double preco, String descricao) {
+    public Moto(Long id, String nome_modelo, String marca, Double preco, String descricao) {
         this.id = id;
         this.nome_modelo = nome_modelo;
         this.marca = marca;
@@ -30,7 +31,7 @@ public class Veiculos {
         this.descricao = descricao;
     }
 
-    public Veiculos() {
+    public Moto() {
     }
 
     public Long getId() {

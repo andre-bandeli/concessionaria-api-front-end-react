@@ -7,6 +7,7 @@ import Financiamentos from './financiamentos/Financiamentos'
 import Header from './header/Header'
 import Produtos from './produtos/Produtos'
 import Marca from './marcas/Marca'
+import Veiculos from './produtos/Veiculos'
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Header/>
       <Card/>
       <Produtos/>
+      <Veiculos/>
       <Marca/>
       <Financiamentos/>
       <Contato/>
