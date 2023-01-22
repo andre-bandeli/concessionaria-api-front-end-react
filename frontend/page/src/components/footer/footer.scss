@@ -37,6 +37,16 @@
                     padding: 3px;
                     font-weight: 100;
                 }
+
+                .redes {
+                    display: flex;
+                    margin-top: 1vh;
+                    img {
+                        width: 25px;
+                        margin-right: 2vh;
+                        opacity: .7;
+                    }
+                }
             }
         }
     

@@ -1,5 +1,8 @@
 import React from 'react'
 import './footer.scss'
+import instagran from './insta.png'
+import linkedin from './in.png'
+import twitter from './twitter.png'
 
 export default function Footer() {
   return (
@@ -78,6 +81,11 @@ export default function Footer() {
                     </li>
                     <li>
                         Atendimento: seg à sex: 08h00 às 19h00
+                    </li>
+                    <li className='redes'>
+                        <img src={twitter} alt="" />
+                        <img src={instagran} alt="" />
+                        <img src={linkedin} alt="" />
                     </li>
                    
             </ul>

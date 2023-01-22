@@ -8,6 +8,8 @@ import Header from './header/Header'
 import Produtos from './produtos/Produtos'
 import Marca from './marcas/Marca'
 import Veiculos from './produtos/Veiculos'
+import PageTitle from './PageTitle'
+import Folder from './folder/Folder'
 
 
 export default function Home() {
@@ -15,7 +17,9 @@ export default function Home() {
     <div>
       <Navbar/>,
       <Header/>
+      <PageTitle/>
       <Card/>
+      <Folder/>
       <Produtos/>
       <Veiculos/>
       <Marca/>

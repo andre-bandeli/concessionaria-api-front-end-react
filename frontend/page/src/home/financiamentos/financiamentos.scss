@@ -11,7 +11,7 @@
         h2 {
             margin-left: 10vh;
             font-size: 35px;
-            font-weight: 300;
+            font-weight: 500;
         }
         h3 {
             font-size: 20px;
@@ -21,11 +21,10 @@
     }
 
     .container {
-        width: 95%;
+        width: 80%;
         height: 50vh;
         margin: auto;
         margin-top: 10vh;
-        margin-left: 5vh;
 
         .acordion {
             width: 100%;
@@ -33,7 +32,7 @@
             flex-wrap: wrap;
 
             .ac {
-                width: 80%;
+                width: 100%;
                 margin: auto;
                 margin-top: 2vh;
                 color: black;

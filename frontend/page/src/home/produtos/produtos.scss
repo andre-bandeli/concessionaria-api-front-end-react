@@ -3,6 +3,7 @@
 .produtos {
     width: 100%;
     height: auto;
+    margin-top: 10vh;
 
     .container {
         width: 100%;
@@ -32,7 +33,7 @@
             h2 {
                 margin-left: 10vh;
                 font-size: 35px;
-                font-weight: 300;
+                font-weight: 500;
             }
             h3 {
                 font-size: 20px;
@@ -54,7 +55,7 @@
         }
 
         .product {
-            width: 90%;
+            width: 92%;
             margin: auto;
             height: auto;
             display: flex;
@@ -64,8 +65,8 @@
             .box {
                 width: 22%;
                 height: 450px;
+                margin: auto;
                 margin-top: 5vh;
-                margin-right: 2vh;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
                 .imagem {
@@ -144,6 +145,11 @@
                     }
 
                 }
+            }
+
+            .box:hover {
+                background-color: rgba(245, 245, 245, 0.233);
+                cursor: pointer;
             }
         }
     }

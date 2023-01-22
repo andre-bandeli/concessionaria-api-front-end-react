@@ -10,18 +10,19 @@ const Navbar = () => {
         <div className="Navbar">
             <ul>
 
-                <li>
+                <li className='menu'>
+                    <h3>Menu</h3>
                     <MobileNavgation/>
                 </li>
                 <li>
                 <Link to="/">
-                    <h2>Web Motors</h2>
+                    <h2 className='logo'>Web Motors</h2>
                 </Link>
                 </li>
                 <li>
                     <img src={usuario}></img>
                     <Link to="/login">
-                        <h3>Login</h3>
+                        <h3>Área do cliente</h3>
                     </Link>
                     
                 </li>

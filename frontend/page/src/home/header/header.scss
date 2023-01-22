@@ -1,13 +1,52 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;900&display=swap');
 .header {
 
     width: 100%;
     height: 80vh;
-    margin-top: 8vh;
+    margin-top: 7vh;
     position: relative;
-    background-image: url(./header.webp);
+    background-image: url(./vw.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    font-family: 'Inter', sans-serif;
+
+
+    .box {
+        position: absolute;
+        width: 45%;
+        height: 50%;
+        margin-top: 15vh; margin-left: 10vh;
+
+        h2 {
+            font-size: 50px;
+            color: whitesmoke;
+            font-weight: 400;
+
+            span {
+                color: rgba(228, 161, 18, 0.904);
+                font-weight: 700;
+            }
+        }
+
+        h3 {
+            width: 80%;
+            font-size: 25px;
+            font-weight: 400;
+            color: wheat;
+        }
+
+        button {
+            background-color: rgb(235, 238, 240);
+            width: 200px;
+            height: 40px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+    }
 }
 
 @media (max-width: 550px) {
