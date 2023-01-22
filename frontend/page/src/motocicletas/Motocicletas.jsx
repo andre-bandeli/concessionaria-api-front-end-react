@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../components/Nav/Navbar'
 import './motocicletas.scss'
-import Produto from './produtos/Produtos'
 import HeaderMotos from './header/HeaderMotos'
 import Footer from '../components/footer/Footer'
+import Produtos from './produtos/Produtos'
 
 export default function Motocicletas() {
   return (
     <div className='motocicletas'>
       <Navbar/>
       <HeaderMotos/>
-      <Produto/>
+      <Produtos/>
       <Footer/>
     </div>
   )

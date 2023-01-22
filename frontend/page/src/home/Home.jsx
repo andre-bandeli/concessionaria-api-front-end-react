@@ -12,7 +12,6 @@ import Marca from './marcas/Marca'
 export default function Home() {
   return (
     <div>
-
       <Navbar/>,
       <Header/>
       <Card/>

@@ -4,16 +4,42 @@ import { useEffect, useState } from 'react';
 import moto from './moto.png'
 import { Link } from "react-router-dom";
 
+import PortfolioList from './ProdutosCategoriaList';
+
 export default function Produtos() {
 
     const[nome_modelo,setNome_modelo]=useState('')
     const[preco,setPreco]=useState('')
+    const[marca,setMarca]=useState('')
     const[descricao,setDescricao]=useState('')
+    const [data, setData] = useState([]);
     const[produto,setProduto]=useState([])
+    const [selected, setSelected] = useState("todos");
+
+
+    const list = [
+        {
+        id: "todos",
+        title: "Todos",
+        },
+        {
+        id: "react",
+        title: "React",
+        },
+        {
+        id: "java",
+        title: "Java",
+        },
+        {
+        id: "python",
+        title: "Python",
+        },
+    ];
+
 
     const handleClick=(e)=>{
         e.preventDefault()
-        const produto={nome_modelo,preco, descricao}
+        const produto={nome_modelo,marca, preco, descricao}
         console.log(produto)
         fetch("http://localhost:8080/api/produto/add",{
           method:"POST",
@@ -26,14 +52,53 @@ export default function Produtos() {
       })
     }
 
-    useEffect(()=>{
-        fetch("http://127.0.0.1:8080/api/produto/list")
-        .then(res=>res.json())
-        .then((result)=>{
+    // useEffect(()=>{
+    //     fetch("http://127.0.0.1:8085/api/produto/list")
+    //     .then(res=>res.json())
+    //     .then((result)=>{
+    //       setProduto(result);
+    //     }
+    //   )
+    // },[])
+
+    useEffect(() => {
+        switch (selected) {
+            case "todos":
+                fetch('http://127.0.0.1:8085/api/produto/list')
+                    .then(response => response.json())
+                    .then((result)=>{
           setProduto(result);
+        })
+                break;
+            case "react":
+                fetch('http://127.0.0.1:8085/api/veiculo/marca/honda')
+                    .then(response => response.json())
+                    .then((result)=>{
+          setProduto(result);
+        })
+                break;
+            case "java":
+                fetch('http://127.0.0.1:8085/api/veiculo/list')
+                    .then(response => response.json())
+                    .then((result)=>{
+          setProduto(result);
+        })
+                break;
+            case "python":
+                fetch('http://127.0.0.1:8085/api/produto/list')
+                    .then(response => response.json())
+                    .then((result)=>{
+          setProduto(result);
+        })
+                break;
+            default:
+                fetch('http://127.0.0.1:8085/api/produto/list')
+                    .then(response => response.json())
+                    .then((result)=>{
+          setProduto(result);
+        })
         }
-      )
-    },[])
+    }, [selected]);
 
 
   return (
@@ -47,25 +112,19 @@ export default function Produtos() {
                 <h3>Confira alguns de nossos modelos disponíveis</h3>
 
             </div>
-            <div className="busca">
-
-                <div className="btn">
-                    <h4>Yamaha MT-03</h4>
-                </div>
-                <div className="btn">
-                    <h4>BMW iX</h4>
-                </div>
-                <div className="btn">
-                    <h4>Honda Street</h4>
-                </div>
-                <div className="btn">
-                    <h4>Audi</h4>
-                </div>
-                
+            <div className='filter'>
+                <ul>
+                    {list.map((item) => (
+                    <PortfolioList
+                        title={item.title}
+                        active={selected === item.id}
+                        setSelected={setSelected}
+                        id={item.id}
+                    />
+                    ))}
+                </ul>
             </div>
-            <div className="paginacao">
-                
-            </div>
+           
             <div className="product">
 
             {produto.map(produto=>(
@@ -75,11 +134,14 @@ export default function Produtos() {
                     <div className="imagem">
                             <img src={moto} alt="" />
                     </div>
+                    <div className="marca">
+                        <h3>{produto.marca}</h3>
+                    </div>
                     <div className="modelo">
                         <h2>{produto.nome_modelo}</h2>
                     </div>
                     <div className="preco">
-                        <h3>A partir de R$ {produto.preco}</h3>
+                        <h3>A partir de <span>R$ {produto.preco}</span></h3>
                         <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
                     </div>
                     <div className="condicoes">
@@ -90,197 +152,7 @@ export default function Produtos() {
                 </div>
             ))
             }
-                {/* <div className="box">
-
-                     <div className="imagem">
-                            <img src={moto} alt="" />
-                    </div>
-                    <div className="modelo">
-                        <h2>Yamaha MT-03 ABS 2023</h2>
-                    </div>
-                    <div className="preco">
-                        <h3>A partir de R$ 28.000,00</h3>
-                        <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                    </div>
-                    <div className="condicoes">
-                        <a href="">
-                            ver detalhes
-                        </a>
-
-                    </div>
-                    
-                </div>
-
-                <div className="box">
-
-                     <div className="imagem">
-                            <img src={moto} alt="" />
-                    </div>
-                    <div className="modelo">
-                        <h2>Yamaha MT-03 ABS 2023</h2>
-                    </div>
-                    <div className="preco">
-                        <h3>A partir de R$ 28.000,00</h3>
-                        <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                    </div>
-                    <div className="condicoes">
-                        <a href="">
-                            ver detalhes
-                        </a>
-
-          
-
-                    </div>
-                    
-                </div>
-
-                <div className="box">
-
-                     <div className="imagem">
-                            <img src={moto} alt="" />
-                    </div>
-                    <div className="modelo">
-                        <h2>Yamaha MT-03 ABS 2023</h2>
-                    </div>
-                    <div className="preco">
-                        <h3>A partir de R$ 28.000,00</h3>
-                        <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                    </div>
-                    <div className="condicoes">
-                        <a href="">
-                            ver detalhes
-                        </a>
-
-                    </div>
-                    
-                </div>
-
-                <div className="box">
-
-                     <div className="imagem">
-                            <img src={moto} alt="" />
-                    </div>
-                    <div className="modelo">
-                        <h2>Yamaha MT-03 ABS 2023</h2>
-                    </div>
-                    <div className="preco">
-                        <h3>A partir de R$ 28.000,00</h3>
-                        <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                    </div>
-                    <div className="condicoes">
-                        <a href="">
-                            ver detalhes
-                        </a>
-
-                    </div>
-                    
-                </div>
-
-                <div className="box">
-
-                     <div className="imagem">
-                            <img src={moto} alt="" />
-                    </div>
-                    <div className="modelo">
-                        <h2>Yamaha MT-03 ABS 2023</h2>
-                    </div>
-                    <div className="preco">
-                        <h3>A partir de R$ 28.000,00</h3>
-                        <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                    </div>
-                    <div className="condicoes">
-                        <a href="">
-                            ver detalhes
-                        </a>
-
-                    </div>
-                    
-                </div>
-
-                <div className="box">
-
-                     <div className="imagem">
-                            <img src={moto} alt="" />
-                    </div>
-                    <div className="modelo">
-                        <h2>Yamaha MT-03 ABS 2023</h2>
-                    </div>
-                    <div className="preco">
-                        <h3>A partir de R$ 28.000,00</h3>
-                        <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                    </div>
-                    <div className="condicoes">
-                        <a href="">
-                            ver detalhes
-                        </a>
-
-                    </div>
-                    
-                </div>
-
-                <div className="box">
-
-                     <div className="imagem">
-                            <img src={moto} alt="" />
-                    </div>
-                    <div className="modelo">
-                        <h2>Yamaha MT-03 ABS 2023</h2>
-                    </div>
-                    <div className="preco">
-                        <h3>A partir de R$ 28.000,00</h3>
-                        <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                    </div>
-                    <div className="condicoes">
-                        <a href="">
-                            ver detalhes
-                        </a>
-
-                    </div>
-                    
-                </div>
-
-                <div className="box">
-
-                     <div className="imagem">
-                            <img src={moto} alt="" />
-                    </div>
-                    <div className="modelo">
-                        <h2>Yamaha MT-03 ABS 2023</h2>
-                    </div>
-                    <div className="preco">
-                        <h3>A partir de R$ 28.000,00</h3>
-                        <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                    </div>
-                    <div className="condicoes">
-                        <a href="">
-                            ver detalhes
-                        </a>
-
-                    </div>
-                    
-                </div>
-
-                <div className="box">
-
-                     <div className="imagem">
-                            <img src={moto} alt="" />
-                    </div>
-                    <div className="modelo">
-                        <h2>Yamaha MT-03 ABS 2023</h2>
-                    </div>
-                    <div className="preco">
-                        <h3>A partir de R$ 28.000,00</h3>
-                        <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                    </div>
-                    <div className="condicoes">
-                        <a href="">
-                            ver detalhes
-                        </a>
-
-                    </div>
-                    
-                </div> */}
-                
+              
             </div>
         </div>
 

@@ -18,13 +18,17 @@ public class Produtos {
     private String nome_modelo;
 
     @NotNull
+    private String marca;
+
+    @NotNull
     private Double preco;
 
     private String descricao;
 
-    public Produtos(Long id, String nome_modelo, Double preco, String descricao) {
+    public Produtos(Long id, String nome_modelo,String marca, Double preco, String descricao) {
         this.id = id;
         this.nome_modelo = nome_modelo;
+        this.marca = marca;
         this.preco = preco;
         this.descricao = descricao;
     }
@@ -46,6 +50,14 @@ public class Produtos {
 
     public void setNome_modelo(String nome_modelo) {
         this.nome_modelo = nome_modelo;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
     public Double getPreco() {

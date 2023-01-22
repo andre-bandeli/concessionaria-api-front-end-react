@@ -11,23 +11,9 @@ export default function Produtos() {
     const[descricao,setDescricao]=useState('')
     const[produto,setProduto]=useState([])
 
-    const handleClick=(e)=>{
-        e.preventDefault()
-        const produto={nome_modelo,preco, descricao}
-        console.log(produto)
-        fetch("http://localhost:8080/api/produto/add",{
-          method:"POST",
-          mode: 'no-cors',
-          headers:{"Content-Type":"application/json"},
-          body:JSON.stringify(produto)
-    
-      }).then(()=>{
-        console.log("Novo produto adicionado.")
-      })
-    }
 
     useEffect(()=>{
-        fetch("http://127.0.0.1:8080/api/produto/list")
+        fetch("http://127.0.0.1:8085/api/produto/list")
         .then(res=>res.json())
         .then((result)=>{
           setProduto(result);
