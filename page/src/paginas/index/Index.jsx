@@ -7,7 +7,7 @@ import Financiamentos from './financiamentos/Financiamentos'
 import Header from './header/Header'
 import Produtos from '../../components/produtos/Produtos'
 import Marca from './marcas/Marca'
-import Veiculos from '../../paginas/veiculos/Veiculos'
+import Veiculos from '../../components/produtos/Veiculos'
 import PageTitle from './PageTitle'
 import Folder from './folder/Folder'
 
@@ -21,11 +21,11 @@ export default function Home() {
       <Card/>
       <Folder/>
       <Produtos/>
-      {/* <Veiculos/>
+      <Veiculos/>
       <Marca/>
       <Financiamentos/>
       <Contato/>
-      <Footer/> */}
+      <Footer/>
     </div>
   )
 }

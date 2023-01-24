@@ -7,7 +7,7 @@ import Sobre from './paginas/sobre/Sobre';
 import Login from './paginas/login/Login';
 import ProdutoSingle from './produto_single/ProdutoSingle';
 import Motocicletas from './paginas/motocicletas/Motocicletas';
-import Veiculos from './components/produtos/Veiculos';
+import Veiculos from './paginas/veiculos/Veiculos';
 import Financiamentos from './paginas/financeiro/Financiamentos';
 
 

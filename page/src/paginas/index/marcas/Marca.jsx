@@ -53,10 +53,7 @@ export default function Marca() {
                  <img src={ferrari} alt="" />
 
               </div>
-              <div className="card">
-                 <img src={bmw} alt="" />
-
-              </div>
+             
         </div>
 
     </div>

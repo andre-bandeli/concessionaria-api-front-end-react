@@ -68,3 +68,54 @@
         }
     }
 }
+
+@media (max-width: 550px) {
+    
+    .financiamentos {
+        height: auto;
+        width: 100%;
+        margin-left: 0vh;
+        margin-bottom: 10vh;
+
+       
+        .title {
+    
+            h2 {
+                width: 80%;
+                margin-left: 5vh;
+            }
+            h3 {
+                margin-left: 5vh;
+            }
+        }
+
+        .container {
+            height: auto;
+            margin-top: 5vh;
+            .acordion {
+             
+
+                .ac {
+                  
+
+                    .head {
+                    
+
+                        .h {
+                        
+                        }
+                        .h:hover {
+                      
+                        }
+
+                    }
+                    
+                    h3 {
+                    
+                    }
+
+                }
+            }
+        }
+    }
+}

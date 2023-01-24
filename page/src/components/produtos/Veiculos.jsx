@@ -36,7 +36,6 @@ export default function Veiculos() {
         },
     ];
 
-
     const handleClick=(e)=>{
         e.preventDefault()
         const produto={nome_modelo,marca, preco, descricao}
@@ -51,15 +50,6 @@ export default function Veiculos() {
         console.log("Novo produto adicionado.")
       })
     }
-
-    // useEffect(()=>{
-    //     fetch("http://127.0.0.1:8085/api/produto/list")
-    //     .then(res=>res.json())
-    //     .then((result)=>{
-    //       setProduto(result);
-    //     }
-    //   )
-    // },[])
 
     useEffect(() => {
         switch (selected) {
@@ -104,15 +94,15 @@ export default function Veiculos() {
   return (
     <div className='produtos'>
 
-        <div className="container-produtos">
+        <div className="containerProdutos">
 
-            <div className="title">
+            <div className="titleProdutos">
 
                 <h2>Veiculos</h2>
                 <h3>Confira alguns de nossos modelos disponíveis</h3>
 
             </div>
-            <div className='filter'>
+            <div className='filterProdutos'>
                 <ul>
                     {list.map((item) => (
                     <PortfolioList
@@ -146,7 +136,7 @@ export default function Veiculos() {
                     </div>
                     <div className="condicoes">
                         <Link to="/produto/{id}">
-                            ver detalhes
+                            <button>ver detalhes</button>
                         </Link>
                     </div>
                 </div>

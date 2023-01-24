@@ -270,3 +270,36 @@
         }
     }
 }
+
+
+
+@media (max-width: 1024px) and (max-height: 600px) {
+
+    .produtos {
+        .containerProdutos {     
+            .filterProdutos {
+    
+                ul {
+                   
+    
+                   
+                }
+            }
+            .product {
+    
+                .box {
+                    width: 250px;
+                    height: 370px;
+                    margin-top: 5vh;
+
+                    .imagem {
+                      
+                        img {
+                           width: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }        
+}

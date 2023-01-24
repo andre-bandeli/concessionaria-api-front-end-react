@@ -1,9 +1,9 @@
 import React from 'react'
-import '../../../components/produtos/produtos.scss'
 import { useEffect, useState } from 'react';
 import moto from './carro.png'
 import { Link } from "react-router-dom";
-import iconarrow from '../../../components/produtos/produtos.scss'
+import '../../../components/produtos/produtos.scss'
+import iconarrow from '../../../components/produtos/arrow.png'
 
 import PortfolioList from './ProdutosCategoriaList';
 
@@ -94,11 +94,11 @@ export default function Produtos() {
 
 
   return (
-    <div className='produtos'>
+    <div className="produtos" id='produtos'>
 
-        <div className="container-produtos">
+        <div className="containerProdutos">
 
-            <div className='filter'>
+            <div className='filterProdutos'>
                 <div className="menu">
                     <Link to="/">
                         <h2>Home<span className='spn'> 
