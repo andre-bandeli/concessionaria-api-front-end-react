@@ -3,6 +3,7 @@ import './produtos.scss'
 import { useEffect, useState } from 'react';
 import moto from './carro.png'
 import { Link } from "react-router-dom";
+import iconarrow from './arrow.png'
 
 import PortfolioList from './ProdutosCategoriaList';
 
@@ -98,8 +99,19 @@ export default function Produtos() {
         <div className="container">
 
             <div className='filter'>
-                <h2>Categorias</h2>
+                <div className="menu">
+                    <Link to="/">
+                        <h2>Home<span className='spn'> 
+                        
+                            <img src={iconarrow} alt="" />
+
+                        </span></h2>
+                    </Link>
+                    <h2>Veiculos</h2>
+                </div>
+                <h2>Veiculos</h2>
                 <ul>
+                    <h3>Filtrar por marca:</h3>
                     {list.map((item) => (
                     <PortfolioList
                         title={item.title}

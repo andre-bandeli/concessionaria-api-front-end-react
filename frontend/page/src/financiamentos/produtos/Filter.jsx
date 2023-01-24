@@ -1,0 +1,208 @@
+import React from 'react'
+import './filter.scss'
+import { useEffect, useState } from 'react';
+import FormularioFinanciamento from './formulario/FormularioFinanciamento'
+import iconarrow from '../../veiculos/produtos/arrow.png'
+import { Link } from "react-router-dom";
+import itau from './itau.png'
+import chip from './chip.png'
+import mastercard from './mastercard.png'
+
+import {
+    Consorcio,
+    Financiamento,
+} from '../data.js';
+import FilterList from './FilterList';
+
+export default function Produtos() {
+
+    const [selected, setSelected] = useState("Financiamento");
+    const [data, setData] = useState([]);
+    const list = [
+        {
+        id: "Financiamento",
+        title: "Financiamentos",
+        },
+        {
+        id: "Consorcio",
+        title: "Consórcios",
+        },
+    ];
+
+    useEffect(() => {
+        switch (selected) {
+        case "Financiamento":
+            setData(Financiamento);
+            break;
+        case "Consorcio":
+            setData(Consorcio);
+            break;
+        default:
+            setData(Financiamento);
+        }
+    }, [selected]);
+
+  return (
+    <div id='filter' className='filterFinanceiro'>
+
+        <div className="header_financeiro">
+            <div className="container-filter">
+                <h1>Confira nossas condições financeiras!</h1>
+                <ul>
+                    {list.map((item) => (
+                    <FilterList
+                        title={item.title}
+                        active={selected === item.id}
+                        setSelected={setSelected}
+                        id={item.id}
+                    />
+                    ))}
+                </ul>
+            </div>
+        </div>
+
+
+        <div className="container">
+            <div className="text">
+            <div className="menu">
+                    <Link to="/">
+                        <h2>Home</h2>
+                    </Link>
+                    <img src={iconarrow} alt="" />
+                    <h2>Financeiro</h2>
+
+                </div>
+                <h2>{selected}</h2>
+            </div>
+               {selected === "Financiamento" ? (
+                    data.map((d) => (
+                    <div className="box">
+                        <h2>{d.title}</h2>
+                        <h3>{d.paragrafo_1}</h3>
+
+                        <div className="cards-financiamento">
+                            <div className="text-f">
+                                <h2>
+                                    TRABALHAMOS COM OS <br/><span>PRINCIPAIS BANCOS</span>
+                                </h2>
+
+                            </div>
+                            <div className="cards">
+                               
+                                    <div className="box-f-nu">
+
+                                        <div className="cartao">
+                                            <div className="line">
+                                                <img src={itau} alt="" />
+                                            </div>
+                                            <div className="line">
+                                                <img src={chip} alt="" className='chip'/>
+                                            </div>
+                                            <div className="line">
+                                                <div className="contorno">
+                                                    <div className="contorno-interno">
+                                                        <h2>Click</h2>
+                                                    </div>
+                                                    <div className="circle-master">
+                                                        <img src={mastercard} alt="" />
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                        </div>
+
+                                        <div className="bankimage">
+
+                                        </div>
+                                        <div className="bankname">
+
+                                        </div>
+                                        <div className="banktext">
+
+                                        </div>
+                                    </div>
+                                <div className="box-f-it">
+
+                                        <div className="cartao">
+                                            <div className="line">
+                                                <img src={itau} alt="" />
+                                            </div>
+                                            <div className="line">
+                                                <img src={chip} alt="" className='chip'/>
+                                            </div>
+                                            <div className="line">
+                                                <div className="contorno">
+                                                    <div className="contorno-interno">
+                                                        <h2>Click</h2>
+                                                    </div>
+                                                    <div className="circle-master">
+                                                        <img src={mastercard} alt="" />
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                        </div>
+                            
+                                    <div className="bankimage">
+
+                                    </div>
+                                    <div className="bankname">
+
+                                    </div>
+                                    <div className="banktext">
+
+                                    </div>        
+
+                                </div>
+                                <div className="box-f-br">
+                                    <div className="bankimage">
+
+                                    </div>
+                                    <div className="bankname">
+
+                                    </div>
+                                    <div className="banktext">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>{d.paragrafo_2}</h3>
+
+                        <FormularioFinanciamento/>
+                    </div>
+                    ))
+                ) : (
+                    
+                    data.map((d) => (
+                        <div className="box">
+                            <h2>{d.title}</h2>
+                            <h3>{d.paragrafo_1}</h3>
+                            <h3>{d.paragrafo_2}</h3>
+
+                            <div className='bx_box'>
+                               <div className='bx'>
+                                    <h2>Clausulas contratuais</h2>
+                               </div>
+                               <div className='bx'>
+                                    <h2>Clausulas contratuais</h2>
+                               </div>
+                               <div className='bx'>
+                                    <h2>Clausulas contratuais</h2>
+                               </div>
+                               <div className='bx'>
+                                    <h2>Clausulas contratuais</h2>
+                               </div>
+                               <div className='bx'>
+                                    <h2>Clausulas contratuais</h2>
+                               </div>
+                               <div className='bx'>
+                                    <h2>Clausulas contratuais</h2>
+                               </div>
+                            </div>
+                        </div>
+                        ))
+                        
+                )}
+        </div>
+    </div>
+  )
+}

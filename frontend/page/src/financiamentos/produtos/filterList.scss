@@ -1,0 +1,35 @@
+
+.filterList {
+
+    height: 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    background-color: rgba(241, 241, 18, 0.904);
+
+    h3 {
+        margin-top: 13px;
+    }
+
+    &.active {
+
+        border-radius: 10px;
+        background-color
+        : #1b1a1ad8 ;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:550px) {
+    .filterList {
+      
+      
+        &.active {
+         
+        }
+    }
+}

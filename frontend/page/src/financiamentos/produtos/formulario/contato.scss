@@ -1,0 +1,179 @@
+
+.formularioFinanceiro {
+
+    width: 100%;
+    height: auto;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+
+    .title {
+        width: 100%;
+        margin: auto;
+
+        h2 {
+            margin-left: 0vh;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 20px;
+            margin-left: 0vh;
+            width: 80%;
+        }
+    }
+
+    .container-contato {
+
+        width: 100%;
+        height: auto;
+        margin: auto;
+
+
+        .forms {
+            width: 100%;
+            height: 80%;
+            margin-left: 0;
+
+
+            .form {
+                display: flex;
+                flex-wrap: wrap;
+
+                h3 {
+                    width: auto;
+                    color: black;
+                    font-size: 22px;
+                    width: auto;
+                    margin-top: 25px;
+                    font-weight: bold;
+                    margin-left: 0vh;
+                }
+
+                .nome {
+                    width: 100%;
+                    height: auto;
+                    .standard-basic-nome {
+                        width: 85%;
+                        height: 55px;
+                        margin-top: 5px;
+                        border: 1.5px solid rgb(17, 17, 17);
+                        border-radius: 5px;
+                        margin-left: 0vh;
+                        label { color: black;
+                          
+                        }
+                        .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                            width: 0px;
+                            border: none;
+                        }
+                        input {
+                            color: black;
+                            border: none;
+                        }
+                    }
+                }
+        
+                .ddd {
+                    h3 {
+                        margin-top: 2vh;
+                    }
+                    .standard-basic-ddd {
+                        width: 100px;
+                        border: 1.5px solid rgb(17, 17, 17);
+                        border-radius: 5px;
+                        height: 55px;
+                        label {
+                            color: black;
+            
+                        }
+                        .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                            width: 0px;
+                            border: none;
+                        }
+                        input {
+                            color: black;
+                            border: none;
+                        }
+                    }
+                }
+                .telefone {
+                    h3 {
+                        margin-top: 2vh;
+                        margin-left: 2vh;
+                    }
+                    .standard-basic-telefone {
+                        width: 300px;
+                        height: 55px;
+                        border: 1.5px solid rgb(17, 17, 17);
+                        border-radius: 5px;
+                        margin-left: 2vh;
+                        label {
+                            color: black;
+            
+                        }
+                        .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                            width: 0px;
+                            border: none;
+                        }
+                        input {
+                            color: black;
+                            border: none;
+                        }
+                    }
+                }
+                .email {
+                    
+                    h3 {
+                        margin-top: 2vh;
+                        margin-left: 2vh;
+                    }
+                    .standard-basic-email {
+                        width: 800px;
+                        height: 55px;
+                        border: 1.5px solid rgb(17, 17, 17);
+                        border-radius: 5px;
+                        margin-left: 2vh;
+                        label {
+                            color: black;
+            
+                        }
+                        .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                            width: 0px;
+                            border: none;
+                        }
+                        input {
+                            color: black;
+                            border: none;
+                        }
+                    }
+                }
+
+                .informacoes {
+
+                    width: 100%;
+                    margin-top: 2vh;
+                    justify-content: space-between;
+
+                    .standard-basic {
+                        border: none;
+                        width: 20%;
+                        margin-top: 2vh;
+                        margin-right: 2vh;
+                    }
+                }
+
+                .btn {
+                    height: 40px;
+                    background-color: rgba(238, 9, 9, 0.904);
+                    border: none;
+                    font-weight: bolder;
+                }
+            }
+            .btn:hover {
+                background-color: rgba(253, 0, 38, 0.979);
+            }
+        }
+
+    }
+    
+}

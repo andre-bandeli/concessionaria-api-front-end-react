@@ -1,15 +1,16 @@
 import React from 'react'
 import Navbar from '../components/Nav/Navbar'
+import Filter from './produtos/Filter.jsx'
 import './financiamentos.scss'
-import HeaderFinanceiro from './HeaderFinanceiro'
-import PageTitle from './PageTitle'
+import ProdutosCategoriaList from './produtos/FilterList'
+import Footer from '../components/footer/Footer'
 
 export default function Financiamentos() {
   return (
     <div className='financeiro'>
         <Navbar/>
-        <HeaderFinanceiro/>
-        <PageTitle/>
+        <Filter/>
+        <Footer/>
     </div>
   )
 }

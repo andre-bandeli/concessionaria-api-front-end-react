@@ -14,7 +14,7 @@ export default function Veiculos() {
     const[descricao,setDescricao]=useState('')
     const [data, setData] = useState([]);
     const[produto,setProduto]=useState([])
-    const [selected, setSelected] = useState("todos");
+    const [selected, setSelected] = useState("motos");
 
 
     const list = [
