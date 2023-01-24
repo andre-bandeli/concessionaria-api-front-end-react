@@ -2,19 +2,19 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom"
 
-import Home from './home/Home';
-import Sobre from './sobre/Sobre';
-import Login from './login/Login';
+import Index from './paginas/index/Index';
+import Sobre from './paginas/sobre/Sobre';
+import Login from './paginas/login/Login';
 import ProdutoSingle from './produto_single/ProdutoSingle';
-import Motocicletas from './motocicletas/Motocicletas';
-import Veiculos from './veiculos/Veiculos';
-import Financiamentos from './financiamentos/Financiamentos';
+import Motocicletas from './paginas/motocicletas/Motocicletas';
+import Veiculos from './components/produtos/Veiculos';
+import Financiamentos from './paginas/financeiro/Financiamentos';
 
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Index />} />
       <Route path="/sobre" element={<Sobre />} />
       <Route path="/financiamentos" element={<Financiamentos />} />
       <Route path="/login" element={<Login />} />

@@ -1,0 +1,246 @@
+
+.card {
+    width: 100%;
+    height: auto;
+    margin-top: 8vh;
+    background-color: yellow;
+
+    .container {
+        width: 90%;
+        height: 50vh;
+        margin: auto;
+        display: flex;
+
+        .box-left {
+            width: 50%;
+            height: 80%;
+            margin-top: 5vh;
+            border-right: 1px solid black;
+            display: flex;
+
+            .imagem {
+                width: 70%;
+                height: 80%;
+                margin-top: 5vh;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .texto {
+                width: 40%;
+                height: 100%;
+                margin-right: 5vh;
+
+                h2 {
+                    text-align: left;
+                    border-radius: 5px;
+                    margin-top: 5vh;
+                }
+                h3 {
+                    font-size: 27px;
+                    font-weight: 300;
+                }
+                .btn {
+                    width: 150px;
+                    height: 35px;
+                    border: none;
+                    background-color: rgb(27, 26, 26);
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+        }
+        .box-right {
+            width: 50%;
+            height: 80%;
+            margin-top: 5vh;
+            display: flex;
+
+            .imagem {
+                width: 70%;
+                height: 80%;
+                margin-top: 2vh;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .texto {
+                width: 40%;
+                height: 100%;
+                margin-left: 5vh;
+
+                h2 {
+                    text-align: left;
+                    border-radius: 5px;
+                    margin-top: 5vh;
+                }
+                h3 {
+                    font-size: 27px;
+                    font-weight: 300;
+                }
+
+                .btn {
+                    width: 150px;
+                    height: 35px;
+                    border: none;
+                    background-color: rgb(26, 26, 27);
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+.card {
+    height: auto;
+   
+    .container {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        
+        .box-left {
+            width: 100%;
+            border: none;
+            margin: 0;
+           
+            .imagem {
+             
+                img {
+                 
+                }
+            }
+            .texto {
+                margin-left: 5vh;
+
+                h2 {
+                   
+                }
+                h3 {
+                   
+                }
+                .btn {
+
+                    a {
+                        
+                    }
+                }
+
+            }
+        }
+        .box-right {
+            width: 90%;
+            margin: auto;
+            margin-top: 10vh;
+
+            .imagem {
+               
+
+                img {
+                  
+                }
+            }
+            .texto {
+            
+
+                h2 {
+                   
+                }
+                h3 {
+                   
+                }
+
+                .btn {
+                
+
+                    a {
+                    
+                    }
+                }
+            }
+        }
+    }
+
+}
+}
+
+
+@media (max-width: 550px) {
+    
+    .card {
+       
+        .container {
+            width: 100%;
+            display: inline-block;
+            
+            .box-left {
+                width: 100%;
+                border: none;
+                margin: 0;
+                display: inline-block;
+               
+                .imagem {
+                    width: 100%;
+                 
+                }
+                .texto {
+                    width: 80%;
+                    margin: auto;
+    
+    
+                }
+            }
+            .box-right {
+                width: 90%;
+                margin: auto;
+                margin-top: 10vh;
+                display: inline-block;
+    
+                .imagem {
+                   width: 100%;
+    
+                    img {
+                      
+                    }
+                }
+                .texto {
+                    width: 80%;
+                    margin: auto;
+    
+                    h2 {
+                       
+                    }
+                    h3 {
+                       
+                    }
+    
+                    .btn {
+                    
+    
+                        a {
+                        
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+    }
