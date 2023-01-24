@@ -38,7 +38,7 @@ export default function FormularioFinanciamento() {
   return (
     <div className='formularioFinanceiro'>
             <div className="title">
-                <h2>Faça uma simulação de financiamento!</h2>
+                <h2>Faça uma simulação de financiamento</h2>
                 <h3>mande uma mensagem para nós que um de nossos representantes comerciais entrará em contato</h3>
             </div>
 

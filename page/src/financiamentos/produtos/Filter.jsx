@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import itau from './itau.png'
 import chip from './chip.png'
 import mastercard from './mastercard.png'
+import nubank from './nu.png'
+import bradesco from './bradesco.png'
+
 
 import {
     Consorcio,
@@ -93,19 +96,18 @@ export default function Produtos() {
 
                                         <div className="cartao">
                                             <div className="line">
-                                                <img src={itau} alt="" />
+                                                <img src={mastercard} alt="" />
                                             </div>
                                             <div className="line">
                                                 <img src={chip} alt="" className='chip'/>
                                             </div>
                                             <div className="line">
                                                 <div className="contorno">
+                                                    <img src={nubank} alt="" />
                                                     <div className="contorno-interno">
-                                                        <h2>Click</h2>
+                                                        <h2>João J. Silva</h2>
                                                     </div>
-                                                    <div className="circle-master">
-                                                        <img src={mastercard} alt="" />
-                                                    </div>
+                                                   
                                                 </div>  
                                             </div>
                                         </div>
@@ -153,6 +155,15 @@ export default function Produtos() {
 
                                 </div>
                                 <div className="box-f-br">
+                                    <div className="cartao">
+                                                <div className="line">
+                                                    <img src={bradesco} alt="" />
+                                                </div>
+                                                <div className="line-chip">
+                                                    <img src={chip} alt=""/>
+                                                </div>
+                                               
+                                            </div>
                                     <div className="bankimage">
 
                                     </div>
