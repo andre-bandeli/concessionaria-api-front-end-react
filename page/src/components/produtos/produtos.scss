@@ -5,13 +5,13 @@
     height: auto;
     margin-top: 10vh;
 
-    .container-produtos {
+    .containerProdutos {
         width: 100%;
         height: 100%;
         display: inline-block;
         margin-left: 0vh;
 
-        .filter {
+        .filterProdutos {
             width: 90%;
             margin: auto;
 
@@ -28,7 +28,6 @@
                 a {
                     text-decoration: none;
                     color: rgb(36, 33, 33);
-                
                 }
 
                 h2 {
@@ -37,16 +36,13 @@
                     font-size: 16px;
                     font-weight: 300;
 
-
                     .spn {
-
                         img {
                             margin-left: 1vh;
                             margin-right: calc(1vh - 5px);
                             width: 10px;
                         }
                     }
-
                 }
 
                 h4 {
@@ -57,6 +53,8 @@
             ul {
                 width: 100%;
                 margin: auto;
+                margin-top: 5vh;
+                margin-left: 0;
                 display: flex;
                 text-align: left;
 
@@ -69,7 +67,7 @@
                 }
 
                 li {
-                    margin-left: 2vh;
+                    margin-left: 0vh;
                     list-style: none;
                     font-size: 20px;
                     cursor: pointer;
@@ -78,18 +76,21 @@
             }
         }
 
-        .title {
-            width: 100%;
+        .titleProdutos {
+            width: 90%;
+            margin: auto;
+            text-align: left;
 
             h2 {
-                margin-left: 10vh;
+            
                 font-size: 35px;
                 font-weight: 500;
+                margin-left: 3vh;
             }
             h3 {
                 font-size: 20px;
                 font-weight: 300;
-                margin-left: 10vh;
+                margin-left: 3vh;
             }
         }
         .busca {
@@ -106,7 +107,7 @@
         }
 
         .product {
-            width: 92%;
+            width: 90%;
             margin: auto;
             height: auto;
             display: flex;
@@ -140,6 +141,7 @@
                     h3 {
                         margin-top: 5px;
                         font-weight: 200;
+                        font-size: 18px;
                         height: 100%;
                         padding: 0;
                         
@@ -148,13 +150,13 @@
                 .modelo {
                     width: 100%;
                     height: 2.5vh;
-                    margin-top: 3vh;
+                    margin-top: 0vh;
                     display: inline;
 
                     h2 {
                         margin-left: 2vh;
-                        font-weight: 400;
-                        margin-top: 0;
+                        font-weight: 500;
+                        margin-top: 0vh;
                         height: 25px;
                     }
                 }
@@ -163,7 +165,8 @@
                     h3 {
                         font-weight: 100;
                         margin-left: 2vh;
-                        margin-top: 0;
+                        margin-top: 2vh;
+                        font-size: 20px;
 
                         span {
                             font-weight: 300;
@@ -173,31 +176,28 @@
                         width: 90%;
                         font-size: 14px;
                         margin-left: 2vh;
-                        margin-top: -1vh;
+                        margin-top: 0vh;
                         font-weight: 100;
                     }
                 }
                 .condicoes {
-                    width: 60%;
-                    margin-top: 3vh;
+                    width: 50%;
+                    margin-top: 2vh;
                     height: 5vh;
                     display: flex;
-                    background-color: red;
-
+                    
                     a {
                         width: 100%;
-                        margin-top: 1vh;
-                        text-align: center;
-                        text-decoration: none;
-                        color: whitesmoke;
-                        font-weight: 500;
-                        font-size: 16px;
-                        
+                        button {
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgb(231, 18, 18);
+                            color: whitesmoke;
+                            border: none;
+                        }
                     }
-
                 }
             }
-
             .box:hover {
                 background-color: rgba(245, 245, 245, 0.233);
                 cursor: pointer;
@@ -208,134 +208,64 @@
 
 
 @media (max-width: 1440px) {
-    
 
     .produtos {
+        .containerProdutos {     
+            .filterProdutos {
     
-        .container {
-            
-            .product {
-
-                .box {
-                    width: 30%;
-                    margin: auto;
-                    margin-right: 0;
-                    .imagem {
-                
-
-                        
-                    }
-    
-                }
-            }
-        }
-    }
-}
-@media (max-width: 1024px) {
-    
-    .produtos {
-    
-        .container {
-            
-            .product {
-
-                .box {
-                    
-                    .imagem {
-                        img {
-                            width: 270px;
-                        }
-                        
-                    }
-    
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    
-
-.produtos {
-
-    .container {
-        
-        .product {
-            width: 90%;
-
-            height: 50%;
-            margin: auto;
-           
-    
-            .box {
-                width: 40%;
-                margin: auto;
-                margin-right: 0;
-                .imagem {
-            
-                    img {
-                        width: 250px;
-                    }
-                    
-                }
-
-            }
-        }
-    }
-}
-}
-
-@media (max-width: 550px) {
-    
-
-    .produtos {
-    
-        .container {
-
-            .title {
-                margin-left: 0vh;
-
-                h2 {
-                    margin-left: 5vh;
-                }
-                h3 {
-                    margin-left: 5vh;
-                }
-            }
-            
-            .busca {
-
-                width: 100%;
-                height: auto;
-                flex-wrap: wrap;
-                .btn {
-                    width: auto;
-                    margin-left: 5vh;
-                }
-            }
-            
-            .product {
-                width: 95%;
-                margin-top: 5vh;
-                height: 50%;
-        
-                .box {
-                    width: 50%;
-                    margin: auto;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
                     margin-top: 5vh;
-                    margin-right: 0;
-
     
+                    li {
+                        margin-left: 0;
+                    }
+                }
+            }
+            .product {
+    
+                .box {
+                    width: 250px;
+                    margin-top: 5vh;
+
                     .imagem {
-                
+                      
                         img {
-                            width: 200px;
-                            height: 200px;
+                           width: 250px;
                         }
                     }
-    
                 }
+            }
+        }
+    }        
+}
+
+@media (max-width: 1024px) {
+
+    .produtos {
+        .containerProdutos { 
+            .filterProdutos {
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+            .product {
+        
+                .box {
+                    width: 250px;
+                    margin-top: 5vh;
+                
+                    .imagem {
+                    
+                        img {
+                        width: 250px;
+                        }
+                    }
+                }
+
             }
         }
     }

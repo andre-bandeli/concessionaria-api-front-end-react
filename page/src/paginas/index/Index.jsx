@@ -19,9 +19,9 @@ export default function Home() {
       <Header/>
       <PageTitle/>
       <Card/>
-      {/* <Folder/>
+      <Folder/>
       <Produtos/>
-      <Veiculos/>
+      {/* <Veiculos/>
       <Marca/>
       <Financiamentos/>
       <Contato/>

@@ -104,15 +104,15 @@ export default function Produtos() {
   return (
     <div className="produtos" id='produtos'>
 
-        <div className="container-produtos">
+        <div className="containerProdutos">
 
-            <div className="title">
+            <div className="titleProdutos">
 
                 <h2>Motocicletas</h2>
                 <h3>Confira alguns de nossos modelos disponíveis</h3>
 
             </div>
-            <div className='filter'>
+            <div className='filterProdutos'>
                 <ul>
                     {list.map((item) => (
                     <PortfolioList
@@ -146,7 +146,10 @@ export default function Produtos() {
                     </div>
                     <div className="condicoes">
                         <Link to="/produto/{id}">
-                            ver detalhes
+                            <button>
+                                ver detalhes
+                            </button>
+                            
                         </Link>
                     </div>
                 </div>

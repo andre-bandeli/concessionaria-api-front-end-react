@@ -48,3 +48,60 @@
         
     }
 }
+
+@media (max-width: 1024px) {
+    .folder {
+
+        .container-folder {
+            margin-top: 10vh;
+            h2 {
+              font-size: 30px;
+              line-height: normal;
+            }
+    
+        }
+    }
+}
+@media (max-width: 768px) {
+    .folder {
+
+        .container-folder {
+            width: 70%;
+            margin: auto;
+            margin-top: 10vh;
+            margin-left: 10vh;
+            h2 {
+                width: 100%;
+              font-size: 30px;
+              line-height: normal;
+            }
+    
+            button {
+                width: 220px;
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .folder {
+
+        .container-folder {
+            width: 80%;
+            margin: auto;
+            margin-top: 5vh;
+            margin-left: 5vh;
+            h2 {
+                width: 100%;
+              font-size: 30px;
+              line-height: normal;
+            }
+            h3 {
+                width: 80%;
+            }
+    
+            button {
+                width: 220px;
+            }
+        }
+    }
+}
