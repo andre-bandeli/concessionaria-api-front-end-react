@@ -9,6 +9,10 @@ import chip from './chip.png'
 import mastercard from './mastercard.png'
 import nubank from './nu.png'
 import bradesco from './bradesco.png'
+import Nubank from './Nubank.jpg'
+import Itau from './itau.webp'
+import Bradesco from './bradesco.jpg'
+
 
 
 import {
@@ -113,14 +117,12 @@ export default function Produtos() {
                                         </div>
 
                                         <div className="bankimage">
-
+                                            <img src={Nubank} alt="" />
                                         </div>
                                         <div className="bankname">
-
+                                            <h2>Nubank <br /> Seguros</h2>
                                         </div>
-                                        <div className="banktext">
-
-                                        </div>
+                                       
                                     </div>
                                 <div className="box-f-it">
 
@@ -144,10 +146,10 @@ export default function Produtos() {
                                         </div>
                             
                                     <div className="bankimage">
-
+                                        <img src={Itau} alt="" />
                                     </div>
                                     <div className="bankname">
-
+                                        <h2>Linha de Crédito Itau</h2>
                                     </div>
                                     <div className="banktext">
 
@@ -165,10 +167,10 @@ export default function Produtos() {
                                                
                                             </div>
                                     <div className="bankimage">
-
+                                        <img src={Bradesco} alt="" />
                                     </div>
                                     <div className="bankname">
-
+                                        <h2>Bradesco Financiamentos</h2>
                                     </div>
                                     <div className="banktext">
 
