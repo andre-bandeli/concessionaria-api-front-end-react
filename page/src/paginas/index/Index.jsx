@@ -17,7 +17,7 @@ export default function Home() {
     <div>
       <Navbar/>,
       <Header/>
-      <PageTitle/>
+      {/* <PageTitle/>
       <Card/>
       <Folder/>
       <Produtos/>
@@ -25,7 +25,7 @@ export default function Home() {
       <Marca/>
       <Financiamentos/>
       <Contato/>
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }

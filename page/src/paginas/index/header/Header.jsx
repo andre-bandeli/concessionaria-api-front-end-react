@@ -3,24 +3,23 @@ import './header.scss'
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
-import imagem from './vw.jpg'
-import imagem2 from './bmw2.jpg'
-import imagem3 from './bmw.jpg'
+import primeiraImagemSlider from './vw.jpg'
+import segundaImagemSlider from './bmw2.jpg'
+import terceiraImagemSlider from './bmw.jpg'
 
 export default function Header() {
   return (
-    <div className='header'>
-    
-
-      <div className='carousel'>
-      <Carousel className='carousel-bootstrap'>
-        <Carousel.Item className='item' interval={3500}>
+    <div className='headerContainer'>
+      <div className='carouselContainer'>
+      <Carousel className='carouselBootstrap'>
+        <Carousel.Item className='carouselItem' interval={3500}>
           <img
-            src={imagem}
-            alt="Image One"
+            src={primeiraImagemSlider}
+            alt="Primeiro slider: imagem de um carro cinza em uma estrada como background"
           />
-           <div className="box_item">
-              <h2>CONCESSIONÁRIA AUTORIZADA <span>WEB MOTORS</span></h2>
+           <div className="carouselItemContent">
+              <h2>Concessionária Autorizada <br /> <span>WEB MOTORS</span></h2>
+              <br />
               <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minus labore debitis</h3>
               <a href="#produtos">
               <button>
@@ -29,13 +28,13 @@ export default function Header() {
             </div>
           
         </Carousel.Item>
-        <Carousel.Item className='item' interval={3500}>
+        <Carousel.Item className='carouselItem' interval={3500}>
           <img
-            src={imagem2}
+            src={segundaImagemSlider}
             alt="Image Two"
           />
-          <div className="box_item">
-              <h2>CONCESSIONÁRIA AUTORIZADA <span>WEB MOTORS</span></h2>
+          <div className="carouselItemContent">
+              <h2>Concessionária Autorizada <br /> <span>WEB MOTORS</span></h2>
               <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minus labore debitis</h3>
               <a href="#produtos">
               <button>
@@ -43,13 +42,13 @@ export default function Header() {
               </button> </a>
             </div>
         </Carousel.Item>
-        <Carousel.Item className='item' interval={3500}>
+        <Carousel.Item className='carouselItem' interval={3500}>
           <img
-            src={imagem3}
+            src={terceiraImagemSlider}
             alt="Image Two"
           />
-          <div className="box_item">
-              <h2>CONCESSIONÁRIA AUTORIZADA <span>WEB MOTORS</span></h2>
+          <div className="carouselItemContent">
+              <h2>Concessionária Autorizada <br /> <span>WEB MOTORS</span></h2>
               <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minus labore debitis</h3>
               <a href="#produtos">
               <button>
@@ -59,7 +58,6 @@ export default function Header() {
         </Carousel.Item>
       </Carousel>
     </div>
-       
     </div>
   )
 }
