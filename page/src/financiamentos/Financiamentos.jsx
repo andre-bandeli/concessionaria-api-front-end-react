@@ -4,12 +4,14 @@ import Filter from './produtos/Filter.jsx'
 import './financiamentos.scss'
 import ProdutosCategoriaList from './produtos/FilterList'
 import Footer from '../components/footer/Footer'
+import Duvidas from './Duvidas'
 
 export default function Financiamentos() {
   return (
     <div className='financeiro'>
         <Navbar/>
         <Filter/>
+        <Duvidas/>
         <Footer/>
     </div>
   )
