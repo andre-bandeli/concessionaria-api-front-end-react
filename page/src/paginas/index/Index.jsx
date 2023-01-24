@@ -17,9 +17,9 @@ export default function Home() {
     <div>
       <Navbar/>,
       <Header/>
-      {/* <PageTitle/>
+      <PageTitle/>
       <Card/>
-      <Folder/>
+      {/* <Folder/>
       <Produtos/>
       <Veiculos/>
       <Marca/>
