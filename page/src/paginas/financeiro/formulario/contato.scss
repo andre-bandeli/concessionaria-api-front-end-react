@@ -122,17 +122,17 @@
                     }
                 }
                 .email {
-                    
+                    width: 90%;
                     h3 {
                         margin-top: 2vh;
-                        margin-left: 2vh;
+                        margin-left: 0vh;
                     }
                     .standard-basic-email {
-                        width: 800px;
+                        width: 100%;
                         height: 55px;
                         border: 1.5px solid rgb(17, 17, 17);
                         border-radius: 5px;
-                        margin-left: 2vh;
+                        margin-left: 0vh;
                         label {
                             color: black;
             
@@ -179,3 +179,262 @@
     }
     
 }
+
+@media (max-width: 550px) {
+
+.formularioFinanceiro {
+
+
+    .title {
+        
+
+        h2 {
+           
+        }
+        h3 {
+            
+        }
+    }
+
+    .container-contato {
+
+       
+
+        .forms {
+         
+            .form {
+               
+
+                h3 {
+                
+                }
+
+                .nome {
+                   
+                    .standard-basic-nome {
+                      
+                        label {
+                          
+                        }
+                        .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                          
+                        }
+                        input {
+                       
+                        }
+                    }
+                }
+        
+                .ddd {
+                    h3 {
+                        
+                    }
+                    .standard-basic-ddd {
+                   
+                        label {
+                           
+            
+                        }
+                        .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                        
+                        }
+                        input {
+                           
+                        }
+                    }
+                }
+                .telefone {
+                    h3 {
+                        margin-top: 2vh;
+                        margin-left: 0vh;
+                    }
+                    .standard-basic-telefone {
+                      
+                        margin-left: 0vh;
+                        label {
+                           
+            
+                        }
+                        .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                            
+                        }
+                        input {
+                           
+                        }
+                    }
+                }
+                .email {
+                   
+                    h3 {
+                        
+                        margin-left: 0vh;
+                    }
+                    .standard-basic-email {
+                       
+                        margin-left: 0vh;
+                        label {
+                        
+            
+                        }
+                        .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                        
+                        }
+                        input {
+                            
+                        }
+                    }
+                }
+
+                .informacoes {
+
+                 
+
+                    .standard-basic {
+                        width: 100%;
+                    }
+                }
+
+                .btn {
+                
+                }
+            }
+            .btn:hover {
+            
+            }
+        }
+
+    }
+    
+}
+    
+}
+
+
+@media (max-width: 350px) {
+
+    .formularioFinanceiro {
+    
+    
+        .title {
+            
+    
+            h2 {
+               
+            }
+            h3 {
+                
+            }
+        }
+    
+        .container-contato {
+    
+           
+    
+            .forms {
+             
+                .form {
+                   
+    
+                    h3 {
+                    
+                    }
+    
+                    .nome {
+                       
+                        .standard-basic-nome {
+                          
+                            label {
+                              
+                            }
+                            .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                              
+                            }
+                            input {
+                           
+                            }
+                        }
+                    }
+            
+                    .ddd {
+                        h3 {
+                            
+                        }
+                        .standard-basic-ddd {
+                       
+                            label {
+                               
+                
+                            }
+                            .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                            
+                            }
+                            input {
+                               
+                            }
+                        }
+                    }
+                    .telefone {
+                        h3 {
+                            margin-top: 2vh;
+                            margin-left: 0vh;
+                        }
+                        .standard-basic-telefone {
+                            width: 100%;
+                            margin-left: 0vh;
+                            label {
+                               
+                
+                            }
+                            .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                                
+                            }
+                            input {
+                               
+                            }
+                        }
+                    }
+                    .email {
+                       
+                        h3 {
+                            
+                            margin-left: 0vh;
+                        }
+                        .standard-basic-email {
+                           
+                            margin-left: 0vh;
+                            label {
+                            
+                
+                            }
+                            .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                            
+                            }
+                            input {
+                                
+                            }
+                        }
+                    }
+    
+                    .informacoes {
+    
+                     
+    
+                        .standard-basic {
+                            width: 100%;
+                        }
+                    }
+    
+                    .btn {
+                    
+                    }
+                }
+                .btn:hover {
+                
+                }
+            }
+    
+        }
+        
+    }
+        
+    }

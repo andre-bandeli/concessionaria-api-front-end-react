@@ -10,8 +10,8 @@ export default function Financiamentos() {
     <div className='financeiro'>
         <Navbar/>
         <Filter/>
-        {/* <Duvidas/>
-        <Footer/> */}
+        <Duvidas/>
+        <Footer/>
     </div>
   )
 }
