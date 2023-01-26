@@ -9,22 +9,21 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.164);
     }
 
-    .container {
+    .containerFooter {
         width: 80%;
         height: 70%;
         margin:auto;
         margin-top: 2vh;
         display: flex;
         
-
-
-        .box {
+        .boxFooter {
             width: 33.3%;
             margin: auto;
             height: 100%;
 
             h2 {
-                margin-left: 4vh;
+                font-size: 20px;
+                margin-left: 3vh;
                 letter-spacing: 1px;
                 font-weight: 500;
                 color: rgb(48, 46, 46);
@@ -32,6 +31,7 @@
 
             ul {
                 margin-top: 2vh;
+   
                 li {
                     list-style: none;
                     padding: 3px;
@@ -58,16 +58,12 @@
 
     .footer {
      
-        .social-box {
-         
-        }
-
-        .container {
+        .containerFooter {
             width: 100%;
             display: inline-block;
 
 
-            .box {
+            .boxFooter {
                 width: 90%;
                 height: auto;
                 margin: auto;

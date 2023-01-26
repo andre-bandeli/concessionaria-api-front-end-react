@@ -10,9 +10,9 @@ export default function Footer() {
         <div className="social-box">
                 
         </div>
-        <div className="container">
+        <div className="containerFooter">
 
-           <div className="box">
+           <div className="boxFooter">
             <h2>Instituccional</h2>
             <ul>
                     <li>
@@ -39,7 +39,7 @@ export default function Footer() {
             </ul>
 
            </div>
-           <div className="box">
+           <div className="boxFooter">
             <h2>Produtos</h2>
            <ul>
                     <li>
@@ -67,7 +67,7 @@ export default function Footer() {
 
             
             </div>
-            <div className="box">
+            <div className="boxFooter">
             <h2>Contato</h2>
             <ul>
                     <li>
@@ -91,7 +91,7 @@ export default function Footer() {
             </ul>
 
             </div>
-            <div className="box">
+            <div className="boxFooter">
             <h2>Carreiras</h2>
             <ul>
                     <li>

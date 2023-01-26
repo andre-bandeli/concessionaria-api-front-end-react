@@ -31,16 +31,17 @@ export default function Contato() {
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(lead)
     }).then(()=> {
-      setTimeout(() => {
-        setMensagemSucesso("Mensagem enviada com sucesso!");
-    }, 3000);
-    setNome("")
-    setEmail("")
-    setMensagem("")
+        setTimeout(() => {
+        setMensagemSucesso("Mensagem enviada com sucesso! Entraremos em contato o quanto antes!");
+        }, 10);
+        setTimeout(() => {
+          setMensagemSucesso("");
+          }, 5000);
+        setNome("")
+        setEmail("")
+        setMensagem("")
     })
   }
-
-
 
   return (
     <div className='contato'>
@@ -67,11 +68,11 @@ export default function Contato() {
                     <Button variant='contained' className='btn' onClick={handleClick} type="submit" alt="botão para enviar formulário">
                       Enviar
                     </Button>
-
-                    {mensagemSucesso !== "" && <p>{mensagemSucesso}</p>}
-                      
-
                 </form>
+                
+                <div className="mensagemSucesso">
+                        {mensagemSucesso !== "" ? <p>{mensagemSucesso}</p> : ""}
+                </div>
                
 
               </div>

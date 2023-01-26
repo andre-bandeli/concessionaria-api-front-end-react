@@ -10,8 +10,17 @@ import logo from './logo.png'
 export default function FormularioFinanciamento() {
 
   const [nome, setNome] = useState("")
+  const [ddd, setDDD] = useState("")
+  const [telefone, setTelefone] = useState("")
   const [email, setEmail] = useState("")
-  const [mensagem, setMensagem] = useState("")
+  const [salario, setSalario] = useState("")
+  const [possuiVeiculo, setPossuiVeiculo] = useState("")
+  const [estadoCivil, setEstadoCivil] = useState("")
+  const [dependentes, setDependentes] = useState("")
+  const [valorEntrada, setValorEntrada] = useState("")
+  const [modeloInteresse, setModeloInteresse] = useState("")
+  const [fiador, setFiador] = useState("")
+  const [cidade, setCidade] = useState("")
 
 
   const onSubmit = (e) => {
@@ -22,9 +31,9 @@ export default function FormularioFinanciamento() {
 
   const handleClick=(e)=> {
     e.preventDefault()
-    const lead = {nome, email, mensagem}
+    const lead = {nome, ddd, telefone, email, salario, possuiVeiculo, estadoCivil, dependentes, valorEntrada, modeloInteresse, fiador, cidade}
     console.log(lead)
-    fetch("http://localhost:8080/api/add",{
+    fetch("http://localhost:8080/api/v1/financeiro/add",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(lead)
