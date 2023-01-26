@@ -9,6 +9,7 @@ import PortfolioList from './ProdutosCategoriaList';
 export default function Produtos() {
 
     const[nome_modelo,setNome_modelo]=useState('')
+    const[id,setId]=useState('')
     const[preco,setPreco]=useState('')
     const[marca,setMarca]=useState('')
     const[descricao,setDescricao]=useState('')
@@ -39,7 +40,7 @@ export default function Produtos() {
 
     const handleClick=(e)=>{
         e.preventDefault()
-        const produto={nome_modelo,marca, preco, descricao}
+        const produto={id, nome_modelo,marca, preco, descricao}
         console.log(produto)
         fetch("http://localhost:8080/api/produto/add",{
           method:"POST",
@@ -51,15 +52,6 @@ export default function Produtos() {
         console.log("Novo produto adicionado.")
       })
     }
-
-    // useEffect(()=>{
-    //     fetch("http://127.0.0.1:8085/api/produto/list")
-    //     .then(res=>res.json())
-    //     .then((result)=>{
-    //       setProduto(result);
-    //     }
-    //   )
-    // },[])
 
     useEffect(() => {
         switch (selected) {
@@ -145,7 +137,7 @@ export default function Produtos() {
                         <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
                     </div>
                     <div className="condicoes">
-                        <Link to="/produto/{id}">
+                            <Link to={`/produto/${produto.id}`}>
                             <button>
                                 ver detalhes
                             </button>

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin
@@ -18,6 +19,11 @@ public class MotoController {
     @GetMapping("/list")
     public List<Moto> getAll(){
         return motoService.motos();
+    }
+
+    @GetMapping("/{id}")
+    public Optional<Moto> getAll(@PathVariable Long id){
+        return motoService.findyMotobyId(id);
     }
 
     @GetMapping("/list/honda")

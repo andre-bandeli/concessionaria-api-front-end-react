@@ -1,91 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;900&display=swap');
-
-
-.headerContainer {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Inter', sans-serif;
+.carouselContainer {
     height: 85vh;
-    margin-top: 6vh;
-    position: relative;
     width: 100%;
-    
-    .carouselContainer {
+
+    .carouselBootstrap {
         height: 85vh;
         width: 100%;
-    
-        .carouselBootstrap {
+        .carouselItem {
             height: 85vh;
             width: 100%;
-            .carouselItem {
-                height: 85vh;
+
+            img {
+                height: 100%;
                 width: 100%;
-    
-                img {
-                    height: 100%;
-                    width: 100%;
-                    z-index: 1;
+                z-index: 1;
+            }
+
+            .carouselItemContent {
+                height: 50%;
+                margin: 15vh 25vh;
+                position: absolute;
+                top: 0;
+                width: 45%;
+                z-index: 0;
+
+                h2 {
+                    color: whitesmoke;
+                    font-size: 30px;
+                    font-weight: 400;
+        
+                    span {
+                        color: rgba(228, 161, 18, 0.904);
+                        font-size: 80px;
+                        font-weight: 700;
+                    }
                 }
-    
-                .carouselItemContent {
-                    height: 50%;
-                    margin: 15vh 25vh;
-                    position: absolute;
-                    top: 0;
-                    width: 45%;
-                    z-index: 0;
-    
-                    h2 {
-                        color: whitesmoke;
-                        font-size: 30px;
-                        font-weight: 400;
-            
-                        span {
-                            color: rgba(228, 161, 18, 0.904);
-                            font-size: 80px;
-                            font-weight: 700;
-                        }
-                    }
-            
-                    h3 {
-                        color: wheat;
-                        font-size: 25px;
-                        font-weight: 400;
-                        width: 80%;
-                    }
-                    button {
-                        background-color: rgba(0, 0, 0, 0.363);
-                        border: none;
-                        border-radius: 2px;
-                        color: rgb(219, 210, 210);
-                        cursor: pointer;
-                        font-size: 18px;
+        
+                h3 {
+                    color: wheat;
+                    font-size: 25px;
+                    font-weight: 400;
+                    width: 80%;
+                }
+                button {
+                    background-color: rgba(0, 0, 0, 0.363);
+                    border: none;
+                    border-radius: 2px;
+                    color: rgb(219, 210, 210);
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: bolder;
+                    height: 50px;
+                    margin-top: 5vh;
+                    width: 250px;
+                    -webkit-backdrop-filter: blur( 5.5px );
+                    backdrop-filter: blur( 6.5px );
+                    
+                    a {
+                        color: white;
                         font-weight: bolder;
-                        height: 50px;
-                        margin-top: 5vh;
-                        width: 250px;
-                        -webkit-backdrop-filter: blur( 5.5px );
-                        backdrop-filter: blur( 6.5px );
-                        
-                        a {
-                            color: white;
-                            font-weight: bolder;
-                            text-decoration: none;
-                        }
-                    }
-                    button:hover {
-                        background-color: rgba(0, 0, 0, 0.658);
-                        color: whitesmoke;
-                        transition: .4s ease;
+                        text-decoration: none;
                     }
                 }
-                
+                button:hover {
+                    background-color: rgba(0, 0, 0, 0.658);
+                    color: whitesmoke;
+                    transition: .4s ease;
+                }
             }
             
         }
-    }    
-}
+        
+    }
+}    
+
 @media (max-width: 1024px) {
     .headerContainer {
         .carouselContainer {

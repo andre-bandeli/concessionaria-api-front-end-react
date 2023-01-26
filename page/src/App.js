@@ -21,6 +21,7 @@ function App() {
       <Route path="/motocicletas" element={<Motocicletas />} />
       <Route path="/veiculos" element={<Veiculos />} />
       <Route path="/produto/list" element={<ProdutoSingle />} />
+      <Route path="/produto/:id" element={<ProdutoSingle />} />
     </Routes>
   );
 }

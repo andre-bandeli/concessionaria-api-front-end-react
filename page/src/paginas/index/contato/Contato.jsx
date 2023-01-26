@@ -13,6 +13,8 @@ export default function Contato() {
   const [email, setEmail] = useState("")
   const [mensagem, setMensagem] = useState("")
 
+  const [mensagemSucesso, setMensagemSucesso] = useState("");
+
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -24,12 +26,17 @@ export default function Contato() {
     e.preventDefault()
     const lead = {nome, email, mensagem}
     console.log(lead)
-    fetch("http://localhost:8080/api/add",{
+    fetch("http://127.0.0.1:8085/api/v1/lead/add",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(lead)
     }).then(()=> {
-      console.log("lead adicionado")
+      setTimeout(() => {
+        setMensagemSucesso("Mensagem enviada com sucesso!");
+    }, 3000);
+    setNome("")
+    setEmail("")
+    setMensagem("")
     })
   }
 
@@ -61,7 +68,11 @@ export default function Contato() {
                       Enviar
                     </Button>
 
+                    {mensagemSucesso !== "" && <p>{mensagemSucesso}</p>}
+                      
+
                 </form>
+               
 
               </div>
               <div className="logo">
