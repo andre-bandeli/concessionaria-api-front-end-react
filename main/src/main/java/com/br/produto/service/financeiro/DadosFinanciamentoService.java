@@ -12,7 +12,7 @@ public class DadosFinanciamentoService {
     @Autowired
     private DadosFinanciamentoRepository dadosFinanciamentoRepository;
 
-    public DadosFinanciamento addLeadFinanciamento(DadosFinanciamento dadosFinanciamento) {
+    public DadosFinanciamento addDadosFinanciamento(DadosFinanciamento dadosFinanciamento) {
         return dadosFinanciamentoRepository.save(dadosFinanciamento);
     }
 

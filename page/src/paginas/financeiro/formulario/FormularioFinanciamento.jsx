@@ -27,18 +27,64 @@ export default function FormularioFinanciamento() {
     e.preventDefault();
     console.log("refresh prevented");
   };
+  const [mensagem, setMensagem] = useState("")
+
+  const [mensagemSucesso, setMensagemSucesso] = useState("");
+
 
 
   const handleClick=(e)=> {
     e.preventDefault()
-    const lead = {nome, ddd, telefone, email, salario, possuiVeiculo, estadoCivil, dependentes, valorEntrada, modeloInteresse, fiador, cidade}
-    console.log(lead)
-    fetch("http://localhost:8080/api/v1/financeiro/add",{
+    const dados = {nome, ddd, telefone, email, salario, possuiVeiculo, estadoCivil, dependentes, valorEntrada, modeloInteresse, fiador, cidade}
+    console.log(dados)
+    // fetch("http://127.0.0.1:8085/api/v1/financeiro/add",{
+    //   method:"POST",
+    //   headers:{"Content-Type":"application/json"},
+    //   body:JSON.stringify(dados)
+    // }).then(()=> {
+    //   setTimeout(() => {
+    //     setMensagemSucesso("Mensagem enviada com sucesso! Entraremos em contato o quanto antes!");
+    //     }, 10);
+    //     setTimeout(() => {
+    //       setMensagemSucesso("");
+    //       }, 5000);
+    //   setNome("")
+    //   setDDD("")
+    //   setTelefone("")
+    //   setEmail("")
+    //   setSalario("")
+    //   setPossuiVeiculo("")
+    //   setEstadoCivil("")
+    //   setDependentes("")
+    //   setValorEntrada("")
+    //   setModeloInteresse("")
+    //   setFiador("")
+    //   setCidade("");
+    // })
+
+    fetch("http://127.0.0.1:8085/api/v1/financeiro/add",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
-      body:JSON.stringify(lead)
+      body:JSON.stringify(dados)
     }).then(()=> {
-      console.log("lead adicionado")
+        setTimeout(() => {
+        setMensagemSucesso("Recebemos sua mensagem. Logo logo entraremos em contato! ");
+        }, 10);
+        setTimeout(() => {
+          setMensagemSucesso("");
+          }, 5000);
+          setNome("")
+          setDDD("")
+          setTelefone("")
+          setEmail("")
+          setSalario("")
+          setPossuiVeiculo("")
+          setEstadoCivil("")
+          setDependentes("")
+          setValorEntrada("")
+          setModeloInteresse("")
+          setFiador("")
+          setCidade("");
     })
   }
 
@@ -66,16 +112,16 @@ export default function FormularioFinanciamento() {
                    
                    <div className="ddd">
                       <h3>ddd *</h3>
-                      <TextField id="standard-basic-ddd" className='standard-basic-ddd' label="ddd" variant='outlined' value={email}
+                      <TextField id="standard-basic-ddd" className='standard-basic-ddd' label="ddd" variant='outlined' value={ddd}
                       onChange={
-                        (e)=>setEmail(e.target.value)} />
+                        (e)=>setDDD(e.target.value)} />
                    </div>
                 
                   <div className="telefone">
                       <h3>Telefone *</h3>
-                      <TextField id="standard-basic-telefone" className='standard-basic-telefone' label="telefone" variant='outlined' value={email} 
+                      <TextField id="standard-basic-telefone" className='standard-basic-telefone' label="telefone" variant='outlined' value={telefone} 
                       onChange={
-                        (e)=>setEmail(e.target.value)} />
+                        (e)=>setTelefone(e.target.value)} />
                   </div>
                 
                   <div className="email">
@@ -87,30 +133,30 @@ export default function FormularioFinanciamento() {
 
                   <div className="informacoes">
 
-                        <TextField id="standard-basic-email" className='standard-basic' label="Salário mensal $$" variant='outlined' value={email} 
+                        <TextField id="standard-basic-salario" className='standard-basic' label="Salário mensal $$" variant='outlined' value={salario} 
                         onChange={
-                          (e)=>setEmail(e.target.value)} />
-                           <TextField id="standard-basic-email" className='standard-basic' label="possui veiculo próprio?" variant='outlined' value={email} 
+                          (e)=>setSalario(e.target.value)} />
+                           <TextField id="standard-basic-possuiVeiculo" className='standard-basic' label="possui veiculo próprio?" variant='outlined' value={possuiVeiculo} 
                         onChange={
-                          (e)=>setEmail(e.target.value)} />
-                           <TextField id="standard-basic-email" className='standard-basic' label="estado civil" variant='outlined' value={email} 
+                          (e)=>setPossuiVeiculo(e.target.value)} />
+                           <TextField id="standard-basic-estadoCivil" className='standard-basic' label="estado civil" variant='outlined' value={estadoCivil} 
                         onChange={
-                          (e)=>setEmail(e.target.value)} />
-                           <TextField id="standard-basic-email" className='standard-basic' label="quantidade de dependentes" variant='outlined' value={email} 
+                          (e)=>setEstadoCivil(e.target.value)} />
+                           <TextField id="standard-basic-dependentes" className='standard-basic' label="quantidade de dependentes" variant='outlined' value={dependentes} 
                         onChange={
-                          (e)=>setEmail(e.target.value)} />
-                           <TextField id="standard-basic-email" className='standard-basic' label="valor de entrada $$" variant='outlined' value={email} 
+                          (e)=>setDependentes(e.target.value)} />
+                           <TextField id="standard-basic-valorEntrada" className='standard-basic' label="valor de entrada $$" variant='outlined' value={valorEntrada} 
                         onChange={
-                          (e)=>setEmail(e.target.value)} />
-                           <TextField id="standard-basic-email" className='standard-basic' label="Modelo do veículo de interesse" variant='outlined' value={email} 
+                          (e)=>setValorEntrada(e.target.value)} />
+                           <TextField id="standard-basic-modeloInteresse" className='standard-basic' label="Modelo do veículo de interesse" variant='outlined' value={modeloInteresse} 
                         onChange={
-                          (e)=>setEmail(e.target.value)} />
-                           <TextField id="standard-basic-email" className='standard-basic' label="Possui fiador?" variant='outlined' value={email} 
+                          (e)=>setModeloInteresse(e.target.value)} />
+                           <TextField id="standard-basic-fiador" className='standard-basic' label="Possui fiador?" variant='outlined' value={fiador} 
                         onChange={
-                          (e)=>setEmail(e.target.value)} />
-                           <TextField id="standard-basic-email" className='standard-basic' label="Seu email" variant='outlined' value={email} 
+                          (e)=>setFiador(e.target.value)} />
+                           <TextField id="standard-basic-cidade" className='standard-basic' label="Seu email" variant='outlined' value={cidade} 
                         onChange={
-                          (e)=>setEmail(e.target.value)} />
+                          (e)=>setCidade(e.target.value)} />
 
                   </div>
                   
@@ -119,7 +165,9 @@ export default function FormularioFinanciamento() {
                     </Button>
 
                 </form>
-
+                <div className="mensagemSucesso">
+                        {mensagemSucesso !== "" ? <p>{mensagemSucesso}</p> : ""}
+                </div>
               </div>
               
             </div>

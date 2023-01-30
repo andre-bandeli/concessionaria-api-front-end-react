@@ -1,23 +1,23 @@
 package com.br.produto.controller.financeiro;
 
+import com.br.produto.model.financeiro.DadosFinanciamento;
 import com.br.produto.model.lead.Lead;
+import com.br.produto.service.financeiro.DadosFinanciamentoService;
 import com.br.produto.service.lead.LeadService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
+@RestController
 @RequestMapping("/api/v1/financeiro")
 @CrossOrigin
 public class FinanceiroController {
 
     @Autowired
-    private LeadService leadService;
+    private DadosFinanciamentoService dadosFinanciamentoService;
 
     @PostMapping("/add")
-    public Lead save(@RequestBody Lead lead) {
-        return leadService.addLead(lead);
+    public DadosFinanciamento save(@RequestBody DadosFinanciamento dadosFinanciamento) {
+        return dadosFinanciamentoService.addDadosFinanciamento(dadosFinanciamento);
     }
 
 }
