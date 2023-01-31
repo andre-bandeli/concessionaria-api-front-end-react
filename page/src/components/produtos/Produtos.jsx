@@ -119,7 +119,7 @@ export default function Produtos() {
            
             <div className="product">
 
-            {produto.map(produto=>(
+            {produto.slice(0, 8).map(produto=>(
 
                 <div className="box">
 

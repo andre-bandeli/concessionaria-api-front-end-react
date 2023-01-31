@@ -20,8 +20,20 @@ public class VeiculosController {
         return veiculosService.veiculos();
     }
 
+    @PostMapping("/addList")
+    public List<Veiculo> addListaVeiculos(@RequestBody List<Veiculo> veiculoList){
+        return veiculosService.addListaMotos(veiculoList);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public String deleteVeiculoById(@PathVariable Long id){
+        veiculosService.deleteMoto(id);
+        return "Veiculo" + id + "removida com sucesso !";
+    }
     @GetMapping("/marca/honda")
     public List<Veiculo> getVeiculosByMarca() {
         return veiculosService.veiculosByMarca();
     }
+
+
 }

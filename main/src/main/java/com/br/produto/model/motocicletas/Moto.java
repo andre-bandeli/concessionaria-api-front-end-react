@@ -23,6 +23,10 @@ public class Moto {
 
     private String descricao;
 
+    //imagem convertida para base64
+    //@Lob
+    //private byte[] imagem;
+
     public Moto(Long id, String nome_modelo, String marca, Double preco, String descricao) {
         this.id = id;
         this.nome_modelo = nome_modelo;
@@ -73,4 +77,12 @@ public class Moto {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+//    public byte[] getImagem() {
+//        return imagem;
+//    }
+//
+//    public void setImagem(byte[] imagem) {
+//        this.imagem = imagem;
+//    }
 }

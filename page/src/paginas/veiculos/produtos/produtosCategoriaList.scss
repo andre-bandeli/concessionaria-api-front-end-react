@@ -1,0 +1,28 @@
+.portfolioList {
+    font-size: 16px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+  
+    &.active {
+        width: auto;
+        border-radius: 10px;
+        background-color
+        : #1b1a1ad8 ;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:550px) {
+    .portfolioList {
+      
+      
+        &.active {
+         
+        }
+    }
+}

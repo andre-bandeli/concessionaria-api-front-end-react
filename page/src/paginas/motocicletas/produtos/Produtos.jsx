@@ -1,21 +1,24 @@
 import React from 'react'
-import '../../../components/produtos/produtos.scss'
+import './produtos.scss'
 import { useEffect, useState } from 'react';
 import moto from './moto.png'
 import { Link } from "react-router-dom";
-import iconarrow from '../../veiculos/produtos/arrow.png'
 
 import PortfolioList from './ProdutosCategoriaList';
 
 export default function Produtos() {
 
     const[nome_modelo,setNome_modelo]=useState('')
+    const[id,setId]=useState('')
     const[preco,setPreco]=useState('')
     const[marca,setMarca]=useState('')
     const[descricao,setDescricao]=useState('')
     const [data, setData] = useState([]);
     const[produto,setProduto]=useState([])
     const [selected, setSelected] = useState("motos");
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const [perPage, setPerPage] = useState(12);
 
 
     const list = [
@@ -40,7 +43,7 @@ export default function Produtos() {
 
     const handleClick=(e)=>{
         e.preventDefault()
-        const produto={nome_modelo,marca, preco, descricao}
+        const produto={id, nome_modelo,marca, preco, descricao}
         console.log(produto)
         fetch("http://localhost:8080/api/produto/add",{
           method:"POST",
@@ -92,26 +95,29 @@ export default function Produtos() {
         }
     }, [selected]);
 
+    const indexOfLast = currentPage * perPage;
+    const indexOfFirst = indexOfLast - perPage;
+    const currentProdutos = produto.slice(indexOfFirst, indexOfLast);
+
+    // Change page
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+
+
 
   return (
-    <div className='produtos'>
+    <div className="produtos" id='produtos'>
 
-        <div className="container-produtos">
+        <div className="containerProdutos">
 
-            <div className='filter'>
-                <div className="menu">
-                        <Link to="/">
-                            <h2>Home<span className='spn'> 
-                            
-                                <img src={iconarrow} alt="" />
+            <div className="titleProdutos">
 
-                            </span></h2>
-                        </Link>
-                        <h2>Motocicletas</h2>
-                </div>
-                <h2>Motos</h2>
+                <h2>Motocicletas</h2>
+                <h3>Confira alguns de nossos modelos disponíveis</h3>
+
+            </div>
+            <div className='filterProdutos'>
                 <ul>
-                    <h4>Filtrar por marca:</h4>
                     {list.map((item) => (
                     <PortfolioList
                         title={item.title}
@@ -125,35 +131,71 @@ export default function Produtos() {
            
             <div className="product">
 
-            {produto.map(produto=>(
+                {currentProdutos.map(produto=>(
 
-                <div className="box">
+                    <div className="box">
 
-                    <div className="imagem">
-                            <img src={moto} alt="" />
+                        <div className="imagem">
+                                <img src={moto} alt="" />
+                        </div>
+                        <div className="marca">
+                            <h3>{produto.marca}</h3>
+                        </div>
+                        <div className="modelo">
+                            <h2>{produto.nome_modelo}</h2>
+                        </div>
+                        <div className="preco">
+                            <h3>A partir de <span>R$ {produto.preco}</span></h3>
+                            <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
+                        </div>
+                        <div className="condicoes">
+                                <Link to={`/produto/${produto.id}`}>
+                                <button>
+                                    ver detalhes
+                                </button>
+                                
+                            </Link>
+                        </div>
                     </div>
-                    <div className="marca">
-                        <h3>{produto.marca}</h3>
-                    </div>
-                    <div className="modelo">
-                        <h2>{produto.nome_modelo}</h2>
-                    </div>
-                    <div className="preco">
-                        <h3>A partir de <span>R$ {produto.preco}</span></h3>
-                        <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                    </div>
-                    <div className="condicoes">
-                        <Link to="/produto/{id}">
-                            ver detalhes
-                        </Link>
-                    </div>
-                </div>
-            ))
-            }
+                ))
+                }
               
             </div>
+
+            <Pagination
+                perPage={perPage}
+                totalProdutos={produto.length}
+                paginate={paginate}
+            />
         </div>
 
     </div>
   )
 }
+
+const Pagination = ({ perPage, totalProdutos, paginate }) => {
+    const pageNumbers = [];
+    
+    for (let i = 1; i <= Math.ceil(totalProdutos / perPage); i++) {
+    pageNumbers.push(i);
+    }
+    
+    return (
+        <nav className='pagination'>
+            <ul>
+            {pageNumbers.map(number => (
+                <li key={number} className='page-item'>
+                    <a onClick={() => paginate(number)} className='page-link'>
+                        {number}
+                    </a>
+                </li>
+            ))}
+            </ul>
+        </nav>
+    );
+};
+    
+    
+    
+    
+    
