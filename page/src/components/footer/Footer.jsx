@@ -106,13 +106,9 @@ export default function Footer() {
                     <li>
                         Politíca de contratação
                     </li>
-                   
             </ul>
             </div>
-
         </div>
-
-        
     </div>
   )
 }

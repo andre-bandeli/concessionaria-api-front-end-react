@@ -1,7 +1,6 @@
 
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import {CgClose, CgMenu, CgHome, CgCreditCard, CgPhone, CgShoppingCart, CgHello, CgUserlane} from 'react-icons/cg'
 import { useLocation } from 'react-router-dom';
 
 
@@ -15,12 +14,6 @@ import login from './enter.webp'
 
 
 const NavLinksMobile = () => {
-
-    const homeIcon = <CgHello className='icone'size='40px' color='cecece'/>
-    const cardIcon = <CgCreditCard className='icone'size='40px' color='cecece'/>
-    const phoneIcon = <CgPhone className='icone'size='40px' color='cecece'/>
-    const productIcon = <CgShoppingCart className='Hamburguer'size='50px' color='cecece'/>
-    const userIcon = <CgUserlane className='icone'size='40px' color='cecece'/>
 
     const [active, setActive] = useState('');
     const { pathname } = useLocation();

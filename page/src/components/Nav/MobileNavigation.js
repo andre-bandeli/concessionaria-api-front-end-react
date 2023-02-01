@@ -1,6 +1,3 @@
-import classes from '../Nav/Navbar.modules.scss'
-import NavLinks from "./NavLinks";
-
 import {CgClose, CgMenu} from 'react-icons/cg'
 import { useState } from 'react';
 import NavLinksMobile from './NavLinksMobile';

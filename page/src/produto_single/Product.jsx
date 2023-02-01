@@ -1,14 +1,13 @@
 import React from 'react'
 import './product.scss'
-import moto from './moto.png'
 import { useEffect, useState } from 'react';
 import { useParams, Route } from "react-router-dom";
 
 
-import mt1 from './mt-5.jpg'
-import mt2 from './mt-2.jpg'
-import mt3 from './moto.jpg'
-import mt4 from './mt6.jpg'
+import mt1 from './mt-5.webp'
+import mt2 from './mt-2.webp'
+import mt3 from './moto.webp'
+import mt4 from './mt6.webp'
 
 export default function Product() {
 

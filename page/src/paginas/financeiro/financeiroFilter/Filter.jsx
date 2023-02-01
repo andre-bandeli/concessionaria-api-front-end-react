@@ -4,14 +4,14 @@ import { useEffect, useState } from 'react';
 import FormularioFinanciamento from '../formulario/FormularioFinanciamento'
 import iconarrow from '../../../components/produtos/arrow.png'
 import { Link } from "react-router-dom";
-import itau from '../../../components/assets/images/itau.png'
-import chip from '../../../components/assets/images/chip.png'
-import mastercard from '../../../components/assets/images/mastercard.png'
-import nubank from '../../../components/assets/images/nu.png'
-import bradesco from '../../../components/assets/images/bradesco.png'
-import Nubank from '../../../components/assets/images/Nubank.jpg'
+import itau from '../../../components/assets/images/itau_logo.webp'
+import chip from '../../../components/assets/images/chip.webp'
+import mastercard from '../../../components/assets/images/mastercard.webp'
+import nubank from '../../../components/assets/images/nu.webp'
+import bradesco from '../../../components/assets/images/bradesco_logo.webp'
+import Nubank from '../../../components/assets/images/Nubank.webp'
 import Itau from '../../../components/assets/images/itau.webp'
-import Bradesco from '../../../components/assets/images/bradesco.jpg'
+import Bradesco from '../../../components/assets/images/bradesco.webp'
 
 
 
