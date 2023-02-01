@@ -12,6 +12,34 @@ export default function Header() {
     <div className='headerContainer'>
       <div className='carouselContainer'>
       <Carousel className='carouselBootstrap'>
+      <Carousel.Item className='carouselItem' interval={3500}>
+          <img
+            src={terceiraImagemSlider}
+            alt="Image Two"
+          />
+          <div className="carouselItemContent">
+              <h2>Concessionária Autorizada <br /> <span>WEB MOTORS</span></h2>
+              <h3>Dirija o futuro. Descubra uma ampla variedade de opções de carros e motos à sua disposição</h3>
+              <a href="#produtos">
+              <button>
+                ver ofertas
+              </button> </a>
+            </div>
+        </Carousel.Item>
+        <Carousel.Item className='carouselItem' interval={3500}>
+          <img
+            src={segundaImagemSlider}
+            alt="Image Two"
+          />
+          <div className="carouselItemContent">
+              <h2>Novos e Seminovos<br /> <span>Carros e Motos</span></h2>
+              <h3>Transforme sua viagem em uma experiência única com um carro de alta qualidade. Escolha agora mesmo.</h3>
+              <a href="#produtos">
+              <button>
+                ver ofertas
+              </button> </a>
+            </div>
+        </Carousel.Item>
         <Carousel.Item className='carouselItem' interval={3500}>
           <img
             src={primeiraImagemSlider}
@@ -20,41 +48,13 @@ export default function Header() {
            <div className="carouselItemContent">
               <h2>Concessionária Autorizada <br /> <span>WEB MOTORS</span></h2>
               <br />
-              <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minus labore debitis</h3>
+              <h3>Experimente a liberdade da estrada com um carro ou moto novo. Escolha entre uma ampla seleção de modelos à sua disposição.</h3>
               <a href="#produtos">
               <button>
                 ver ofertas
               </button> </a>
             </div>
           
-        </Carousel.Item>
-        <Carousel.Item className='carouselItem' interval={3500}>
-          <img
-            src={segundaImagemSlider}
-            alt="Image Two"
-          />
-          <div className="carouselItemContent">
-              <h2>Concessionária Autorizada <br /> <span>WEB MOTORS</span></h2>
-              <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minus labore debitis</h3>
-              <a href="#produtos">
-              <button>
-                ver ofertas
-              </button> </a>
-            </div>
-        </Carousel.Item>
-        <Carousel.Item className='carouselItem' interval={3500}>
-          <img
-            src={terceiraImagemSlider}
-            alt="Image Two"
-          />
-          <div className="carouselItemContent">
-              <h2>Concessionária Autorizada <br /> <span>WEB MOTORS</span></h2>
-              <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minus labore debitis</h3>
-              <a href="#produtos">
-              <button>
-                ver ofertas
-              </button> </a>
-            </div>
         </Carousel.Item>
       </Carousel>
     </div>

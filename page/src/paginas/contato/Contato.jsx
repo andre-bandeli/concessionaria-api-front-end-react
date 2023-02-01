@@ -11,7 +11,7 @@ import maps from './google-maps.png'
 
 export default function Contato() {
   return (
-    <div className='contato'>
+    <div className='contato-single'>
         <Navbar/>
         <Header/>
         <PageTitle/>

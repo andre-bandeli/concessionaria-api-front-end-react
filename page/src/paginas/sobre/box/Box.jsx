@@ -5,6 +5,8 @@ import imagem from './imagem1.webp'
 import imagem2 from './team.webp'
 import financeiro from './financeiro.webp'
 import time from './time.webp'
+import member from './member.jpg'
+import team from './team.jpg'
 
 export default function Box() {
   return (
@@ -27,12 +29,12 @@ export default function Box() {
         </div>
 
         <div className="box_info">
-            <img src={imagem} alt="" />
-            <h2>Loja online</h2>
+            <img src={member} alt="" />
+            <h2>Seja membro</h2>
         </div>
         <div className="box_info">
-            <img src={imagem} alt="" />
-            <h2>Loja online</h2>
+            <img src={team} alt="" />
+            <h2>Trabalhe Conosco!</h2>
         </div>
 
     </div>
