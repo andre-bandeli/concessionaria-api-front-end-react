@@ -3,13 +3,14 @@
     width: 100%;
     height: auto;
     margin-top: 8vh;
-    background-color: yellow;
+    border: transparent;
 
     .cardContainer {
         width: 90%;
         height: 50vh;
         margin: auto;
         display: flex;
+        border: transparent;
 
         .cardBoxContainerLeft, .cardBoxContainerRight {
             width: 50%;

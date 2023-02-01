@@ -37,14 +37,11 @@
                 font-size: 25px;
                 
                 span {
-                    color: white;
+                    color: rgb(48, 46, 46);
                     font-weight: bolder;
-                    font-size: 55px;
-                    font-style: italic;
-                    font-family: 'Allerta Stencil', sans-serif;
-                    border: 1px solid black;
+                    font-size: 40px;
+                    font-style: normal;
                     border-radius: 10px;
-                    background-color: rgb(8, 8, 8);
                     padding: 1%; padding-right: 5%;
                 }
             }
@@ -61,8 +58,10 @@
                     height: 50px;
                     margin-top: 5vh;
                     margin-left: 10vh;
-                    background-color: transparent;
-                    border-radius: 10px;
+                    background-color: red;
+                    font-weight: 500;
+                    border: transparent;
+                    border-radius: 5px;
                 }
                 button:hover {
                     background-color: rgb(31, 28, 28);
@@ -117,10 +116,36 @@
         }
     }
 
+    .especificacoes {
+        width: 100%;
+        height: 10vh;
+        margin: auto;
+        margin-top: 2vh;
+        display: flex;
+
+        .box-esp {
+            width: 20%;
+            height: 70px;
+            margin: auto;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+
+
+            h3 {
+                font-size: 18px;
+                text-align: center;
+                margin-left: 2vh;
+            }
+        }
+
+    }
+
     .fotos {
         width: 100%;
-        height: 30vh;
+        height: 40vh;
         display: flex;
+        margin-top: 2vh;
 
         .box {
             width: 25%;
@@ -133,15 +158,26 @@
         }
     }
 
-    .ficha {
+    .iframe {
         width: 100%;
+        height: 100vh;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .ficha {
+        width: 90%;
         height: 80vh;
+        margin: auto;
         margin-top: 10vh;
 
         h2 {
             width: 90%;
             margin: auto;
-            margin-left: 17vh;
+            margin-left: 10vh;
         }
 
         .containerFichaTecnica {
@@ -163,17 +199,19 @@
                     height: 70px;
                     margin: auto;
                     display: flex;
-                    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
                     margin-top: 0;
                     
 
                     .li-nome-coluna {
                         width: 20%;
                         border-right: 1px solid rgba(68, 65, 65, 0.26);
+                        display: flex;
+                        align-items: center;
 
                         h2 {
                             text-align: left;
                             width: 100%;
+                            font-weight: 200;
                             margin-left: 0; margin-top: 2vh;
                             font-size: 22px;
                         }
@@ -182,14 +220,346 @@
                     li {
                         width: 80%;
                         height: 100%;
-
+                        display: flex;
                         margin: auto;
+                        align-items: center;
+
+                        h3 {
+                            font-size: 18px;
+                            margin-left: 5vh;
+                        }
                     }
 
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    
+    .product {
+        
+
+        .container-single {
+            
+          
+
+            .imagem_produto {
+               
+
+            }
+            .dados {
+               
+
+                h1 {
+                    font-size: 70px;
+                }   
+                h2 {
+               
+                    span {
+                       font-size: 30px;
+                    }
+                }
+                h3 {
+                    
+                }
+
+                .btn {
+
+                    button {
+                      width: 150px;
+                    }
+                    button:hover {
+                        
+                    }
+
+                }
+
+                .info {
+                 
+
+                    h3 {
+                    
+                        
+                        span {
+                          
+                        }
+                    }
+                }
+                .buttons {
+                    button {
+                        
+                
+                    }
+                    .btn {
+                       
+                    }
+                }
+                
+            }
+        }
+
+        .especificacoes {
+            
+           
+
+            .box-esp {
+               
+                h3 {
+                   
+                }
+            }
+
+        }
+
+        .fotos {
+           
+
+            .box {
+                
+
+                img {
+                  
+                }
+            }
+        }
+
+        .ficha {
+            margin-bottom: 10vh;
+
+            h2 {
+               
+            }
+
+            .containerFichaTecnica {
+               
+                ul {   
+                
+
+                    .ul-dark {
+                        height: auto;
+                      
+
+                        .li-nome-coluna {
+                            height: auto;
+                            margin-bottom: 5vh;
+
+                            h2 {
+                              
+                            }
+                        }
+
+                        li {
+                            
+
+                            h3 {
+                               
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
 
 
+@media (max-width: 768px) {
+    
+    .product {
+        
+        .container-single {
+            
+        
+            .dados {
+               
+
+                h1 {
+                    margin-left: 5vh;
+                    font-size: 70px;
+                }   
+                h2 {
+                    margin-left: 5vh;
+                    span {
+                       font-size: 30px;
+                    }
+                }
+                h3 {
+                    
+                }
+
+                .btn {
+                    margin-left: 0vh;
+                    button {
+                      width: 150px;
+                      margin-left: 5vh;
+                    }
+                    button:hover {
+                        
+                    }
+
+                }
+
+                .info {
+                 
+
+                    h3 {
+                    
+                        
+                        span {
+                          
+                        }
+                    }
+                }
+                .buttons {
+                    button {
+                        
+                
+                    }
+                    .btn {
+                       
+                    }
+                }
+                
+            }
+        }
+
+        .fotos {
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+           
+
+            .box {
+                margin: .5vh;
+                margin-top: .5vh;
+                width: 48%;
+
+                img {
+                  
+                }
+            }
+        }
+
+        .ficha {
+            margin-bottom: 10vh;
+
+            h2 {
+               
+            }
+
+            .containerFichaTecnica {
+               
+                ul {   
+                
+
+                    .ul-dark {
+                        height: auto;
+                      
+
+                        .li-nome-coluna {
+                            height: auto;
+                            margin-bottom: 5vh;
+
+                            h2 {
+                              
+                            }
+                        }
+
+                        li {
+                            
+
+                            h3 {
+                               
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 450px) {
+    
+    .product {
+        .container-single {
+            
+        
+            .dados {
+               
+
+                h1 {
+                    margin-left: 5vh;
+                    font-size: 40px;
+                }   
+                h2 {
+                    margin-left: 5vh;
+                    span {
+                       font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .fotos {
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+           
+
+            .box {
+                margin: .5vh;
+                margin-top: .5vh;
+                width: 47.5%;
+
+                img {
+                  
+                }
+            }
+        }
+
+        .ficha {
+            margin-bottom: 10vh;
+
+            h2 {
+               
+            }
+
+            .containerFichaTecnica {
+               
+                ul {   
+                
+
+                    .ul-dark {
+                        height: auto;
+                      
+
+                        .li-nome-coluna {
+                            height: auto;
+                            margin-bottom: 5vh;
+
+                            h2 {
+                              
+                            }
+                        }
+
+                        li {
+                            
+
+                            h3 {
+                               
+                            }
+                        }
+
+                    }
+                }
+            }
         }
     }
 }

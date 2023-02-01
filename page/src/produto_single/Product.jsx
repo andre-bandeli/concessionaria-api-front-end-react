@@ -2,6 +2,8 @@ import React from 'react'
 import './product.scss'
 import moto from './moto.png'
 import { useEffect, useState } from 'react';
+import { useParams, Route } from "react-router-dom";
+
 
 import mt1 from './mt-5.jpg'
 import mt2 from './mt-2.jpg'
@@ -14,6 +16,9 @@ export default function Product() {
     const[preco,setPreco]=useState('')
     const[descricao,setDescricao]=useState('')
     const[produto,setProduto]=useState([]);
+
+    const { id } = useParams();
+    const url = `http://127.0.0.1:8085/api/v1/moto/${id}`;
 
     const handleClick=(e)=>{
       e.preventDefault()
@@ -31,7 +36,7 @@ export default function Product() {
   }
 
     useEffect(()=>{
-        fetch("http://127.0.0.1:8085/api/v1/moto/1")
+        fetch(url)
         .then(res=>res.json())
         .then((result)=>{
           setProduto(result);
@@ -52,13 +57,30 @@ export default function Product() {
                 <h1>
                     {produto.nome_modelo}
                 </h1>
-                <h2>à partir de: <span>R$ {produto.preco}</span></h2>
+                <h2>por apenas<span>R$ {produto.preco}</span></h2>
                 <div className='btn'>
                   <button>
                     ver ficha técnica
                   </button>
 
                 </div>
+            </div>
+        </div>
+        <div className="especificacoes">
+            <div className="box-esp"> 
+                <h3> Quilometragem: </h3>
+            </div>
+            <div className="box-esp">
+              <h3> Ano: </h3>
+            </div>
+            <div className="box-esp">
+              <h3> Injeção Eletrônica: </h3>
+            </div>
+            <div className="box-esp">
+              <h3> Freio: </h3>
+            </div>
+            <div className="box-esp">
+              <h3> Cilindrada: </h3>
             </div>
         </div>
 
@@ -87,7 +109,8 @@ export default function Product() {
 
                     </li>
                     <li>
-                      
+                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
+                        
                     </li>
                 </ul>
                 <ul className='ul-dark'>
@@ -95,7 +118,7 @@ export default function Product() {
                       <h2>Ano</h2>
                     </li>
                     <li>
-                      
+                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
                     </li>
                 </ul>
                 <ul className='ul-dark'>
@@ -103,7 +126,7 @@ export default function Product() {
                         <h2>Cilindradas</h2>
                     </li>
                     <li>
-                      
+                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
                     </li>
                 </ul>
                 <ul className='ul-dark'>
@@ -111,36 +134,40 @@ export default function Product() {
                       <h2>KM</h2>
                     </li>
                     <li>
-                      
+                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
                     </li>
                 </ul>
                 <ul className='ul-dark'>
                     <li className='li-nome-coluna'>
-
+                       <h2>KM</h2>
                     </li>
                     <li>
-                      
+                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
                     </li>
                 </ul>
                 <ul className='ul-dark'>
                     <li className='li-nome-coluna'>
-
+                      <h2>KM</h2>
                     </li>
                     <li>
-                      
+                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
                     </li>
                 </ul>
                 <ul className='ul-dark'>
                     <li className='li-nome-coluna'>
-
+                      <h2>KM</h2>
                     </li>
                     <li>
-                      
+                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
                     </li>
                 </ul>
                
               </ul>
             </div>
+        </div>
+
+        <div className="iframe">
+        <iframe src="https://www.youtube.com/embed/lGbla9PCJN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
   )
