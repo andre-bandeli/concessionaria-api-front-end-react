@@ -1,5 +1,5 @@
 {
-  "homepage": "https://andre-bandeli.github.io/springboot-api-crud-java-react",
+  "name": "page",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
