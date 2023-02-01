@@ -1,14 +1,14 @@
 import React from 'react'
 import './marca.scss'
 
-import bmw from './bmw.png'
-import honda from './honda.png'
-import yamaha from  './yamaha.png'
-import volw from  './vw.jpg'
-import audi from  './audi.webp'
-import jeep from  './jeep.jpg'
-import mit from  './mit.png'
-import ferrari from  './ferrari.jpg'
+import bmw from './assets/bmw.webp'
+import honda from './assets/honda.webp'
+import yamaha from  './assets/yamaha.webp'
+import volw from  './assets/vw.webp'
+import audi from  './assets/audi.webp'
+import jeep from  './assets/jeep.webp'
+import mit from  './assets/mit.webp'
+import ferrari from  './assets/ferrari.webp'
 
 export default function Marca() {
   return (

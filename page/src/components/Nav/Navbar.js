@@ -1,6 +1,5 @@
 import MobileNavgation from './MobileNavigation'
 import { Link } from "react-router-dom";
-import usuario from './user.svg'
 import {CgLogIn, CgSearch} from 'react-icons/cg'
 
 const Navbar = () => {

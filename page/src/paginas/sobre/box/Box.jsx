@@ -1,12 +1,11 @@
 import React from 'react'
 import './box.scss'
-import valores from './sede.png'
-import imagem from './imagem1.webp'
-import imagem2 from './team.webp'
+import valores from './sede.webp'
+import team from './team.webp'
 import financeiro from './financeiro.webp'
+import member from './membro.webp'
+import team_ from './team_.webp'
 import time from './time.webp'
-import member from './member.jpg'
-import team from './team.jpg'
 
 export default function Box() {
   return (
@@ -16,7 +15,7 @@ export default function Box() {
             <h2>Concessionárias</h2>
         </div>
         <div className="box_info">
-            <img src={time} alt="" />
+            <img src={team} alt="" />
             <h2>Nosso Time</h2>
         </div>
         <div className="box_info">
@@ -24,7 +23,7 @@ export default function Box() {
             <h2>Parceiros Financeiros</h2>
         </div>
         <div className="box_info">
-            <img src={imagem2} alt="" />
+            <img src={team_} alt="" />
             <h2>Oficinas e Lojas</h2>
         </div>
 
@@ -33,7 +32,7 @@ export default function Box() {
             <h2>Seja membro</h2>
         </div>
         <div className="box_info">
-            <img src={team} alt="" />
+            <img src={time} alt="" />
             <h2>Trabalhe Conosco!</h2>
         </div>
 

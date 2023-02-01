@@ -3,7 +3,7 @@ import './contato.scss'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import { useState } from 'react'
-import logo from './logo.png'
+import logo from './logo.webp'
 
 
 

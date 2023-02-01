@@ -2,8 +2,8 @@ import React from 'react'
 import './card.scss'
 import { Link } from "react-router-dom";
 
-import moto from './moto.png'
-import carro from './carro.png'
+import moto from './moto.webp'
+import carro from './carro.webp'
 
 export default function Card() {
   return (

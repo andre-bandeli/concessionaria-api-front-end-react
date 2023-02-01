@@ -1,18 +1,17 @@
 
-import user from '../Nav/user.svg'
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import {CgClose, CgMenu, CgHome, CgCreditCard, CgPhone, CgShoppingCart, CgHello, CgUserlane} from 'react-icons/cg'
 import { useLocation } from 'react-router-dom';
 
 
-import moto from '../assets/images/moto.png'
-import carro from '../assets/images/carros.png'
-import carteira from '../assets/images/carteira.png'
-import phone from './call.png'
-import home from './home.png'
-import info from './info.png'
-import login from './enter.png'
+import moto from './moto.webp'
+import carro from './carros.webp'
+import carteira from './carteira.webp'
+import phone from './call.webp'
+import home from './home.webp'
+import info from './info.webp'
+import login from './enter.webp'
 
 
 const NavLinksMobile = () => {

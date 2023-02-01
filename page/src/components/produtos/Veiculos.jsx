@@ -1,7 +1,7 @@
 import React from 'react'
 import './produtos.scss'
 import { useEffect, useState } from 'react';
-import moto from './carro.png'
+import moto from './carro.webp'
 import { Link } from "react-router-dom";
 
 import PortfolioList from './ProdutosCategoriaList';

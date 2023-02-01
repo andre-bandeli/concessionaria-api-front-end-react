@@ -4,8 +4,8 @@ import './variables.css'
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
-import primeiraImagemSlider from './primeiraImagemSlider.jpg'
-import segundaImagemSlider from './segundaImagemSlider.jpg'
+import primeiraImagemSlider from './primeiraImagemSlider.webp'
+import segundaImagemSlider from './segundaImagemSlider.webp'
 import terceiraImagemSlider from './terceiraImagemSlider.webp'
 
 

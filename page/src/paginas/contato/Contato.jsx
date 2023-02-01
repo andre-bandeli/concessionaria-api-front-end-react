@@ -4,10 +4,9 @@ import Navbar from '../../components/Nav/Navbar'
 import './contato.scss'
 import Header from './header/HeaderContato'
 import PageTitle from './PageTitle'
-import insta from './insta.png'
-import linkedin from './in.png'
-import twitter from './twitter.png'
-import maps from './google-maps.png'
+import insta from './insta.webp'
+import linkedin from './in.webp'
+import twitter from './twitter.webp'
 
 export default function Contato() {
   return (
