@@ -6,11 +6,15 @@
     background-color: rgba(20, 20, 20, 0.952);
     position: absolute;
     
+    display: flex;
+    align-items: center;
+    
     h2 {
-        width: 100%;
-        color: white;
-        text-align: center;
-        margin-top: 1vh;
-        letter-spacing: 10px;
+            font-family: 'Cinzel', serif;
+            width: 100%;
+            color: white;
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 20px;
     }
 }

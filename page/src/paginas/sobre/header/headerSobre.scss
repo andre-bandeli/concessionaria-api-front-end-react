@@ -2,14 +2,30 @@
 .headerSobre {
 
     width: 100%;
-    height: 55vh;
+    height: 40vh;
     margin-top: 8vh;
     position: relative;
-    background-image: url(./bg.jpeg);
+    background-color: rgba(0, 0, 0, 0.808);
     // background-image: linear-gradient(to right top, #0c0c11, #11131a, #131922, #13202a, #102632);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    h1 {
+        width: 100%;
+        margin-top: 10vh;
+        position: absolute;
+        margin: 15vh auto;
+        color: whitesmoke;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+
+        span {
+            font-weight: bolder;
+            text-decoration:line-through;
+            color: rgb(79, 168, 241);
+        }
+    }
 
     .container {
         position: absolute;
