@@ -3,15 +3,15 @@
 
 
 .carouselContainer {
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     top: 0;
 
     .carouselBootstrap {
-        height: 90vh;
+        height: 95vh;
         width: 100%;
         .carouselItem {
-            height: 90vh;
+            height: 95vh;
             width: 100%;
             color: var(--secondary-color);
     
@@ -23,7 +23,63 @@
     
             .carouselItemContent {
                 height: 50%;
-                margin: 25vh 25vh;
+                margin: 35vh 25vh;
+                position: absolute;
+                top: 0;
+                width: 45%;
+                z-index: 0;
+    
+                h2 {
+                    color: var(--light-color);
+                    font-size: 30px;
+                    font-weight: 400;
+                    font-family: var(--font-primary);
+        
+                    span {
+                        color: var(--primary-color);
+                        font-size: 80px;
+                        font-weight: 700;
+                        font-family: var(--font-primary);
+                    }
+                }
+        
+                h3 {
+                    color: var(--dark-color);
+                    font-size: 25px;
+                    font-weight: 300;
+                    width: 80%;
+                }
+                button {
+                    background-color: var(--background-color);
+                    border: none;
+                    border-radius: 2px;
+                    color: rgb(219, 210, 210);
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: bolder;
+                    height: 50px;
+                    margin-top: 5vh;
+                    width: 250px;
+                    -webkit-backdrop-filter: blur( 5.5px );
+                    backdrop-filter: blur( 6.5px );
+                    
+                    a {
+                        color: var(--light-color);
+                        font-weight: bolder;
+                        text-decoration: none;
+                        font-family: var(--font-primary);
+                    }
+                }
+                button:hover {
+                    background-color: rgba(0, 0, 0, 0.658);
+                    color: var(--light-color);
+                    transition: .4s ease;
+                }
+            }
+
+            .carouselItemContent-right {
+                height: 50%;
+                margin: 35vh 100vh;
                 position: absolute;
                 top: 0;
                 width: 45%;
@@ -79,7 +135,23 @@
         }
     }
 }    
+@media (max-width: 1440px) {
+    .headerContainer {
+  
+        .carouselContainer {
 
+            .carouselBootstrap {
+                .carouselItem {
+        
+                    .carouselItemContent-right {
+                        margin: 25vh 75vh;
+
+                    }   
+                }   
+            }
+        }    
+    }
+}
 @media (max-width: 1024px) {
     .headerContainer {
         height: 70vh;
@@ -88,7 +160,7 @@
             .carouselBootstrap {
                 .carouselItem {
                     height: 70vh;
-                    .carouselItemContent {
+                    .carouselItemContent, .carouselItemContent-right {
                         margin: 20vh 15vh;
                         width: calc(100% - 15vh);
                         h2 {
@@ -116,7 +188,7 @@
             .carouselBootstrap {
                 .carouselItem {
                     height: 90vh;
-                    .carouselItemContent {
+                    .carouselItemContent, .carouselItemContent-right {
                         margin: 30vh 20vh;
                         width: calc(100% - 20vh);
                         h2 {
@@ -142,7 +214,7 @@
  
                 .carouselItem {
                     height: 50vh;
-                    .carouselItemContent {
+                    .carouselItemContent, .carouselItemContent-right {
                         margin: 20vh 10vh;
                         width: calc(100% - 10vh);
                         h2 {
@@ -170,7 +242,7 @@
             .carouselBootstrap {
                 .carouselItem {
                     height: 60vh;
-                    .carouselItemContent {
+                    .carouselItemContent, .carouselItemContent-right {
                         margin: 20vh 7vh;
                         width: calc(100% - 7vh);
                         h2 {
@@ -198,7 +270,7 @@
             .carouselBootstrap {
                 .carouselItem {
                     height: 50vh;
-                    .carouselItemContent {
+                    .carouselItemContent, .carouselItemContent-right {
                         margin: 15vh 7vh;
                         width: calc(100% - 7vh);
                         h2 {
@@ -232,7 +304,7 @@
             .carouselBootstrap {
                 .carouselItem {
                     height: 60vh;
-                    .carouselItemContent {
+                    .carouselItemContent, .carouselItemContent-right {
                         margin: 20vh 7vh;
                         width: calc(100% - 7vh);
                         h2 {

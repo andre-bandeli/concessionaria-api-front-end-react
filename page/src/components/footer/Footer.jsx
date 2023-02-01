@@ -71,7 +71,7 @@ export default function Footer() {
             <h2>Contato</h2>
             <ul>
                     <li>
-                        Rua dos Marajós, 45112, Jd. Retirantes. 
+                        Francisco Matarazzo Avenue, 45112, Jd. Retirantes. 
                     </li>
                     <li>
                        São Paulo, Brasil.

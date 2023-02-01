@@ -1,5 +1,5 @@
 import React from 'react'
-import './contato.scss'
+import './financeiro.scss'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import { useState } from 'react'
@@ -97,8 +97,8 @@ export default function FormularioFinanciamento() {
                 <h3>mande uma mensagem para nós que um de nossos representantes comerciais entrará em contato</h3>
             </div>
 
-            <div className="container-contato">
-              <div className="forms">
+            <div className="container-financeiro-forms">
+              <div className="forms-financeiro">
 
                 <form noValidate autoComplete='off' onSubmit={onSubmit} className="form">
 

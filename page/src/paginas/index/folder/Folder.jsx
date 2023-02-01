@@ -1,5 +1,7 @@
 import React from 'react'
 import './folder.scss'
+import { Link } from "react-router-dom";
+
 
 export default function Folder() {
   return (
@@ -11,7 +13,8 @@ export default function Folder() {
               <h3>Experimente o novo HR-V e desfrute de uma jornada confortável e segura. 
                 Aproveite nossas condições especiais de financiamento e 
                 tornar este carro incrível seu agora mesmo</h3>
-              <button> Consultar financiamento</button>
+                <Link to="/financiamentos">
+                <button> Consultar financiamento</button></Link>
         </div>
 
     </div>

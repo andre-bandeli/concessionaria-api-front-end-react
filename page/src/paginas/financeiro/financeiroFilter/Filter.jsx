@@ -71,16 +71,16 @@ export default function Produtos() {
 
         <div className="container-financeiro">
             <div className="text">
-            <div className="menu">
-                    <Link to="/">
-                        <h2>Home</h2>
-                    </Link>
-                    <img src={iconarrow} alt="" />
-                    <h2>Financeiro</h2>
+                <div className="menu">
+                        <Link to="/">
+                            <h2>Home</h2>
+                        </Link>
+                        <img src={iconarrow} alt="" />
+                        <h2>Financeiro</h2>
 
+                    </div>
+                    <h2>{selected}</h2>
                 </div>
-                <h2>{selected}</h2>
-            </div>
                {selected === "Financiamento" ? (
                     data.map((d) => (
                     <div className="box">

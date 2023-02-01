@@ -44,7 +44,7 @@ export default function Contato() {
            </div>
         </div>
         <h3>
-          Rua dos Marajós, 45112, Jd. Retirantes. São Paulo, Brasil.
+            Francisco Matarazzo Avenue, 45112, Jd. Retirantes. São Paulo, Brasil.
         </h3>
         <h4>(11) 2664-4588 | (11) 2256-4785</h4>
         <Footer/>

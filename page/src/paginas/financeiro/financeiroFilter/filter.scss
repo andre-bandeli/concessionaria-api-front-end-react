@@ -27,7 +27,6 @@
                 text-align: left;
                 font-size: 50px;
                 font-weight: 400;
-
             }
 
         
@@ -37,6 +36,7 @@
                 margin-left: 0vh;
                 display: flex;
                 margin-top: 50px;
+                font-size: 15px;
    
 
                 li {
@@ -45,6 +45,7 @@
                     margin: auto;
                     margin-left: 0vh;
                     text-align: center;
+
                 }
             }
         }
@@ -68,7 +69,6 @@
                 position: absolute;
                 margin-top: 80px;
                 display: flex;
-
 
                 a {
                     text-decoration: none;
@@ -96,11 +96,13 @@
             h2 {
                 width: 15%;
                 height: calc(5vh - 10px);
-                margin-top: 0;
                 margin-left: 45%;
                 padding-top: 10px;
                 text-align: center;
                 color: white;
+                font-size: 20px;
+                font-family: 'Cinzel', serif;
+
 
             }
         }
@@ -120,12 +122,15 @@
                 font-size: 20px;
                 font-weight: 100;
                 text-align: justify;
+                margin-bottom: 10vh;
+                line-height: 35px;
             }
 
             .cards-financiamento {
                 width: 100%;
                 height: 30vh;
                 display: flex;
+                margin-bottom: 10vh;
 
                 .text-f {
                     width: 50%;
@@ -504,73 +509,23 @@
 
     .filterFinanceiro {
        
-    
-        .header_financeiro {
-       
-    
-            .container-filter {
-            
-    
-                h1 {
-                
-    
-                }
-    
-            
-                ul {
-                    width: 100%;
-    
-                    li {
-                      
-                    }
-                }
-            }
-        }
         .container-financeiro {
          
             .text {
-            
-    
-                .menu {
-
-                    margin-left: 15vh;
                 
-    
-                    a {
-                      
-                    }
-    
-                    h2 {
-                        
-                    }
-                    img {
-                      
-                    }
-                }
-    
-                h2 {
-                  
-    
+                .menu {
+                    width: 50%;
+                    margin-left: 15vh;
                 }
             }
     
             .box {
-            
-    
-                h2 {
-                  
-                }
-    
-                h3 {
-                    
-                }
     
                 .cards-financiamento {
                     height: auto;
                     width: 100%;
                     display: inline-block;
-                 
-    
+                
                     .text-f {
                         width: 90%;
                         margin-top: 5vh;
@@ -588,190 +543,28 @@
                         margin-left: 40vh;
     
                         .box-f-nu {
-                           
-    
-                            .bankimage {
-                             
-    
-                                img {
-                                 
-                                }
-                            }
-                            .bankname {
-                                
-    
-                                h2 {
-                                 
-                                }
-                            }
-    
+
                             .cartao {
                                 margin-left: -45vh;
-                            
-        
-                                .line {
-                                  
-                                    img {
-                                      
-                                    }
-        
-                                    .chip {
-                                  
-                                    }
-        
-                                    .contorno {
-                                       
-    
-                                        img {
-                                    
-                                        }
-        
-                                        .contorno-interno {
-        
-                                          
-                               
-                                            h2 {
-                                             
-                                            }
-                                        }
-                                        .circle-master {
-                                           
-        
-                                            img {
-                                             
-                                            }
-                                        }
-                                    }
-                                }
+
                             }
                         }
                   
                         .box-f-it {
                      
-    
-                            .bankimage {
-                              
-    
-                                img {
-                                 
-                                }
-                            }
-                            .bankname {
-                               
-    
-                                h2 {
-                             
-                                    
-                                }
-                            }
-    
                             .cartao {
                                 margin-left: -50vh;
-        
-                                .line {
-                                
-                                    img {
-                                    
-                                    }
-        
-                                    .chip {
-                                     
-                                    }
-        
-                                    .contorno {
-                                       
-        
-                                        .contorno-interno {
-        
-                                       
-        
-                                            h2 {
-                                             
-                                            }
-                                        }
-                                        .circle-master {
-                                            
-        
-                                            img {
-                                            
-                                            }
-                                        }
-                                    }
-                                }
                             }
                         }
-                        .box-f-it:hover {
-                            
-    
-                            .cartao {
-                              
-                            }
-                        }
+                       
                         .box-f-br {
-                         
-    
-                            .bankimage {
-                               
-                                img {
-                                 
-                                }
-                            }
-                            .bankname {
-                               
-    
-                                h2 {
-                                   
-                                }
-                            }
-    
+            
                             .cartao {
                                 margin-top: 10vh;
                                 margin-left: -80vh;
         
-                                .line {
-                                 
-                                    img {
-                                      
-                                    
-                                    }
-    
-                                }
-                                .line-chip {
-                                  
-                                    img {
-                                    
-                                    }
-                                    
-                                }
                             }
                             
-                        }
-                        .box-f-br:hover {
-                           
-    
-                            .cartao {
-                            
-                            }
-                        }
-                    }
-                }
-    
-                .bx_box {
-    
-                   
-    
-                    .bx {
-                       
-    
-                        h2 {
-                          
-                        }
-    
-                    }
-                    .bx:hover {
-                      
-                        h2 {
-                         
                         }
                     }
                 }
@@ -789,17 +582,13 @@
     
         .header_financeiro {
        
-    
             .container-filter {
             
-    
                 h1 {
                     width: 100%;
                     font-size: 35px;
-    
                 }
-    
-            
+
                 ul {
                     width: 100%;
     
@@ -813,76 +602,26 @@
         .container-financeiro {
          
             .text {
-            
-    
                 .menu {
                     width: 200px;
-                    margin-left: 11vh;
-    
-                    a {
-                      
-                    }
-    
-                    h2 {
-                        
-                    }
-                    img {
-                      
-                    }
-                }
-    
-                h2 {
-                  
-    
+                    margin-top: 50px;
+                    margin-left: 16vh;
+                    
+
                 }
             }
     
             .box {
-            
-    
-                h2 {
-                  
-                }
-    
-                h3 {
-                    
-                }
-    
+
                 .cards-financiamento {
 
-                    
-                 
-    
-                    .text-f {
-                      
-    
-                        h2 {
-                         
-                        }
-    
-                    }
                     .cards {
                        
                         margin-left: 30vh;
                         margin-top: 0;
     
                         .box-f-nu {
-                           
-    
-                            .bankimage {
-                             
-    
-                                img {
-                                 
-                                }
-                            }
-                            .bankname {
-                                
-    
-                                h2 {
-                                 
-                                }
-                            }
+                        
     
                             .cartao {
                                 width: 300px;
@@ -894,56 +633,12 @@
                                     img {
                                         margin-left: 200px;
                                     }
-        
-                                    .chip {
-                                  
-                                    }
-        
-                                    .contorno {
-                                       
-    
-                                        img {
-                                    
-                                        }
-        
-                                        .contorno-interno {
-        
-                                          
-                               
-                                            h2 {
-                                             
-                                            }
-                                        }
-                                        .circle-master {
-                                           
-        
-                                            img {
-                                             
-                                            }
-                                        }
-                                    }
                                 }
                             }
                         }
                   
                         .box-f-it {
                      
-    
-                            .bankimage {
-                              
-    
-                                img {
-                                 
-                                }
-                            }
-                            .bankname {
-                               
-    
-                                h2 {
-                             
-                                    
-                                }
-                            }
     
                             .cartao {
                                 width: 300px;
@@ -952,10 +647,6 @@
                                 margin-top: 10vh;
         
                                 .line {
-                                
-                                    img {
-                                    
-                                    }
         
                                     .chip {
                                         margin-left: 200px;
@@ -963,15 +654,6 @@
         
                                     .contorno {
                                        
-        
-                                        .contorno-interno {
-        
-                                       
-        
-                                            h2 {
-                                             
-                                            }
-                                        }
                                         .circle-master {
                                             
         
@@ -983,79 +665,16 @@
                                 }
                             }
                         }
-                        .box-f-it:hover {
-                            
-    
-                            .cartao {
-                              
-                            }
-                        }
                         .box-f-br {
                          
-    
-                            .bankimage {
-                               
-                                img {
-                                 
-                                }
-                            }
-                            .bankname {
-                               
-    
-                                h2 {
-                                   
-                                }
-                            }
     
                             .cartao {
                                 width: 300px;
                                 height: 200px;
                                 margin-left: -65vh;
         
-                                .line {
-                                 
-                                    img {
-                                      
-                                    
-                                    }
-    
-                                }
-                                .line-chip {
-                                  
-                                    img {
-                                    
-                                    }
-                                    
-                                }
                             }
                             
-                        }
-                        .box-f-br:hover {
-                           
-    
-                            .cartao {
-                            
-                            }
-                        }
-                    }
-                }
-    
-                .bx_box {
-    
-                   
-    
-                    .bx {
-                       
-    
-                        h2 {
-                          
-                        }
-    
-                    }
-                    .bx:hover {
-                      
-                        h2 {
-                         
                         }
                     }
                 }
@@ -1070,21 +689,13 @@
     
 
     .filterFinanceiro {
-       
-    
         .header_financeiro {
-       
-    
             .container-filter {
             
-    
                 h1 {
                     width: 100%;
                     font-size: 35px;
-    
                 }
-    
-            
                 ul {
                     width: 100%;
     
@@ -1098,46 +709,18 @@
         .container-financeiro {
          
             .text {
-            
-    
                 .menu {
                     width: 200px;
-                    margin-left: 11vh;
-    
-                    a {
-                      
-                    }
-    
-                    h2 {
-                        
-                    }
-                    img {
-                      
-                    }
-                }
-    
-                h2 {
-                  
-    
+                    margin-left: 10vh;
                 }
             }
     
             .box {
-            
-    
-                h2 {
-                  
-                }
-    
-                h3 {
-                    
-                }
     
                 .cards-financiamento {
               
                     height: 85vh;
                     
-    
                     .text-f {
                         height: 40vh;
                         display: inline-block;
@@ -1155,17 +738,8 @@
     
                         .box-f-nu {
                            
-    
-                            .bankimage {
-                             
-    
-                                img {
-                                 
-                                }
-                            }
                             .bankname {
-                                
-    
+                            
                                 h2 {
                                  font-size: 20px;
                                 }
@@ -1182,51 +756,13 @@
                                     img {
                                         margin-left: 200px;
                                     }
-        
-                                    .chip {
-                                  
-                                    }
-        
-                                    .contorno {
-                                       
-    
-                                        img {
-                                    
-                                        }
-        
-                                        .contorno-interno {
-        
-                                          
-                               
-                                            h2 {
-                                             
-                                            }
-                                        }
-                                        .circle-master {
-                                           
-        
-                                            img {
-                                             
-                                            }
-                                        }
-                                    }
                                 }
                             }
                         }
                   
                         .box-f-it {
                      
-    
-                            .bankimage {
-                              
-    
-                                img {
-                                 
-                                }
-                            }
                             .bankname {
-                               
-    
                                 h2 {
                                     font-size: 20px;
                                     
@@ -1240,26 +776,13 @@
                                 margin-top: 34vh;
         
                                 .line {
-                                
-                                    img {
-                                    
-                                    }
-        
+                            
                                     .chip {
                                         margin-left: 200px;
                                     }
         
                                     .contorno {
                                        
-        
-                                        .contorno-interno {
-        
-                                       
-        
-                                            h2 {
-                                             
-                                            }
-                                        }
                                         .circle-master {
                                             
         
@@ -1271,22 +794,9 @@
                                 }
                             }
                         }
-                        .box-f-it:hover {
-                            
-    
-                            .cartao {
-                              
-                            }
-                        }
+                    
                         .box-f-br {
                          
-    
-                            .bankimage {
-                               
-                                img {
-                                 
-                                }
-                            }
                             .bankname {
                                
     
@@ -1300,52 +810,11 @@
                                 height: 200px;
                                 margin-left: -25vh;
                                 margin-top: 35vh;
-        
-                                .line {
-                                 
-                                    img {
-                                      
-                                    
-                                    }
     
-                                }
-                                .line-chip {
-                                  
-                                    img {
-                                    
-                                    }
-                                    
-                                }
                             }
                             
                         }
-                        .box-f-br:hover {
-                           
-    
-                            .cartao {
-                            
-                            }
-                        }
-                    }
-                }
-    
-                .bx_box {
-    
                    
-    
-                    .bx {
-                       
-    
-                        h2 {
-                          
-                        }
-    
-                    }
-                    .bx:hover {
-                      
-                        h2 {
-                         
-                        }
                     }
                 }
             }
@@ -1376,8 +845,9 @@
         .container-financeiro {
             .text {
                 .menu {
+                    margin-top: 10vh;
                     width: 200px;
-                    margin-left: 11vh;
+                    margin-left: 7vh;
     
                 }
             }
@@ -1502,9 +972,10 @@
     
             
                 ul {
+                    margin-top: 15px;
                     display: inline-block;
                     li {
-                      
+                      height: 30px;
                     }
                 }
             }
@@ -1512,8 +983,7 @@
         .container-financeiro {
             .text {
                 .menu {
-             
-    
+                    margin-left: 5vh;
                 }
             }
     
@@ -1665,143 +1135,40 @@
     
 
     .filterFinanceiro {
-    
-        .header_financeiro {
- 
-            .container-filter {
-            
-              
-                h1 {
-                  
-                }
-    
-            
-                ul {
-                  
-                   
-                    li {
-                      
-                    }
-                }
-            }
-        }
+
         .container-financeiro {
-            .text {
-                .menu {
-             
-    
-                }
-            }
-    
+        
             .box {
             
                 .cards-financiamento {
                     height: 120vh;
-                 
-                    
-                    .text-f {
-                    
-                        h2 {
-                       
-                        }
-    
-                    }
+
                     .cards {
                         margin-left: -5vh ;
                         margin-top: -20vh;
                  
                         .box-f-nu {
-                        
-
-                            .bankname {
-                               
-                                h2 {
-                                 
-                                }
-                            }
-    
+                    
                             .cartao {
                                 margin-top: 50vh;
-                       
-                                .line {
-                            
-                                    img {
-                                  
-                                    }
-
-                                    .chip {
-                                  
-                                        img {
-                                         
-                                        }
-                                    }
-
-                                    .contorno {
-                                        img {
-                                           
-                                        }
-
-                                        .contorno-interno {
-                                            h2 {
-                                                
-                                            }
-                                        }
-                                    }
-                        
-                                }
                             }
                         }
                   
                         .box-f-it {
-                           
-
-                            .bankname {
-                               
-                                h2 {
-                                 
-                                }
-                            }
-    
+                        
                             .cartao {
                                 
                                 margin-top: 40vh;
                                 .line {
-
-                                    .chip {
-                                    
-                                    }
         
                                     .contorno {
                                         height: 10vh;
-                                        
-                                        .circle-master {
-                                            img {
-                                               
-                                            }
-                                        }
 
                                         .contorno-interno {
                                             height: 6.5vh;
-                                            h2 {
-                                          
-                                            }
                                         }
                                     }
                                 }
-                            }
-                        }
-                        
-                        .box-f-br {
-                          
-                            .bankname {
-                                
-                                h2 {
-                                 
-                                }
-                            }
-    
-                            .cartao {
-                            
                             }
                         }
                     }

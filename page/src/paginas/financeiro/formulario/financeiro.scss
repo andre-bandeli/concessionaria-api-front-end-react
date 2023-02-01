@@ -22,14 +22,14 @@
         }
     }
 
-    .container-contato {
+    .container-financeiro-forms {
 
         width: 100%;
         height: auto;
         margin: auto;
 
 
-        .forms {
+        .forms-financeiro {
             width: 100%;
             height: 80%;
             margin-left: 0;
@@ -45,6 +45,7 @@
                     font-size: 22px;
                     width: auto;
                     margin-top: 25px;
+                    margin-bottom: 2vh;
                     font-weight: bold;
                     margin-left: 0vh;
                 }
@@ -52,6 +53,8 @@
                 .nome {
                     width: 100%;
                     height: auto;
+                    margin-top: 0;
+
                     .standard-basic-nome {
                         width: 85%;
                         height: 55px;
@@ -196,11 +199,11 @@
         }
     }
 
-    .container-contato {
+    .container-financeiro-forms {
 
        
 
-        .forms {
+        .forms-financeiro {
          
             .form {
                
@@ -244,6 +247,7 @@
                     }
                 }
                 .telefone {
+                    margin-left: 0;
                     h3 {
                         margin-top: 2vh;
                         margin-left: 0vh;
@@ -287,12 +291,18 @@
 
                 .informacoes {
 
-                 
+                    width: 100%;
+                    margin-top: 2vh;
+                    justify-content: space-between;
 
                     .standard-basic {
-                        width: 100%;
+                        border: none;
+                        width: 45%;
+                        margin-top: 2vh;
+                        margin-right: 2vh;
                     }
                 }
+
 
                 .btn {
                 
@@ -310,7 +320,7 @@
 }
 
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
 
     .formularioFinanceiro {
     
@@ -326,11 +336,11 @@
             }
         }
     
-        .container-contato {
+        .container-financeiro-forms {
     
            
     
-            .forms {
+            .forms-financeiro {
              
                 .form {
                    
@@ -420,7 +430,7 @@
                      
     
                         .standard-basic {
-                            width: 100%;
+                            width: 80%;
                         }
                     }
     

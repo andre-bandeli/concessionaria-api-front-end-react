@@ -95,9 +95,10 @@
             display: flex;
             align-items: center;
 
-            h1 {
+            a {
                 width: 100%;
                 font-family: 'Cinzel', serif;
+                text-decoration: none;
                 text-align: center;
                 font-size: 30px;
                 color: rgb(32, 31, 31);
@@ -111,10 +112,10 @@
     position: absolute;
     display: inline-block;
     z-index: 95;
-    margin-top: 113vh;
+    margin-top: 114vh;
     margin-left: -1vh;
     height: 100vh;
-    background-color: rgba(32, 31, 31, 0.925);
+    background-color: rgba(32, 31, 31, 0.973);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     backdrop-filter: blur( 13.5px );
     -webkit-backdrop-filter: blur( 13.5px );
@@ -135,6 +136,7 @@
     margin-left: -15px;
     display: flex;
     border-bottom: 1px solid rgb(96, 99, 102);
+    text-align: left;
 
 
     .icon {
@@ -151,15 +153,19 @@
         color: rgb(170, 166, 166);
         text-decoration: none;
         margin-top: 10px;
-        margin-left: 4vh;
+        margin-left: 8vh;
         font-size: 20px;
+        text-align: left;
     }
 
     a:hover {
         color: rgb(126, 122, 122);
     }
 }
+.Navbar .mob li.active a{
+    color: rgb(15, 204, 218);
 
+}
 
 @media (max-width: 1440px) {
     .Navbar {
@@ -175,7 +181,7 @@
 
 @media (max-width: 1024px) and (max-height: 600px) {
     .Navbar .mob {
-        width: 65vh;
+        width: 75vh;
         margin-top: 122vh;
 
         .icon {
@@ -195,6 +201,89 @@
         margin-top: 0;
     }
     
+}
+
+
+@media (max-width: 912px) and (max-height: 1368px) {
+    .Navbar .mob {
+        width: 40vh;
+        margin-top: 109vh;
+
+        .icon {
+            margin-top: 0;
+            margin-left: 0;
+             img {
+                width: 30px;
+                margin-left: 0;
+                margin-top: -1vh;
+             }
+        }
+    }
+    .Navbar .mob li {
+        height: 12.8vh;
+    }
+    .Navbar .mob li a{
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 820px) and (max-height: 1180px) {
+    .Navbar .mob {
+        width: 40vh;
+        margin-top: 111vh;
+
+        .icon {
+            margin-top: 0;
+            margin-left: 0;
+             img {
+                width: 30px;
+                margin-left: 0;
+                margin-top: -1vh;
+             }
+        }
+    }
+    .Navbar .mob li {
+        height: 11.5vh;
+    }
+    .Navbar .mob li a{
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .Navbar {
+        ul {
+            
+            .menu {
+              
+    
+                .MobileNavigation { 
+                   
+                    .Hamburguer {
+                     margin-left: 50px;
+                    }
+                }
+            }
+            .pesquisa {
+                margin-left: 0;
+            }
+            .login {
+                width: 0;
+                margin-left: 0;
+                visibility: hidden;
+                position: absolute;
+            }
+
+            li {
+                h1 {
+                    margin-left: 10vh;
+                    margin-top: 2vh;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -226,6 +315,31 @@
         }
     }
 }
+
+
+@media (max-width: 540px) and (max-height: 720px) {
+    .Navbar .mob {
+        width: 55vh;
+        margin-top: 119vh;
+
+        .icon {
+            margin-top: 0;
+            margin-left: 0;
+             img {
+                width: 30px;
+                margin-left: 0;
+                margin-top: -1vh;
+             }
+        }
+    }
+    .Navbar .mob li {
+        height: 11.5vh;
+    }
+    .Navbar .mob li a{
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 500px) {
     .Navbar {
         height: 9vh;
@@ -246,7 +360,7 @@
             }
 
             li {
-                h1 {
+                a {
                     margin-left: 10vh;
                     margin-top: 2vh;
                 }
@@ -261,6 +375,9 @@
     .Navbar .mob li {
        height: 12vh;
     }
+    .Navbar .mob li a {
+        margin-left: 3vh;
+     }
 }
 
 @media (max-width: 400px) {
@@ -274,7 +391,7 @@
             }
 
             li {
-                h1 {
+                a {
                     font-size: 25px;
                     margin-left: 7vh;
                     margin-top: 2vh;
@@ -304,7 +421,7 @@
             }
 
             li {
-                h1 {
+                a {
                     font-size: 25px;
                     margin-left: 7vh;
                     margin-top: 2vh;
@@ -314,7 +431,8 @@
     
     }
     .Navbar .mob {
-        margin-top: 110vh;
+        width: 50vh;
+        margin-top: 107.5vh;
     }
     .Navbar .mob li {
         a {
@@ -332,7 +450,7 @@
             }
 
             li {
-                h1 {
+                a {
                     font-size: 20px;
                     margin-left: 5vh;
                     margin-top: 2vh;

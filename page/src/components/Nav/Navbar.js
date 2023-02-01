@@ -17,9 +17,7 @@ const Navbar = () => {
                     <MobileNavgation/>
                 </li>
                 <li>
-                    <h1>
-                        WebMotors
-                    </h1>
+                    <Link to="/">WebMotors</Link>
                     
                 </li>
                 <li className='pesquisa'>
