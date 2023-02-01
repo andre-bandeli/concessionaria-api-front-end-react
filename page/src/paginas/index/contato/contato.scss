@@ -1,5 +1,5 @@
 
-.contato {
+.contato-index {
 
     width: 100%;
     height: auto;
@@ -139,82 +139,96 @@
     
 }
 
+@media (max-width: 768px) {
 
-@media (max-width: 550px) {
-        
-    .contato {
 
-      
-        .title {
-           
+.contato-index {
+    margin-bottom: 5vh;
+   
+    .title {
+        width: 80%;
+        margin-left: 2vh;
 
+        h2 {
+        width: 80%;
+        margin-left: 2vh;
+        }
+        h3 {
+         width: 80%;
+         margin-left: 2vh;
+        }
+    }
+
+    .container-contato {
+        margin-left: 2vh;
+        display: inline-block;
+    
+        .logo {
+            width: 0;
+            height: 0;
+            visibility: hidden;
+
+
+        }
+
+        .forms {
+          margin-left: 2vh;
             h2 {
-              margin-left: 2vh;
+                width: 60%;
             }
             h3 {
-                width: 80%;
-                margin-left: 2vh;
-            }
-        }
-
-        .container-contato {
-            width: 100%;
-            .logo {
-                width: 0; height: 0;
-                visibility: hidden;
-           
-
-                img {
-                  
-                }
+                margin-top: 2vh;
+                width: 60%;
             }
 
-            .forms {
-                width: 90%;
-                margin: auto;
-                margin-top: 5vh;
-                
-        
-                .standard-basic {
-                 
-                    label {
-                      
-        
-                    }
-                    .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-                       
-                    }
-                    input {
-                        
-                    }
-                    
-                }
-                .standard-basic-box {
-                  
-                    label {
-                 
-                    }
-                    .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-                       
-                    }
-                    input {
-                     
-                    }
-                    
-                }
-
-        
-                .btn {
-                   
-                    width: 150px;
-                
-                }
-                .btn:hover {
+            .mensagemSucesso {
+               width: 200px;
+                p {
                    
                 }
             }
+    
+            .standard-basic {
+            
+                label {
+                   
+    
+                }
+                .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                   
+                }
+                input {
+                    
+                }
+                
+            }
+            .standard-basic-box {
+               
+                label {
+                   
+                }
+                .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                   
+                }
+                input {
+                    
+                }
+                
+            }
 
+    
+            .btn {
+                width: 100px;
+            
+            }
+            .btn:hover {
+               
+            }
         }
-        
+
     }
+    
 }
+    
+}
+

@@ -15,7 +15,7 @@ import Folder from './folder/Folder'
 export default function Home() {
   return (
     <div>
-      <Navbar/>,
+      <Navbar/>
       <Header/>
       <PageTitle/>
       <Card/>

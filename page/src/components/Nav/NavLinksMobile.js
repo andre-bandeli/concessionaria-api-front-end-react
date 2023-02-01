@@ -6,15 +6,18 @@ import {CgClose, CgMenu, CgHome, CgCreditCard, CgPhone, CgShoppingCart, CgHello,
 import moto from '../assets/images/moto.png'
 import carro from '../assets/images/carros.png'
 import carteira from '../assets/images/carteira.png'
+import phone from './call.png'
+import home from './home.png'
+import info from './info.png'
 
 
 const NavLinksMobile = () => {
 
-    const homeIcon = <CgHello className='Hamburguer'size='50px' color='cecece'/>
-    const cardIcon = <CgCreditCard className='Hamburguer'size='50px' color='cecece'/>
-    const phoneIcon = <CgPhone className='Hamburguer'size='50px' color='cecece'/>
+    const homeIcon = <CgHello className='icone'size='40px' color='cecece'/>
+    const cardIcon = <CgCreditCard className='icone'size='40px' color='cecece'/>
+    const phoneIcon = <CgPhone className='icone'size='40px' color='cecece'/>
     const productIcon = <CgShoppingCart className='Hamburguer'size='50px' color='cecece'/>
-    const userIcon = <CgUserlane className='Hamburguer'size='50px' color='cecece'/>
+    const userIcon = <CgUserlane className='icone'size='40px' color='cecece'/>
 
 
 
@@ -22,7 +25,7 @@ const NavLinksMobile = () => {
         <ul className="mob">
             <li>
                 <div className='icon'>
-                {homeIcon}
+                    <img src={home}></img>
                 </div>
                 <Link to="/">Home</Link>
             </li>
@@ -46,15 +49,21 @@ const NavLinksMobile = () => {
             </li>
             <li>
             <div className='icon'>
-                {userIcon}
+                <img src={info}></img>
                 </div>
                  <Link to="/sobre">Sobre Nós</Link>
             </li>
             <li>
             <div className='icon'>
-                {phoneIcon}
+                <img src={phone}></img>
                 </div>
                 <a href="/contato">Contato</a>
+            </li>
+            <li>
+            <div className='icon'>
+                <img src={moto}></img>
+                </div>
+                <a href="/contato">Área do Cliente</a>
             </li>
             
     </ul>

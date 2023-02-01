@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap');
+
 
 .title_home {
     width: 100%;
@@ -8,10 +10,11 @@
     align-items: center;
     
     h2 {
+        font-family: 'Cinzel', serif;
         width: 100%;
         color: white;
         text-align: center;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
         font-size: 22px;
         span {
             color: rgba(255, 0, 0, 0.863);
@@ -33,9 +36,9 @@
 }
 @media (max-width: 550px) {
     .title_home {
-        
+        height: 5vh;
         h2 {
-           font-size: 20px;
+           font-size: 15px;
            letter-spacing: normal;
             span {
                 margin-left: 1vh;

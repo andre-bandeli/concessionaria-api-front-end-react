@@ -81,29 +81,44 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     
 .card {
     height: auto;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+    border: transparent;
    
     .cardContainer {
         width: 100%;
         height: auto;
         display: inline-block;
+        border: none;
+        border: transparent;
         
         .cardBoxContainerLeft {
-            width: 100%;
+            width: 90%;
             border: none;
-            margin: 0;
+            margin: auto;
 
-            .CardVehicletext {
-                margin-left: 5vh;
+            img {
+                margin-top: 0;
             }
+
         }
         .cardBoxContainerRight {
             width: 90%;
             margin: auto;
-            margin-top: 10vh;
+            margin-top: 5vh;
+            border: none;
+
+            .vehicleImg {
+                margin-top: 0;
+                img {
+                    margin-top: 0;
+                }
+            }
+
         }
     }
 
