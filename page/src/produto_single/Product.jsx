@@ -31,7 +31,7 @@ export default function Product() {
   }
 
     useEffect(()=>{
-        fetch("http://127.0.0.1:8080/api/produto/list/1")
+        fetch("http://127.0.0.1:8085/api/v1/moto/1")
         .then(res=>res.json())
         .then((result)=>{
           setProduto(result);
@@ -43,33 +43,22 @@ export default function Product() {
 
   return (
     <div className='product'>
-        <div className="container">
+        <div className="container-single">
             <div className="imagem_produto">
-                    <img src={moto} alt="" />
+           
             </div>
             <div className="dados">
        
                 <h1>
                     {produto.nome_modelo}
                 </h1>
-                <h3>
-                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde animi, minus deserunt voluptatem sint quae qui mollitia repellendus natus rerum non eligendi magni sapiente voluptas facere temporibus maiores eaque odio.
-                </h3>
-                <h2>à partir de: R$ <span>{produto.preco}</span></h2>
-                <div className="info">
-                      <h3>Ano: <span> 2023</span> </h3>
-                      <h3>Modelo: <span>Yamaha</span></h3>
-                      <h3>Situação: <span>0 km</span></h3>
-                </div>
-                <div className="buttons">
+                <h2>à partir de: <span>R$ {produto.preco}</span></h2>
+                <div className='btn'>
                   <button>
-                    SIMULAR FINANCIAMENTO
+                    ver ficha técnica
                   </button>
-                  <button className='btn'>
-                    FALE COM UM ATENDENTE
-                  </button>
+
                 </div>
-                
             </div>
         </div>
 
@@ -86,6 +75,72 @@ export default function Product() {
           <div className="box">
             <img src={mt4} alt="" />
           </div>
+        </div>
+
+        <div className="ficha">
+          <h2>Ficha Técnica</h2>
+            <div className="containerFichaTecnica">
+              <ul>
+                <ul className='ul-dark'>
+                    <li className='li-nome-coluna'>
+                      <h2>Modelo</h2>
+
+                    </li>
+                    <li>
+                      
+                    </li>
+                </ul>
+                <ul className='ul-dark'>
+                    <li className='li-nome-coluna'>
+                      <h2>Ano</h2>
+                    </li>
+                    <li>
+                      
+                    </li>
+                </ul>
+                <ul className='ul-dark'>
+                    <li className='li-nome-coluna'>
+                        <h2>Cilindradas</h2>
+                    </li>
+                    <li>
+                      
+                    </li>
+                </ul>
+                <ul className='ul-dark'>
+                    <li className='li-nome-coluna'>
+                      <h2>KM</h2>
+                    </li>
+                    <li>
+                      
+                    </li>
+                </ul>
+                <ul className='ul-dark'>
+                    <li className='li-nome-coluna'>
+
+                    </li>
+                    <li>
+                      
+                    </li>
+                </ul>
+                <ul className='ul-dark'>
+                    <li className='li-nome-coluna'>
+
+                    </li>
+                    <li>
+                      
+                    </li>
+                </ul>
+                <ul className='ul-dark'>
+                    <li className='li-nome-coluna'>
+
+                    </li>
+                    <li>
+                      
+                    </li>
+                </ul>
+               
+              </ul>
+            </div>
         </div>
     </div>
   )

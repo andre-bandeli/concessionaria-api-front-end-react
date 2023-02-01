@@ -1,0 +1,17 @@
+
+.headerContato {
+
+    width: 100%;
+    height: 40vh;
+    margin-top: 8vh;
+    position: relative;
+    background-image: url(./maps.png);
+
+    .container {
+        position: absolute;
+        h1 {
+            color: black;
+            margin-top: 5vh;
+        }
+    }
+}
