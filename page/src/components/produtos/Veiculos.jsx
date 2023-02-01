@@ -8,11 +8,6 @@ import PortfolioList from './ProdutosCategoriaList';
 
 export default function Veiculos() {
 
-    const[nome_modelo,setNome_modelo]=useState('')
-    const[preco,setPreco]=useState('')
-    const[marca,setMarca]=useState('')
-    const[descricao,setDescricao]=useState('')
-    const [data, setData] = useState([]);
     const[produto,setProduto]=useState([])
     const [selected, setSelected] = useState("motos");
 
@@ -36,20 +31,6 @@ export default function Veiculos() {
         },
     ];
 
-    const handleClick=(e)=>{
-        e.preventDefault()
-        const produto={nome_modelo,marca, preco, descricao}
-        console.log(produto)
-        fetch("http://localhost:8080/api/produto/add",{
-          method:"POST",
-          mode: 'no-cors',
-          headers:{"Content-Type":"application/json"},
-          body:JSON.stringify(produto)
-    
-      }).then(()=>{
-        console.log("Novo produto adicionado.")
-      })
-    }
 
     useEffect(() => {
         switch (selected) {

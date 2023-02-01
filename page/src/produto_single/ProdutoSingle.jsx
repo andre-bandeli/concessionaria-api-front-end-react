@@ -11,8 +11,6 @@ export default function ProdutoSingle() {
         <Navbar/>
         <Product/>
         <Footer/>
-
-
     </div>
   )
 }

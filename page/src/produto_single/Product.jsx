@@ -1,7 +1,7 @@
 import React from 'react'
 import './product.scss'
 import { useEffect, useState } from 'react';
-import { useParams, Route } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 
 import mt1 from './mt-5.webp'
@@ -11,28 +11,10 @@ import mt4 from './mt6.webp'
 
 export default function Product() {
 
-    const[nome_modelo,setNome_modelo]=useState('')
-    const[preco,setPreco]=useState('')
-    const[descricao,setDescricao]=useState('')
     const[produto,setProduto]=useState([]);
 
     const { id } = useParams();
     const url = `http://127.0.0.1:8085/api/v1/moto/${id}`;
-
-    const handleClick=(e)=>{
-      e.preventDefault()
-      const produto={nome_modelo,preco, descricao}
-      console.log(produto)
-      fetch("http://localhost:8080/api/produto/add",{
-        method:"POST",
-        mode: 'no-cors',
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify("produto" + produto)
-  
-    }).then(()=>{
-      console.log("Novo produto adicionado.")
-    })
-  }
 
     useEffect(()=>{
         fetch(url)
