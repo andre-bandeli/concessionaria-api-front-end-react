@@ -115,7 +115,7 @@ export default function Veiculos() {
                 </ul>
             </div>
            
-            <div className="product">
+            {/* <div className="product">
 
             {produto.slice(0, 8).map(produto=>(
 
@@ -143,6 +143,209 @@ export default function Veiculos() {
             ))
             }
               
+            </div> */}
+
+            <div className="product">
+
+            <div className="box">
+
+                <div className="imagem">
+                        <img src={moto} alt="" />
+                </div>
+                <div className="marca">
+                    <h3>Yamaha</h3>
+                </div>
+                <div className="modelo">
+                    <h2>MT-03 330cc ABS</h2>
+                </div>
+                <div className="preco">
+                    <h3>A partir de <span>R$ 25.000,00</span></h3>
+                    <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
+                </div>
+                <div className="condicoes">
+                        <Link to={`/produto/${produto.id}`}>
+                        <button>
+                            ver detalhes
+                        </button>
+                        
+                    </Link>
+                </div>
+            </div>
+
+            <div className="box">
+
+                <div className="imagem">
+                        <img src={moto} alt="" />
+                </div>
+                <div className="marca">
+                    <h3>Yamaha</h3>
+                </div>
+                <div className="modelo">
+                    <h2>MT-03 330cc ABS</h2>
+                </div>
+                <div className="preco">
+                    <h3>A partir de <span>R$ 25.000,00</span></h3>
+                    <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
+                </div>
+                <div className="condicoes">
+                        <Link to={`/produto/${produto.id}`}>
+                        <button>
+                            ver detalhes
+                        </button>
+                        
+                    </Link>
+                </div>
+                </div>
+
+                <div className="box">
+
+                <div className="imagem">
+                        <img src={moto} alt="" />
+                </div>
+                <div className="marca">
+                    <h3>Yamaha</h3>
+                </div>
+                <div className="modelo">
+                    <h2>MT-03 330cc ABS</h2>
+                </div>
+                <div className="preco">
+                    <h3>A partir de <span>R$ 25.000,00</span></h3>
+                    <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
+                </div>
+                <div className="condicoes">
+                        <Link to={`/produto/${produto.id}`}>
+                        <button>
+                            ver detalhes
+                        </button>
+                        
+                    </Link>
+                </div>
+                </div>
+
+                <div className="box">
+
+                <div className="imagem">
+                        <img src={moto} alt="" />
+                </div>
+                <div className="marca">
+                    <h3>Yamaha</h3>
+                </div>
+                <div className="modelo">
+                    <h2>MT-03 330cc ABS</h2>
+                </div>
+                <div className="preco">
+                    <h3>A partir de <span>R$ 25.000,00</span></h3>
+                    <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
+                </div>
+                <div className="condicoes">
+                        <Link to={`/produto/${produto.id}`}>
+                        <button>
+                            ver detalhes
+                        </button>
+                        
+                    </Link>
+                </div>
+                </div>
+
+                <div className="box">
+
+                <div className="imagem">
+                        <img src={moto} alt="" />
+                </div>
+                <div className="marca">
+                    <h3>Yamaha</h3>
+                </div>
+                <div className="modelo">
+                    <h2>MT-03 330cc ABS</h2>
+                </div>
+                <div className="preco">
+                    <h3>A partir de <span>R$ 25.000,00</span></h3>
+                    <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
+                </div>
+                <div className="condicoes">
+                        <Link to={`/produto/${produto.id}`}>
+                        <button>
+                            ver detalhes
+                        </button>
+                        
+                    </Link>
+                </div>
+                </div>
+
+                <div className="box">
+
+                <div className="imagem">
+                        <img src={moto} alt="" />
+                </div>
+                <div className="marca">
+                    <h3>Yamaha</h3>
+                </div>
+                <div className="modelo">
+                    <h2>MT-03 330cc ABS</h2>
+                </div>
+                <div className="preco">
+                    <h3>A partir de <span>R$ 25.000,00</span></h3>
+                    <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
+                </div>
+                <div className="condicoes">
+                        <Link to={`/produto/${produto.id}`}>
+                        <button>
+                            ver detalhes
+                        </button>
+                        
+                    </Link>
+                </div>
+                </div>
+
+                <div className="box">
+
+                <div className="imagem">
+                        <img src={moto} alt="" />
+                </div>
+                <div className="marca">
+                    <h3>Yamaha</h3>
+                </div>
+                <div className="modelo">
+                    <h2>MT-03 330cc ABS</h2>
+                </div>
+                <div className="preco">
+                    <h3>A partir de <span>R$ 25.000,00</span></h3>
+                    <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
+                </div>
+                <div className="condicoes">
+                        <Link to={`/produto/${produto.id}`}>
+                        <button>
+                            ver detalhes
+                        </button>
+                        
+                    </Link>
+                </div>
+                </div>
+
+                <div className="box">
+
+                <div className="imagem">
+                        <img src={moto} alt="" />
+                </div>
+                <div className="marca">
+                    <h3>Yamaha</h3>
+                </div>
+                <div className="modelo">
+                    <h2>MT-03 330cc ABS</h2>
+                </div>
+                <div className="preco">
+                    <h3>A partir de <span>R$ 25.000,00</span></h3>
+                    <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
+                </div>
+                <div className="condicoes">
+                        <Link to={`/produto/${produto.id}`}>
+                        <button>
+                            ver detalhes
+                        </button>
+                        
+                    </Link>
+                    </div>
+            </div>
             </div>
         </div>
 

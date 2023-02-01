@@ -152,12 +152,14 @@
                     display: flex;
 
 
+
                     .box-f-nu {
                         width: 30%;
                         margin: auto;
                         height: 100%;
                         cursor: pointer;
                         z-index: 20;
+                       
 
                         .bankimage {
                             height: 17vh;
@@ -199,6 +201,7 @@
                             z-index: 0;
                             visibility: visible;
                             transition: background-image 5s;
+                            
     
                             .line {
                                 width: 60px;
@@ -265,8 +268,10 @@
                         }
                     }
                      .box-f-nu:hover {
+                        
                          .cartao {
-                             background-image: linear-gradient(to right top, #3b3f42, #28424b, #0a2928, #193425, #2e3718);          
+                             background-image: linear-gradient(to right top, #3b3f42, #28424b, #0a2928, #193425, #2e3718);  
+                             
                          }
                     } 
                     .box-f-it {

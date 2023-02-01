@@ -37,30 +37,7 @@ export default function FormularioFinanciamento() {
     e.preventDefault()
     const dados = {nome, ddd, telefone, email, salario, possuiVeiculo, estadoCivil, dependentes, valorEntrada, modeloInteresse, fiador, cidade}
     console.log(dados)
-    // fetch("http://127.0.0.1:8085/api/v1/financeiro/add",{
-    //   method:"POST",
-    //   headers:{"Content-Type":"application/json"},
-    //   body:JSON.stringify(dados)
-    // }).then(()=> {
-    //   setTimeout(() => {
-    //     setMensagemSucesso("Mensagem enviada com sucesso! Entraremos em contato o quanto antes!");
-    //     }, 10);
-    //     setTimeout(() => {
-    //       setMensagemSucesso("");
-    //       }, 5000);
-    //   setNome("")
-    //   setDDD("")
-    //   setTelefone("")
-    //   setEmail("")
-    //   setSalario("")
-    //   setPossuiVeiculo("")
-    //   setEstadoCivil("")
-    //   setDependentes("")
-    //   setValorEntrada("")
-    //   setModeloInteresse("")
-    //   setFiador("")
-    //   setCidade("");
-    // })
+
 
     fetch("http://127.0.0.1:8085/api/v1/financeiro/add",{
       method:"POST",
