@@ -1,7 +1,6 @@
 import React from 'react'
 import './header.scss'
 import './variables.css'
-import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import primeiraImagemSlider from './primeiraImagemSlider.webp'
@@ -17,7 +16,7 @@ export default function Header() {
         <Carousel.Item className='carouselItem' interval={3500}>
           <img
             src={primeiraImagemSlider}
-            alt="Primeira imagem do slider: imagem de um carro cinza em uma estrada como background"
+            alt="Primeira imagem do slider: imagem de um carro cinza em uma estrada como background" rel="preload"
           />
            <div className="carouselItemContent">
               <h2>Concessionária Autorizada <br /> <span>WEB MOTORS</span></h2>
@@ -31,7 +30,7 @@ export default function Header() {
         <Carousel.Item className='carouselItem' interval={3500}>
           <img
             src={terceiraImagemSlider}
-            alt="Terceira imagem do slider: imagem de uma concessionária autorizada WEB MOTORS"
+            alt="Terceira imagem do slider: imagem de uma concessionária autorizada WEB MOTORS" rel="preload"
           />
           <div className="carouselItemContent-right">
               <h2>Concessionária Autorizada <br /> <span>WEB MOTORS</span></h2>
@@ -45,7 +44,7 @@ export default function Header() {
         <Carousel.Item className='carouselItem' interval={3500}>
           <img
             src={segundaImagemSlider}
-            alt="Segunda imagem do slider: imagem de carros e motos novos e seminovos"
+            alt="Segunda imagem do slider: imagem de carros e motos novos e seminovos" rel="preload"
           />
           <div className="carouselItemContent">
               <h2>Novos e Seminovos<br /> <span>Carros e Motos</span></h2>

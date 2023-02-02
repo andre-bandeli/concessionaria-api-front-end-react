@@ -26,7 +26,6 @@ export default function FormularioFinanciamento() {
     e.preventDefault();
     console.log("refresh prevented");
   };
-  const [mensagem, setMensagem] = useState("")
 
   const [mensagemSucesso, setMensagemSucesso] = useState("");
 
