@@ -83,9 +83,9 @@ export default function Footer() {
                         Atendimento: seg à sex: 08h00 às 19h00
                     </li>
                     <li className='redes'>
-                        <img src={twitter} alt="" />
-                        <img src={instagran} alt="" />
-                        <img src={linkedin} alt="" />
+                        <img src={twitter} alt="ícone do twitter" width='25px' height='25px' />
+                        <img src={instagran} alt="ícone do instagran" width='25px' height='25px' />
+                        <img src={linkedin} alt="ícone do linkedin" width='25px' height='25px' />
                     </li>
                    
             </ul>

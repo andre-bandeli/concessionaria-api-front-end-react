@@ -179,7 +179,6 @@ export default function Produtos() {
                             </div>
                         </div>
                         <h3>{d.paragrafo_2}</h3>
-
                         <FormularioFinanciamento/>
                     </div>
                     ))

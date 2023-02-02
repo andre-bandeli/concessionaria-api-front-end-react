@@ -13,7 +13,7 @@ export default function Header() {
     <div className='headerContainer'>
       <div className='carouselContainer'>
       <Carousel className='carouselBootstrap' indicators={false}>
-        <Carousel.Item className='carouselItem' interval={3500}>
+        <Carousel.Item className='carouselItem' interval={3500} rel="preload">
           <img
             src={primeiraImagemSlider}
             alt="Primeira imagem do slider: imagem de um carro cinza em uma estrada como background" rel="preload"
