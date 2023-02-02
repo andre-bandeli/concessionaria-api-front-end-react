@@ -38,38 +38,78 @@ export default function Produtos() {
         switch (selected) {
             case "motos":
                 fetch('http://127.0.0.1:8085/api/v1/moto/list')
-                    .then(response => response.json())
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(response.statusText);
+                        }
+                        return response.json();
+                    })
                     .then((result)=>{
-          setProduto(result);
-        })
-                break;
+                        setProduto(result);
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                      });
+                    break;
             case "yamaha":
                 fetch('http://127.0.0.1:8085/api/v1/moto/list/yamaha')
-                    .then(response => response.json())
-                    .then((result)=>{
-          setProduto(result);
-        })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(response.statusText);
+                    }
+                    return response.json();
+                })
+                .then((result)=>{
+                    setProduto(result);
+                })
+                .catch((error) => {
+                    console.error(error);
+                  });
                 break;
             case "honda":
                 fetch('http://127.0.0.1:8085/api/v1/moto/list/honda')
-                    .then(response => response.json())
-                    .then((result)=>{
-          setProduto(result);
-        })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(response.statusText);
+                    }
+                    return response.json();
+                })
+                .then((result)=>{
+                    setProduto(result);
+                })
+                .catch((error) => {
+                    console.error(error);
+                  });
                 break;
             case "bmw":
                 fetch('http://127.0.0.1:8085/api/v1/moto/list/bmw')
-                    .then(response => response.json())
-                    .then((result)=>{
-          setProduto(result);
-        })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(response.statusText);
+                    }
+                    return response.json();
+                })
+                .then((result)=>{
+                    setProduto(result);
+                })
+                .catch((error) => {
+                    console.error(error);
+                  });
                 break;
             default:
                 fetch('http://127.0.0.1:8085/api/v1/moto/list')
-                    .then(response => response.json())
-                    .then((result)=>{
-          setProduto(result);
-        })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(response.statusText);
+                    }
+                    return response.json();
+                })
+                .then((result)=>{
+                    setProduto(result);
+                })
+                .catch((error) => {
+                    console.error(error);
+                  });
         }
     }, [selected]);
 
