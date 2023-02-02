@@ -12,13 +12,10 @@ public class Moto {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @NotNull
     private String nome_modelo;
 
-    @NotNull
     private String marca;
 
-    @NotNull
     private Double preco;
 
     private String descricao;
