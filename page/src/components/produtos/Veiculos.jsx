@@ -35,7 +35,7 @@ export default function Veiculos() {
     useEffect(() => {
         switch (selected) {
             case "motos":
-                fetch('http://127.0.0.1:8085/api/v1/moto/list')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
                     .then(response => {
                         if (!response.ok) {
                             throw new Error(response.statusText);
@@ -50,7 +50,7 @@ export default function Veiculos() {
                       });
                     break;
             case "yamaha":
-                fetch('http://127.0.0.1:8085/api/v1/moto/list/yamaha')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -65,7 +65,7 @@ export default function Veiculos() {
                   });
                 break;
             case "honda":
-                fetch('http://127.0.0.1:8085/api/v1/moto/list/honda')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -80,7 +80,7 @@ export default function Veiculos() {
                   });
                 break;
             case "bmw":
-                fetch('http://127.0.0.1:8085/api/v1/moto/list/bmw')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -95,7 +95,7 @@ export default function Veiculos() {
                   });
                 break;
             default:
-                fetch('http://127.0.0.1:8085/api/v1/moto/list')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
