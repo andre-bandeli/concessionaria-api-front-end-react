@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from '../../components/Nav/Navbar'
-import './motocicletas.scss'
-import HeaderMotos from './header/HeaderMotos'
+import './motocicletas.css'
 import Footer from '../../components/footer/Footer'
 import Produtos from './produtos/Produtos'
-import PageTitle from './header/PageTitle'
+import HeaderMotos from './header/HeaderMotos'
+import PageTitle from '../../components/pagetitles/PageTitle'
 
 export default function Motocicletas() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import './container.scss'
+import './container.css'
 
 export default function Container() {
   return (

@@ -1,13 +1,13 @@
 import React from 'react'
 import './produtos.scss'
 import { useEffect, useState } from 'react';
-import carro from './carro.webp'
-import carro2 from './carro2.jpeg'
-import carro3 from './carro3.png'
-import carro4 from './carro4.png'
-import carro5 from './carro5.png'
-import carro6 from './carro6.png'
-import carro7 from './carro7.png'
+import carro from '../../../components/assets/images/produtos/carro.webp'
+import carro2 from '../../../components/assets/images/produtos/carro2.jpeg'
+import carro3 from '../../../components/assets/images/produtos/carro3.png'
+import carro4 from '../../../components/assets/images/produtos/carro4.png'
+import carro5 from '../../../components/assets/images/produtos/carro5.png'
+import carro6 from '../../../components/assets/images/produtos/carro6.png'
+import carro7 from '../../../components/assets/images/produtos/carro7.png'
 import { Link } from "react-router-dom";
 
 import PortfolioList from './ProdutosCategoriaList';

@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 
 
-import mt1 from './mt-5.webp'
-import mt2 from './mt-2.webp'
-import mt3 from './moto.webp'
-import mt4 from './mt6.webp'
+import mt1 from '../../components/assets/images/mt-5.webp'
+import mt2 from '../../components/assets/images/mt-2.webp'
+import mt3 from '../../components/assets/images/moto.webp'
+import mt4 from '../../components/assets/images/mt6.webp'
 
 export default function Product() {
 

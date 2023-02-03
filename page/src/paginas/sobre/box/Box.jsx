@@ -1,11 +1,11 @@
 import React from 'react'
-import './box.scss'
-import valores from './sede.webp'
-import team from './team.webp'
-import financeiro from './financeiro.webp'
-import member from './membro.webp'
-import team_ from './team_.webp'
-import time from './time.webp'
+import './box.css'
+import valores from '../../../components/assets/images/sede.webp'
+import team from '../../../components/assets/images/team.webp'
+import financeiro from '../../../components/assets/images/financeiro.webp'
+import member from '../../../components/assets/images/membro.webp'
+import team_ from '../../../components/assets/images/team_.webp'
+import time from '../../../components/assets/images/time.webp'
 
 export default function Box() {
   return (

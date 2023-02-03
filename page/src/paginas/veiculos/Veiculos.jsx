@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../../components/Nav/Navbar'
-import './veiculos.scss'
-import HeaderMotos from './header/HeaderVeiculos'
+import './veiculos.css'
 import Footer from '../../components/footer/Footer'
 import Produtos from './produtos/Produtos'
-import PageTitle from './header/PageTitle'
+import HeaderVeiculos from './header/HeaderVeiculos'
+import PageTitle from '../../components/pagetitles/PageTitle'
 
 export default function Veiculos() {
   return (
     <div className='veiculos'>
       <Navbar/>
-      <HeaderMotos/>
+      <HeaderVeiculos/>
       <PageTitle/>
       <Produtos/>
       <Footer/>

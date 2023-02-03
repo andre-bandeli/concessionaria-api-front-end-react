@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 
 
-import moto from './moto.webp'
-import carro from './carros.webp'
-import carteira from './carteira.webp'
-import phone from './call.webp'
-import home from './home.webp'
-import info from './info.webp'
-import login from './enter.webp'
+import moto from '../assets/icones/moto.webp'
+import carro from '../assets/icones/carros.webp'
+import carteira from '../assets/icones/carteira.webp'
+import phone from '../assets/icones/call.webp'
+import home from '../assets/icones/home.webp'
+import info from '../assets/icones/info.webp'
+import login from '../assets/icones/enter.webp'
 
 
 const NavLinksMobile = () => {

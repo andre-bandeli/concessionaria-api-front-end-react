@@ -1,11 +1,11 @@
 import React from 'react'
-import './sobre.scss'
+import './style.css'
 import Navbar from '../../components/Nav/Navbar'
 import HeaderSobre from './header/HeaderSobre'
 import Footer from '../../components/footer/Footer'
 import Container from './Container'
 import Box from './box/Box'
-import PageTitle from './PageTitle'
+import PageTitle from '../../components/pagetitles/PageTitle'
 
 export default function Sobre() {
   return (

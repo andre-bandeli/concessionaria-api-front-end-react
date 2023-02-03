@@ -1,12 +1,12 @@
 import React from 'react'
 import './produtos.scss'
 import { useEffect, useState } from 'react';
-import moto from './moto.png'
-import moto1 from './moto1.jpg'
-import moto2 from './moto2.jpg'
-import moto3 from './moto3.jpg'
-import moto4 from './moto4.webp'
-import moto5 from './moto5.jpg'
+import moto from '../../../components/assets/images/produtos/moto.png'
+import moto1 from '../../../components/assets/images/produtos/moto1.jpg'
+import moto2 from '../../../components/assets/images/produtos/moto2.jpg'
+import moto3 from '../../../components/assets/images/produtos/moto3.jpg'
+import moto4 from '../../../components/assets/images/produtos/moto4.webp'
+import moto5 from '../../../components/assets/images/produtos/moto5.jpg'
 import { Link } from "react-router-dom";
 
 import PortfolioList from './ProdutosCategoriaList';

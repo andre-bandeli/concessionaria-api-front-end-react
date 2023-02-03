@@ -1,8 +1,8 @@
 import React from 'react'
-import './footer.scss'
-import instagran from './insta.webp'
-import linkedin from './in.webp'
-import twitter from './twitter.webp'
+import './style.css'
+import instagran from '../assets/icones/insta.webp'
+import linkedin from '../assets/icones/in.webp'
+import twitter from '../assets/icones/twitter.webp'
 
 export default function Footer() {
   return (

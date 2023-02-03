@@ -1,12 +1,12 @@
 import React from 'react'
 import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/Nav/Navbar'
-import './contato.scss'
+import './style.css'
 import Header from './header/HeaderContato'
-import PageTitle from './PageTitle'
-import insta from './insta.webp'
-import linkedin from './in.webp'
-import twitter from './twitter.webp'
+import PageTitle from '../../components/pagetitles/PageTitle'
+import insta from '../../components/assets/icones/insta.webp'
+import linkedin from '../../components/assets/icones/in.webp'
+import twitter from '../../components/assets/icones/twitter.webp'
 
 export default function Contato() {
   return (

@@ -4,26 +4,26 @@
     height: 30vh;
     display: flex;
     margin-top: 5vh;
+}
 
-    .box_info {
+.box_sobre .box_info {
         width: 14%;
         height: 70%;
         margin: auto;
         cursor: pointer;
-
-        h2 {
+}
+.box_sobre .box_info h2 {
             text-align: center;
             font-size: 18px;
             margin-top: 1vh;
-        }
+}
 
-        img {
+.box_sobre .box_info img {
             width: 100%;
             height: 100%;
             border-radius: 10px;
-        }
-    }
-    .box_info:hover {
+}
+
+.box_sobre .box_info:hover {
         opacity: .85;
-    }
 }

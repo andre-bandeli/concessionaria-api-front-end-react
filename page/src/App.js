@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 import Index from './paginas/index/Index';
 import Sobre from './paginas/sobre/Sobre';
 import Login from './paginas/login/Login';
-import ProdutoSingle from './produto_single/ProdutoSingle';
+import ProdutoSingle from './paginas/produto_single/ProdutoSingle';
 import Motocicletas from './paginas/motocicletas/Motocicletas';
 import Veiculos from './paginas/veiculos/Veiculos';
 import Financiamentos from './paginas/financeiro/Financiamentos';
