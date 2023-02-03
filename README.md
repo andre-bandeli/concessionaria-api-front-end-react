@@ -1,18 +1,19 @@
 ## Site Institucional Concessionária Web - Aplicação REST Spring Boot + React
-
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Spring_Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![MYSQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
-Site Institucional com React JS e Spring Boot, com captura de leads, router, docker. login e sistema adm (em desenvolvimento)
+Este é um site institucional da concessionária com funcionalidade de captura de leads, desenvolvido com React JS para a camada de frontend e Spring Boot para a camada de backend. O banco de dados utilizado é o MySQL e toda a aplicação está conteinerizada com Docker. A hospedagem é feita na Vercel para a camada frontend e no Railway para a API backend. Em resumo, é uma aplicação moderna, escalável e eficiente na captura de leads que utiliza as principais stacks do mercado.
+
+## Status
+![BADGE](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)
+![BADGE](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+
 
 Ver online
 [versel app](https://webmotors-lspf9m5d3-andre-bandeli.vercel.app/)
-
-![Captura de tela de 2023-02-02 20-10-30](https://user-images.githubusercontent.com/87938869/216471815-57ab5765-6e0e-4900-a33b-ec9bac36cac7.png)
 
 
 
