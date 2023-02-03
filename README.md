@@ -73,23 +73,20 @@ Nesse momento, estamos com nossa aplicação backend (server) disponivel em noss
 Objeto JSON para autenticação/criação de usuário no banco de dados:
 
     {
-        "nome": " ",
-        "sobrenome": "",
-        "email" : "",
-        "password": ""
+        "nome_modelo": " ",
+        "marca": "",
+        "preco" : "",
+        "descricao": ""
     }
 
 Criar nova conta de usuário:
 
-    POST: localhost:8080/api/v1/auth/register
+    GET: localhost:8085/api/v1/moto/list
 
 Autenticar-se:
 
-    POST: localhost:8080/api/v1/auth/autheticate
+    GET: localhost:8085/api/v1/moto/list/{id}
 
-Página inicial (requer autenticação):
-
-    GET: localhost:8080/api/v1/home
 
 
 ## 📛 Page Speed
