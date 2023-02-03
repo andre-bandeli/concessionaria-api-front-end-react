@@ -1,13 +1,21 @@
 import React from 'react'
 import './produtos.scss'
 import { useEffect, useState } from 'react';
-import moto from './carro.png'
+import carro from './carro.webp'
+import carro2 from './carro2.jpeg'
+import carro3 from './carro3.png'
+import carro4 from './carro4.png'
+import carro5 from './carro5.png'
+import carro6 from './carro6.png'
+import carro7 from './carro7.png'
 import { Link } from "react-router-dom";
 
 import PortfolioList from './ProdutosCategoriaList';
 
 export default function Produtos() {
 
+
+    const imagens = [carro, carro2, carro3, carro4, carro5, carro6, carro7];
 
     const[produto,setProduto]=useState([])
     const [selected, setSelected] = useState("motos");
@@ -38,35 +46,35 @@ export default function Produtos() {
     useEffect(() => {
         switch (selected) {
             case "motos":
-                fetch('http://127.0.0.1:8085/api/v1/moto/list')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "yamaha":
-                fetch('http://127.0.0.1:8085/api/v1/moto/list/yamaha')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/yamaha')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "honda":
-                fetch('http://127.0.0.1:8085/api/v1/moto/list/honda')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/honda')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "bmw":
-                fetch('http://127.0.0.1:8085/api/v1/moto/list/bmw')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/bmw')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             default:
-                fetch('http://127.0.0.1:8085/api/v1/moto/list')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
@@ -115,7 +123,7 @@ export default function Produtos() {
                     <div className="box">
 
                         <div className="imagem">
-                                <img src={moto} alt="" />
+                                <img src={imagens[Math.floor(Math.random() * imagens.length)]} alt="" />
                         </div>
                         <div className="marca">
                             <h3>{produto.marca}</h3>
