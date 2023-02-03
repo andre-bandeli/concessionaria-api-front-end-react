@@ -1,22 +1,20 @@
 import React from 'react'
-import './produtos.scss'
+import '../../../components/produtos/produtos.scss'
 import { useEffect, useState } from 'react';
-import moto from '../../../components/assets/images/produtos/moto.png'
-import moto1 from '../../../components/assets/images/produtos/moto1.jpg'
-import moto2 from '../../../components/assets/images/produtos/moto2.jpg'
-import moto3 from '../../../components/assets/images/produtos/moto3.jpg'
-import moto4 from '../../../components/assets/images/produtos/moto4.webp'
-import moto5 from '../../../components/assets/images/produtos/moto5.jpg'
+import moto from '../../../components/produtos/assets/moto.webp'
+import moto1 from '../../../components/produtos/assets/moto1.webp'
+import moto4 from '../../../components/produtos/assets/moto4.webp'
 import { Link } from "react-router-dom";
 
-import PortfolioList from './ProdutosCategoriaList';
+import ProdutoCategoriaList from '../../../components/produtos/ProdutosCategoriaList'
+
 
 export default function Produtos() {
 
     const[produto,setProduto]=useState([])
     const [selected, setSelected] = useState("motos");
 
-    const imagens = [moto, moto1, moto2, moto3, moto4, moto5];
+    const imagens = [moto, moto1, moto4];
 
     const [currentPage, setCurrentPage] = useState(1);
     const [perPage] = useState(12);
@@ -91,11 +89,11 @@ export default function Produtos() {
 
 
   return (
-    <div className="produtos" id='produtos'>
+    <div className="produtosIndex" id='produtos'>
 
-        <div className="containerProdutos">
+        <div className="containerProdutosIndex">
 
-            <div className="titleProdutos">
+            <div className="titleProdutosIndex">
 
                 <h2>Motocicletas</h2>
                 <h3>Confira alguns de nossos modelos disponíveis</h3>
@@ -104,7 +102,7 @@ export default function Produtos() {
             <div className='filterProdutos'>
                 <ul>
                     {list.map((item) => (
-                    <PortfolioList
+                    <ProdutoCategoriaList
                         title={item.title}
                         active={selected === item.id}
                         setSelected={setSelected}
@@ -114,15 +112,16 @@ export default function Produtos() {
                 </ul>
             </div>
            
-            <div className="product">
+            <div className="productIndex">
 
                 {currentProdutos.map(produto=>(
 
-                    <div className="box">
+                    <div className="boxIndex">
 
                         <div className="imagem">
                                 <img src={imagens[Math.floor(Math.random() * imagens.length)]}  alt="" />
                         </div>
+                        <div className="infos">
                         <div className="marca">
                             <h3>{produto.marca}</h3>
                         </div>
@@ -141,6 +140,7 @@ export default function Produtos() {
                                 
                             </Link>
                         </div>
+                    </div>
                     </div>
                 ))
                 }

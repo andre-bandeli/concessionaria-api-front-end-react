@@ -1,21 +1,19 @@
 import React from 'react'
-import './produtos.scss'
+import '../../../components/produtos/produtos.scss'
 import { useEffect, useState } from 'react';
-import carro from '../../../components/assets/images/produtos/carro.webp'
-import carro2 from '../../../components/assets/images/produtos/carro2.jpeg'
-import carro3 from '../../../components/assets/images/produtos/carro3.png'
-import carro4 from '../../../components/assets/images/produtos/carro4.png'
-import carro5 from '../../../components/assets/images/produtos/carro5.png'
-import carro6 from '../../../components/assets/images/produtos/carro6.png'
-import carro7 from '../../../components/assets/images/produtos/carro7.png'
+import carro from '../../../components/produtos/assets/carro.webp'
+import carro3 from '../../../components/produtos/assets/carro3.webp'
+import carro4 from '../../../components/produtos/assets/carro4.webp'
+import carro5 from '../../../components/produtos/assets/carro5.webp'
+import carro6 from '../../../components/produtos/assets/carro6.webp'
+import carro7 from '../../../components/produtos/assets/carro7.webp'
 import { Link } from "react-router-dom";
-
-import PortfolioList from './ProdutosCategoriaList';
+import ProdutoCategoriaList from '../../../components/produtos/ProdutosCategoriaList'
 
 export default function Produtos() {
 
 
-    const imagens = [carro, carro2, carro3, carro4, carro5, carro6, carro7];
+    const imagens = [carro, carro3, carro4, carro5, carro6, carro7];
 
     const[produto,setProduto]=useState([])
     const [selected, setSelected] = useState("motos");
@@ -30,16 +28,16 @@ export default function Produtos() {
         title: "Todas as categorias",
         },
         {
-        id: "yamaha",
-        title: "Yamaha",
-        },
-        {
         id: "honda",
         title: "Honda",
         },
         {
         id: "bmw",
-        title: "BMW Motorrad",
+        title: "BMW",
+        },
+        {
+        id: "audi",
+        title: "Audi",
         },
     ];
 
@@ -92,72 +90,74 @@ export default function Produtos() {
 
 
 
-  return (
-    <div className="produtos" id='produtos'>
-
-        <div className="containerProdutos">
-
-            <div className="titleProdutos">
-
-                <h2>Carros</h2>
-                <h3>Confira alguns de nossos modelos disponíveis</h3>
-
+    return (
+        <div className="produtosIndex" id='produtos'>
+    
+            <div className="containerProdutosIndex">
+    
+                <div className="titleProdutosIndex">
+    
+                    <h2>Veículos</h2>
+                    <h3>Confira alguns de nossos modelos disponíveis</h3>
+    
+                </div>
+                <div className='filterProdutos'>
+                    <ul>
+                        {list.map((item) => (
+                        <ProdutoCategoriaList
+                            title={item.title}
+                            active={selected === item.id}
+                            setSelected={setSelected}
+                            id={item.id}
+                        />
+                        ))}
+                    </ul>
+                </div>
+               
+                <div className="productIndex">
+    
+                    {currentProdutos.map(produto=>(
+    
+                        <div className="boxIndex">
+    
+                            <div className="imagem">
+                                    <img src={imagens[Math.floor(Math.random() * imagens.length)]}  alt="" />
+                            </div>
+                            <div className="infos">
+                            <div className="marca">
+                                <h3>{produto.marca}</h3>
+                            </div>
+                            <div className="modelo">
+                                <h2>{produto.nome_modelo}</h2>
+                            </div>
+                            <div className="preco">
+                                <h3>A partir de <span>R$ {produto.preco}</span></h3>
+                                <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
+                            </div>
+                            <div className="condicoes">
+                                    <Link to={`/produto/${produto.id}`}>
+                                    <button>
+                                        ver detalhes
+                                    </button>
+                                    
+                                </Link>
+                            </div>
+                        </div>
+                        </div>
+                    ))
+                    }
+                  
+                </div>
+    
+                <Pagination
+                    perPage={perPage}
+                    totalProdutos={produto.length}
+                    paginate={paginate}
+                />
             </div>
-            <div className='filterProdutos'>
-                <ul>
-                    {list.map((item) => (
-                    <PortfolioList
-                        title={item.title}
-                        active={selected === item.id}
-                        setSelected={setSelected}
-                        id={item.id}
-                    />
-                    ))}
-                </ul>
-            </div>
-           
-            <div className="product">
-
-                {currentProdutos.map(produto=>(
-
-                    <div className="box">
-
-                        <div className="imagem">
-                                <img src={imagens[Math.floor(Math.random() * imagens.length)]} alt="" />
-                        </div>
-                        <div className="marca">
-                            <h3>{produto.marca}</h3>
-                        </div>
-                        <div className="modelo">
-                            <h2>{produto.nome_modelo}</h2>
-                        </div>
-                        <div className="preco">
-                            <h3>A partir de <span>R$ {produto.preco}</span></h3>
-                            <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                        </div>
-                        <div className="condicoes">
-                                <Link to={`/produto/${produto.id}`}>
-                                <button>
-                                    ver detalhes
-                                </button>
-                                
-                            </Link>
-                        </div>
-                    </div>
-                ))
-                }
-              
-            </div>
-
-            <Pagination
-                perPage={perPage}
-                totalProdutos={produto.length}
-                paginate={paginate}
-            />
+    
         </div>
-
-    </div>
-  )
+    )
 }
 
 const Pagination = ({ perPage, totalProdutos, paginate }) => {

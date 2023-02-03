@@ -3,7 +3,9 @@
 
     width: 100%;
     height: auto;
-    margin-top: 10vh;
+    margin-top: 15vh;
+    font-family: 'Montserrat', sans-serif;
+
 
     .title {
         width: 100%;
@@ -17,6 +19,13 @@
             font-size: 20px;
             font-weight: 300;
             margin-left: 10vh;
+        }
+
+        @media (max-width: 300px) {
+            h2 {
+                font-size: 27px;
+
+            }
         }
     }
 

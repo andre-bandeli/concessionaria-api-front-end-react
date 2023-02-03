@@ -4,7 +4,7 @@ import './produtosCategoriaList.scss'
 export default function ProdutosCategoriaList({ id, title, active, setSelected }) {
     return (
       <li
-        className={active ? "portfolioList active" : "portfolioList"}
+        className={active ? "produtoIndexList active" : "produtoIndexList"}
         onClick={() => setSelected(id)}
       >
         {title}

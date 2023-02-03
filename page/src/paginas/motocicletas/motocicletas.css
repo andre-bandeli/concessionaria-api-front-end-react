@@ -2,7 +2,7 @@
 
 .motocicletas {
     width: 100%;
-    height: auto;
+    height: 70vh;
     position: absolute;
     display: inline-block;
 }

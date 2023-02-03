@@ -1,15 +1,33 @@
-
-
-.produtos {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,600;0,700;1,200;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,800&display=swap');
+.produtosIndex {
     width: 100%;
     height: auto;
     margin-top: 10vh;
+    font-family: 'Montserrat', sans-serif;
 
-    .containerProdutos {
+
+    .containerProdutosIndex {
         width: 100%;
         height: 100%;
         display: inline-block;
         margin-left: 0vh;
+
+        .pagination {
+            
+            margin-top: 5vh;
+            ul {
+                width: auto;
+                margin: auto;
+                display: flex;
+            
+                li {
+                    margin-left: 0vh;
+                    list-style: none;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            }
+       }
 
         .filterProdutos {
             width: 90%;
@@ -18,6 +36,7 @@
             h2 {
                 margin-left: 3vh;
                 font-size: 40px;
+                
             }
 
             .menu {
@@ -69,14 +88,14 @@
                 li {
                     margin-left: 0vh;
                     list-style: none;
-                    font-size: 20px;
+                    font-size: 18px;
                     cursor: pointer;
                 }
 
             }
         }
 
-        .titleProdutos {
+        .titleProdutosIndex {
             width: 90%;
             margin: auto;
             text-align: left;
@@ -106,7 +125,7 @@
             }
         }
 
-        .product {
+        .productIndex {
             width: 90%;
             margin: auto;
             height: auto;
@@ -114,92 +133,114 @@
             flex-wrap: wrap;
             margin-top: 25px;
 
-            .box {
+            .boxIndex {
                 width: 22%;
                 height: 450px;
                 margin: auto;
                 margin-top: 5vh;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                background-color: #f6f3fa;
+                border: none;
+                display: inline-block;
+
+                .infos {
+                    width: 100%;
+                    height: 50%;
+                    margin: 0 0;
+                    padding: 0;
+                    border: none;
+                    background-color: rgb(255, 255, 255);
+
+                    .marca {
+                        margin-left: 0vh;
+                        height: 2vh;
+                        margin-top: 0;
+                        text-align: left;
+                        align-items: center;
+                        background-color: white;
+    
+                        h3 {
+                            margin-top: 10px;
+                            font-weight: 200;
+                            font-size: 18px;
+                            margin-left: 2vh;
+                            height: 100%;
+                            padding: 0;
+                            position: absolute;
+                            
+                        }
+
+                    }
+                    .modelo {
+                        width: 100%;
+                        height: 2.5vh;
+                        margin-top: 0vh;
+                        display: inline;
+                        background-color: white;
+    
+                        h2 {
+                            margin-left: 2vh;
+                            font-weight: 500;
+                            font-size: 25px;
+                            margin-top: 2vh;
+                            height: 25px;
+                            text-align: left;
+                        }
+                    }
+                    .preco {
+    
+                        h3 {
+                            font-weight: 100;
+                            margin-left: 2vh;
+                            margin-top: 2vh;
+                            font-size: 20px;
+    
+                            span {
+                                font-weight: 300;
+                            }
+                        }
+                        h4 {
+                            width: 90%;
+                            font-size: 14px;
+                            margin-left: 2vh;
+                            margin-top: 1vh;
+                            font-weight: 100;
+                        }
+                    }
+                    .condicoes {
+                        width: 50%;
+                        margin-top: 2vh;
+                        height: 4vh;
+                        display: flex;
+                        
+                        a {
+                            width: 100%;
+                            button {
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgb(231, 18, 18);
+                                color: whitesmoke;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+
 
                 .imagem {
                     width: 100%;
-                    height: 25vh;
+                    height: 50%;
+
                     img {
                         width: 350px;
                         height: 100%;
 
                     }
                 }
-                .marca {
-             
-                    margin-left: 2vh;
-                    height: 2vh;
-                    margin-top: 0;
-                    text-align: left;
-                    align-items: center;
-
-                    h3 {
-                        margin-top: 5px;
-                        font-weight: 200;
-                        font-size: 18px;
-                        height: 100%;
-                        padding: 0;
-                        
-                    }
-                }
-                .modelo {
-                    width: 100%;
-                    height: 2.5vh;
-                    margin-top: 0vh;
-                    display: inline;
-
-                    h2 {
-                        margin-left: 2vh;
-                        font-weight: 500;
-                        margin-top: 0vh;
-                        height: 25px;
-                    }
-                }
-                .preco {
-
-                    h3 {
-                        font-weight: 100;
-                        margin-left: 2vh;
-                        margin-top: 2vh;
-                        font-size: 20px;
-
-                        span {
-                            font-weight: 300;
-                        }
-                    }
-                    h4 {
-                        width: 90%;
-                        font-size: 14px;
-                        margin-left: 2vh;
-                        margin-top: 0vh;
-                        font-weight: 100;
-                    }
-                }
-                .condicoes {
-                    width: 50%;
-                    margin-top: 2vh;
-                    height: 5vh;
-                    display: flex;
-                    
-                    a {
-                        width: 100%;
-                        button {
-                            width: 100%;
-                            height: 100%;
-                            background-color: rgb(231, 18, 18);
-                            color: whitesmoke;
-                            border: none;
-                        }
-                    }
-                }
             }
-            .box:hover {
+            .boxIndex:hover {
                 background-color: rgba(245, 245, 245, 0.233);
+                transition: .4s ease-in-out;
                 cursor: pointer;
             }
         }
@@ -209,8 +250,8 @@
 
 @media (max-width: 1440px) {
 
-    .produtos {
-        .containerProdutos {     
+    .produtosIndex {
+        .containerProdutosIndex {     
             .filterProdutos {
     
                 ul {
@@ -223,9 +264,9 @@
                     }
                 }
             }
-            .product {
+            .productIndex {
     
-                .box {
+                .boxIndex {
                     width: 250px;
                     margin-top: 5vh;
 
@@ -243,13 +284,58 @@
 
 @media (max-width: 1024px) and (max-height: 600px) {
 
-    .produtos {
-        .containerProdutos {     
+    .produtosIndex {
+        .containerProdutosIndex {     
 
-            .product {    
-                .box {
+            .productIndex {    
+                .boxIndex {
                     height: 370px;
                     margin-top: 5vh;
+                }
+            }
+        }
+    }        
+}
+
+
+@media (max-width: 550px) {
+
+    .produtosIndex {
+        .containerProdutosIndex {     
+            .filterProdutos {
+    
+                ul {    
+                    display: flex;
+                    align-items: center;
+                    li {
+                        margin-left: 0;
+                        margin-top: 0;
+                        height: 30px;
+                        border-radius: 5px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .productIndex {
+                .boxIndex {
+                    width: 250px;
+                    margin-top: 2vh;
+
+                    .infos {
+                        margin-top: 0vh;
+
+                        .marca {
+    
+                            h3 {
+                                margin-top: 1vh;
+                            }
+                        }
+                    }
+                    .imagem {
+                        img {
+                           width: 250px;
+                        }
+                    }
                 }
             }
         }

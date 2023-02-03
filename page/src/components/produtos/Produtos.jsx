@@ -1,16 +1,14 @@
 import React from 'react'
 import './produtos.scss'
 import { useEffect, useState } from 'react';
-import moto from './moto.webp'
 import { Link } from "react-router-dom";
 
-import moto1 from './moto1.jpg'
-import moto2 from './moto2.jpg'
-import moto3 from './moto3.jpg'
-import moto4 from './moto4.webp'
-import moto5 from './moto5.jpg'
+import moto from './assets/moto.webp'
+import moto1 from './assets/moto1.webp'
+import moto4 from './assets/moto4.webp'
 
-import PortfolioList from './ProdutosCategoriaList';
+
+import ProdutosCategoriaList from '../../components/produtos/ProdutosCategoriaList';
 
 export default function Produtos() {
 
@@ -18,7 +16,7 @@ export default function Produtos() {
     const[produto,setProduto]=useState([])
     const [selected, setSelected] = useState("motos");
 
-    const imagens = [moto, moto1, moto2, moto3, moto4, moto5];
+    const imagens = [moto, moto1, moto4];
 
 
     const list = [
@@ -123,11 +121,11 @@ export default function Produtos() {
 
 
   return (
-    <div className="produtos" id='produtos'>
+    <div className="produtosIndex" id='produtos'>
 
-        <div className="containerProdutos">
+        <div className="containerProdutosIndex">
 
-            <div className="titleProdutos">
+            <div className="titleProdutosIndex">
 
                 <h2>Motocicletas</h2>
                 <h3>Confira alguns de nossos modelos disponíveis</h3>
@@ -136,7 +134,7 @@ export default function Produtos() {
             <div className='filterProdutos'>
                 <ul>
                     {list.map((item) => (
-                    <PortfolioList
+                    <ProdutosCategoriaList
                         title={item.title}
                         active={selected === item.id}
                         setSelected={setSelected}
@@ -146,33 +144,36 @@ export default function Produtos() {
                 </ul>
             </div>
            
-            <div className="product">
+            <div className="productIndex">
 
             {produto.slice(0, 8).map(produto=>(
 
-                <div className="box">
+                <div className="boxIndex">
 
                     <div className="imagem">
                             <img src={imagens[Math.floor(Math.random() * imagens.length)]} alt="" />
                     </div>
-                    <div className="marca">
-                        <h3>{produto.marca}</h3>
+                    <div className="infos">
+                        <div className="marca">
+                            <h3>{produto.marca}</h3>
+                        </div>
+                        <div className="modelo">
+                            <h2>{produto.nome_modelo}</h2>
+                        </div>
+                        <div className="preco">
+                            <h3>A partir de <span>R$ {produto.preco}</span></h3>
+                            <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
+                        </div>
+                        <div className="condicoes">
+                                <Link to={`/produto/${produto.id}`}>
+                                <button>
+                                    ver detalhes
+                                </button>
+                                
+                            </Link>
+                        </div>
                     </div>
-                    <div className="modelo">
-                        <h2>{produto.nome_modelo}</h2>
-                    </div>
-                    <div className="preco">
-                        <h3>A partir de <span>R$ {produto.preco}</span></h3>
-                        <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
-                    </div>
-                    <div className="condicoes">
-                            <Link to={`/produto/${produto.id}`}>
-                            <button>
-                                ver detalhes
-                            </button>
-                            
-                        </Link>
-                    </div>
+
                 </div>
             ))
             }

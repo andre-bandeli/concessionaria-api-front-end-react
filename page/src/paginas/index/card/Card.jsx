@@ -7,7 +7,7 @@ import carro from '../../../components/assets/images/carro.webp'
 
 export default function Card() {
   return (
-    <div className='card'>
+    <div className='cardIndex'>
         <div className="cardContainer">
             <div className="cardBoxContainerLeft">
 

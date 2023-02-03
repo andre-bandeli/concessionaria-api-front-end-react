@@ -10,7 +10,7 @@ export const primeiroSlide = [
       imgAlt: 'Primeiro slider: imagem de um carro cinza em uma estrada como background',
       primeiroTexto: 'Concessionária Autorizada',
       span: "WEB MOTORS",
-      segundoTexto: 'Experimente a liberdade da estrada com um carro ou moto novo. Escolha entre uma ampla seleção de modelos à sua disposição.'
+      segundoTexto: 'Experimente a liberdade da estrada com um carro ou moto novo.'
     },
     {
         id: 2,
@@ -26,6 +26,6 @@ export const primeiroSlide = [
         imgAlt: 'Terceiro slider: imagem de um carro branco em uma estrada como background',
         primeiroTexto: 'Concessionária Autorizada',
         span: "WEB MOTORS",
-        segundoTexto: 'Transforme sua viagem em uma experiência única com um carro de alta qualidade. Escolha agora mesmo.'
+        segundoTexto: 'Transforme sua viagem em uma experiência única com um carro de alta qualidade.'
     }
 ];

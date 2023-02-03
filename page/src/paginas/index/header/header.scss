@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,600;0,700;1,200;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,800&display=swap');
 
 .carouselContainer {
     height: 95vh;
@@ -30,24 +28,39 @@
                 z-index: 0;
     
                 h2 {
-                    color: var(--light-color);
-                    font-size: 30px;
+                    color: rgb(139, 139, 136);
+                    font-size: 28px;
                     font-weight: 400;
+                    font-style: italic;
+                    margin-left: 2vh;
                     font-family: var(--font-primary);
+                    font-family: 'Montserrat', sans-serif;
+     
         
                     span {
                         color: var(--primary-color);
                         font-size: 80px;
-                        font-weight: 700;
+                        font-weight: 600;
                         font-family: var(--font-primary);
+                        font-family: 'Josefin Sans', sans-serif;
+                        margin-left: -2vh;
                     }
                 }
         
                 h3 {
-                    color: var(--dark-color);
+                    font-family: 'Montserrat', sans-serif;
+                    color: rgb(194, 192, 192);
                     font-size: 25px;
-                    font-weight: 300;
-                    width: 80%;
+                    margin-left: 1vh;
+                    font-weight: 400;
+                    line-height: 35px;
+                    width: 60%;
+                }
+
+                @media (max-width: 550px) {
+                    h3 {
+                        line-height: normal;
+                    }
                 }
                 button {
                     background-color: var(--background-color);
@@ -68,6 +81,12 @@
                         font-weight: bolder;
                         text-decoration: none;
                         font-family: var(--font-primary);
+                    }
+                }
+
+                @media (max-width: 300px) {
+                    button {
+                        width: 150px;
                     }
                 }
                 button:hover {
@@ -171,9 +190,6 @@
                                 font-size: 70px;
                             }
                         }
-                        h3 {
-                            width: 70%;
-                        }
                     }   
                 }   
             }
@@ -207,13 +223,13 @@
 @media (max-width: 768px) {
     .headerContainer {
 
-        height: 50vh;
+        height: 60vh;
         .carouselContainer {
-            height: 50vh;
+            height: 60vh;
             .carouselBootstrap {
  
                 .carouselItem {
-                    height: 50vh;
+                    height: 60vh;
                     .carouselItemContent, .carouselItemContent-right {
                         margin: 20vh 10vh;
                         width: calc(100% - 10vh);
@@ -225,7 +241,6 @@
                             }
                         }
                         h3 {
-                            width: 80%;
                             font-size: 18px;
                         }
                     }   
@@ -256,6 +271,9 @@
                             font-size: 18px;
                             width: 80%;
                         }
+                        button {
+                            font-size: 15px;
+                        }
                     }   
                 }   
             }
@@ -264,14 +282,14 @@
 }
 @media (max-width: 450px) {
     .headerContainer {
-        height: 50vh;
+        height: 60vh;
         .carouselContainer {
-            height: 50vh;
+            height: 60vh;
             .carouselBootstrap {
                 .carouselItem {
-                    height: 50vh;
+                    height: 60vh;
                     .carouselItemContent, .carouselItemContent-right {
-                        margin: 15vh 7vh;
+                        margin: 20vh 7vh;
                         width: calc(100% - 7vh);
                         h2 {
                             font-size: 18px;
