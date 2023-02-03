@@ -4,6 +4,12 @@ import { useEffect, useState } from 'react';
 import moto from './moto.webp'
 import { Link } from "react-router-dom";
 
+import moto1 from './moto1.jpg'
+import moto2 from './moto2.jpg'
+import moto3 from './moto3.jpg'
+import moto4 from './moto4.webp'
+import moto5 from './moto5.jpg'
+
 import PortfolioList from './ProdutosCategoriaList';
 
 export default function Produtos() {
@@ -11,6 +17,8 @@ export default function Produtos() {
 
     const[produto,setProduto]=useState([])
     const [selected, setSelected] = useState("motos");
+
+    const imagens = [moto, moto1, moto2, moto3, moto4, moto5];
 
 
     const list = [
@@ -145,7 +153,7 @@ export default function Produtos() {
                 <div className="box">
 
                     <div className="imagem">
-                            <img src={moto} alt="" />
+                            <img src={imagens[Math.floor(Math.random() * imagens.length)]} alt="" />
                     </div>
                     <div className="marca">
                         <h3>{produto.marca}</h3>

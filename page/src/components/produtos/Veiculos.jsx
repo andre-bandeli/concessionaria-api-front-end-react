@@ -1,7 +1,13 @@
 import React from 'react'
 import './produtos.scss'
 import { useEffect, useState } from 'react';
-import moto from './carro.webp'
+import carro from './carro.webp'
+import carro2 from './carro2.jpeg'
+import carro3 from './carro3.png'
+import carro4 from './carro4.png'
+import carro5 from './carro5.png'
+import carro6 from './carro6.png'
+import carro7 from './carro7.png'
 import { Link } from "react-router-dom";
 
 import PortfolioList from './ProdutosCategoriaList';
@@ -11,23 +17,25 @@ export default function Veiculos() {
     const[produto,setProduto]=useState([])
     const [selected, setSelected] = useState("motos");
 
+    const imagens = [carro, carro2, carro3, carro4, carro5, carro6, carro7];
+
 
     const list = [
         {
         id: "motos",
-        title: "Motocicletas",
+        title: "Carros",
         },
         {
         id: "yamaha",
-        title: "Yamaha",
-        },
-        {
-        id: "honda",
         title: "Honda",
         },
         {
+        id: "honda",
+        title: "Audi",
+        },
+        {
         id: "bmw",
-        title: "BMW Motorrad",
+        title: "BMW",
         },
     ];
 
@@ -143,7 +151,7 @@ export default function Veiculos() {
                 <div className="box">
 
                     <div className="imagem">
-                            <img src={moto} alt="" />
+                            <img src={imagens[Math.floor(Math.random() * imagens.length)]} alt="" />
                     </div>
                     <div className="marca">
                         <h3>{produto.marca}</h3>
