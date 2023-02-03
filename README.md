@@ -9,10 +9,7 @@ Este é um site institucional para concessionária, com funcionalidades de captu
 
 ## Website Status
 ![BADGE](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)
-![BADGE](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
-
-Ver online
 - Deploy frontend (host Vercel): [vercel app](https://webmotors-lspf9m5d3-andre-bandeli.vercel.app/)
 - Deploy backend (host Railway): [railway app](https://springboot-api-crud-java-react-production.up.railway.app/)
 
@@ -71,6 +68,35 @@ Nesse momento, estamos com nossa aplicação backend (server) disponivel em noss
  npm start
 ```
 
+## 📌 Testando requisições via Postman
+
+Objeto JSON para autenticação/criação de usuário no banco de dados:
+
+    {
+        "nome": " ",
+        "sobrenome": "",
+        "email" : "",
+        "password": ""
+    }
+
+Criar nova conta de usuário:
+
+    POST: localhost:8080/api/v1/auth/register
+
+Autenticar-se:
+
+    POST: localhost:8080/api/v1/auth/autheticate
+
+Página inicial (requer autenticação):
+
+    GET: localhost:8080/api/v1/home
+
+
+## 📛 Page Speed
+![Captura de tela de 2023-02-03 04-00-44_Easy-Resize com](https://user-images.githubusercontent.com/87938869/216533939-a66d20db-bed1-4ae8-ba94-e29abd9021f2.jpg)
+![Captura de tela de 2023-02-03 04-00-51_Easy-Resize com](https://user-images.githubusercontent.com/87938869/216533884-b80ca3ab-187b-4cb5-b843-7f39db4599ef.jpg)
+
+
 ## 🛠️ Construído com
 
 * [Java 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html) - Linguagem backend
@@ -80,10 +106,11 @@ Nesse momento, estamos com nossa aplicação backend (server) disponivel em noss
 * [Docker](https://www.docker.com/) - Virtualização open source
 
 ---
+![readme1](https://user-images.githubusercontent.com/87938869/216533301-b2e188f1-da7b-48c4-8f33-5af86097eb75.jpg)
+![readme2](https://user-images.githubusercontent.com/87938869/216533290-1836046c-b056-427f-9f4c-814fd9e38d57.jpg)
+![readme3](https://user-images.githubusercontent.com/87938869/216533342-bcd23629-cd13-42d9-9618-62084b97aad1.jpg)
 
-![img](https://user-images.githubusercontent.com/87938869/216098311-a4418764-c60e-4443-8bd3-2a48b0f478a8.jpg)
 
 
-![1](https://user-images.githubusercontent.com/87938869/206381428-382adc8d-787f-429c-8a8c-6e82c02dd719.jpg)
-![2](https://user-images.githubusercontent.com/87938869/206381444-f98c15d5-0e85-4777-93a3-716d74c54ae5.jpg)
-![3](https://user-images.githubusercontent.com/87938869/206381459-959f305c-2fd5-46ce-a917-8bc9b9d960f8.jpg)
+
+
