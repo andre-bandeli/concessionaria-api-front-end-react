@@ -1,24 +1,31 @@
-export const slidesData = [
+
+import primeiraImagem from '../../../components/assets/images//primeiraImagemSlider.webp'
+import segundaImagem from '../../../components/assets/images/segundaImagemSlider.webp'
+import terceiraimagem from '../../../components/assets/images/terceiraImagemSlider.jpg'
+
+export const primeiroSlide = [
     {
       id: '1',
-      imgSrc: './vw.jpg',
+      imgSrc: primeiraImagem,
       imgAlt: 'Primeiro slider: imagem de um carro cinza em uma estrada como background',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minus labore debitis'
+      primeiroTexto: 'Concessionária Autorizada',
+      span: "WEB MOTORS",
+      segundoTexto: 'Experimente a liberdade da estrada com um carro ou moto novo. Escolha entre uma ampla seleção de modelos à sua disposição.'
     },
-  ];
-
-  export const slidesData2 = [
-  {
-    id: 2,
-    imgSrc:'./bmw2.jpg',
-    imgAlt: 'Segundo slider: imagem de um carro preto em uma estrada como background',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minus labore debitis'
-  },
-  ];
-  export const slidesData3 = [
-  {
-    id: 3,
-    imgSrc:'./bmw.jpg',
-    imgAlt: 'Terceiro slider: imagem de um carro branco em uma estrada como background',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro minus labore debitis'
-  },];
+    {
+        id: 2,
+        imgSrc: segundaImagem,
+        imgAlt: 'Segundo slider: imagem de um carro preto em uma estrada como background',
+        primeiroTexto: 'Concessionária Autorizada',
+        span: "WEB MOTORS",
+        segundoTexto: 'Dirija o futuro. Descubra uma ampla variedade de opções de carros e motos à sua disposição'
+    },
+    {
+        id: 3,
+        imgSrc:terceiraimagem,
+        imgAlt: 'Terceiro slider: imagem de um carro branco em uma estrada como background',
+        primeiroTexto: 'Concessionária Autorizada',
+        span: "WEB MOTORS",
+        segundoTexto: 'Transforme sua viagem em uma experiência única com um carro de alta qualidade. Escolha agora mesmo.'
+    }
+];

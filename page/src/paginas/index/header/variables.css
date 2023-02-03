@@ -8,4 +8,9 @@
     --background-color: rgba(0, 0, 0, 0.363);
     --font-primary: 'Open Sans', sans-serif;
     --font-secondary:  'Raleway', sans-serif;
+
+    /* buttons */
+    --color-font-button-white: rgb(219, 210, 210);
+    --background-hover-dark-button: rgba(0, 0, 0, 0.658);
+
 }
