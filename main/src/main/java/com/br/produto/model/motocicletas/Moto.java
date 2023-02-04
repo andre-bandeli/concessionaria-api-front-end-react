@@ -20,16 +20,29 @@ public class Moto {
 
     private String descricao;
 
-    //imagem convertida para base64
-    //@Lob
-    //private byte[] imagem;
+    private String quilometragem;
 
-    public Moto(Long id, String nome_modelo, String marca, Double preco, String descricao) {
+    private String ano;
+
+    private String injecaoEletronica;
+
+    private String freio;
+
+    private String cilindradas;
+
+    public Moto(Long id, String nome_modelo, String marca, Double preco, String descricao,
+                String quilometragem, String ano, String injecaoEletronica,
+                String freio, String cilindradas) {
         this.id = id;
         this.nome_modelo = nome_modelo;
         this.marca = marca;
         this.preco = preco;
         this.descricao = descricao;
+        this.quilometragem = quilometragem;
+        this.ano = ano;
+        this.injecaoEletronica = injecaoEletronica;
+        this.freio = freio;
+        this.cilindradas = cilindradas;
     }
 
     public Moto() {
@@ -75,11 +88,43 @@ public class Moto {
         this.descricao = descricao;
     }
 
-//    public byte[] getImagem() {
-//        return imagem;
-//    }
-//
-//    public void setImagem(byte[] imagem) {
-//        this.imagem = imagem;
-//    }
+    public String getQuilometragem() {
+        return quilometragem;
+    }
+
+    public void setQuilometragem(String quilometragem) {
+        this.quilometragem = quilometragem;
+    }
+
+    public String getAno() {
+        return ano;
+    }
+
+    public void setAno(String ano) {
+        this.ano = ano;
+    }
+
+    public String getInjecaoEletronica() {
+        return injecaoEletronica;
+    }
+
+    public void setInjecaoEletronica(String injecaoEletronica) {
+        this.injecaoEletronica = injecaoEletronica;
+    }
+
+    public String getFreio() {
+        return freio;
+    }
+
+    public void setFreio(String freio) {
+        this.freio = freio;
+    }
+
+    public String getCilindradas() {
+        return cilindradas;
+    }
+
+    public void setCilindradas(String cilindradas) {
+        this.cilindradas = cilindradas;
+    }
 }

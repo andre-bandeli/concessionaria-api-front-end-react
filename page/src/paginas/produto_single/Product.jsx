@@ -14,7 +14,7 @@ export default function Product() {
     const[produto,setProduto]=useState([]);
 
     const { id } = useParams();
-    const url = `http://127.0.0.1:8085/api/v1/moto/${id}`;
+    const url = `https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/${id}`;
 
     useEffect(()=>{
         fetch(url)
@@ -80,75 +80,19 @@ export default function Product() {
           </div>
         </div>
 
-        <div className="ficha">
-          <h2>Ficha Técnica</h2>
-            <div className="containerFichaTecnica">
-              <ul>
-                <ul className='ul-dark'>
-                    <li className='li-nome-coluna'>
-                      <h2>Modelo</h2>
-
-                    </li>
-                    <li>
-                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
-                        
-                    </li>
-                </ul>
-                <ul className='ul-dark'>
-                    <li className='li-nome-coluna'>
-                      <h2>Ano</h2>
-                    </li>
-                    <li>
-                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
-                    </li>
-                </ul>
-                <ul className='ul-dark'>
-                    <li className='li-nome-coluna'>
-                        <h2>Cilindradas</h2>
-                    </li>
-                    <li>
-                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
-                    </li>
-                </ul>
-                <ul className='ul-dark'>
-                    <li className='li-nome-coluna'>
-                      <h2>KM</h2>
-                    </li>
-                    <li>
-                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
-                    </li>
-                </ul>
-                <ul className='ul-dark'>
-                    <li className='li-nome-coluna'>
-                       <h2>KM</h2>
-                    </li>
-                    <li>
-                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
-                    </li>
-                </ul>
-                <ul className='ul-dark'>
-                    <li className='li-nome-coluna'>
-                      <h2>KM</h2>
-                    </li>
-                    <li>
-                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
-                    </li>
-                </ul>
-                <ul className='ul-dark'>
-                    <li className='li-nome-coluna'>
-                      <h2>KM</h2>
-                    </li>
-                    <li>
-                      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum, architecto quia ab nihil quo molestias.</h3>
-                    </li>
-                </ul>
-               
-              </ul>
-            </div>
-        </div>
-
         <div className="iframe">
         <iframe src="https://www.youtube.com/embed/lGbla9PCJN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div className="descricao">
+          <div className="container-descricao">
+            <div className="box-text">
+
+            </div>
+            <div className="box-imagem">
+
+            </div>
+          </div>
         </div>
     </div>
   )
