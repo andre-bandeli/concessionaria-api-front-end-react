@@ -24,14 +24,14 @@ public class Moto {
 
     private String ano;
 
-    private String injecaoEletronica;
+    private String injecao_eletronica;
 
     private String freio;
 
     private String cilindradas;
 
     public Moto(Long id, String nome_modelo, String marca, Double preco, String descricao,
-                String quilometragem, String ano, String injecaoEletronica,
+                String quilometragem, String ano, String injecao_eletronica,
                 String freio, String cilindradas) {
         this.id = id;
         this.nome_modelo = nome_modelo;
@@ -40,7 +40,7 @@ public class Moto {
         this.descricao = descricao;
         this.quilometragem = quilometragem;
         this.ano = ano;
-        this.injecaoEletronica = injecaoEletronica;
+        this.injecao_eletronica = injecao_eletronica;
         this.freio = freio;
         this.cilindradas = cilindradas;
     }
@@ -105,11 +105,11 @@ public class Moto {
     }
 
     public String getInjecaoEletronica() {
-        return injecaoEletronica;
+        return injecao_eletronica;
     }
 
     public void setInjecaoEletronica(String injecaoEletronica) {
-        this.injecaoEletronica = injecaoEletronica;
+        this.injecao_eletronica = injecao_eletronica;
     }
 
     public String getFreio() {
