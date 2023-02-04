@@ -62,7 +62,6 @@
             background-color: rgba(12, 12, 12, 0.89);
 
             .menu {
-               
                 height: 40px;
                 margin: auto;
                 margin-left: 19vh;
@@ -73,9 +72,7 @@
                 a {
                     text-decoration: none;
                     color: rgb(36, 33, 33);
-                
                 }
-
                 h2 {
                     width: auto;
                     text-align: left;
@@ -102,8 +99,6 @@
                 color: white;
                 font-size: 20px;
                 font-family: 'Cinzel', serif;
-
-
             }
         }
 
@@ -117,355 +112,12 @@
                 font-size: 30px;
                 font-weight: bold;
             }
-
             h3 {
                 font-size: 20px;
                 font-weight: 100;
                 text-align: justify;
                 margin-bottom: 10vh;
                 line-height: 35px;
-            }
-
-            .cards-financiamento {
-                width: 100%;
-                height: 30vh;
-                display: flex;
-                margin-bottom: 10vh;
-
-                .text-f {
-                    width: 50%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-
-                    h2 {
-                        font-size: 45px;
-                        margin-left: 2vh;
-                        z-index: 20;
-                        width: 60%;
-                    }
-
-                }
-                .cards {
-                    width: 50%;
-                    height: 100%;
-                    display: flex;
-
-
-
-                    .box-f-nu {
-                        width: 30%;
-                        margin: auto;
-                        height: 100%;
-                        cursor: pointer;
-                        z-index: 20;
-                       
-
-                        .bankimage {
-                            height: 17vh;
-                            width: 100%;
-                            background-color: black;
-
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        .bankname {
-                            width: 100%;
-                            height: auto;
-                            background-color: rgba(36, 34, 34, 0.911);
-                            display: flex;
-                            text-align: right;
-                            color: whitesmoke;
-
-                            h2 {
-                                width: 100%;
-                                margin-top: 2vh;
-                                margin-left: 1vh;
-                                margin-right: 1vh;
-                                font-size: 25px;
-                            }
-                        }
-
-                        .cartao {
-
-                            position: absolute;
-                            width: 350px;
-                            height: 200px;
-                            margin-top: 50px;
-                            margin-left: -25vh;
-                            border-radius: 15px;
-                            background-image: linear-gradient(to right top, #591178, #621185, #6b1093, #750ea1, #7e0caf, #850fb9, #8d11c2, #9414cc, #9b1bd3, #a222da, #aa28e2, #b12ee9);
-                            box-shadow: rgba(50, 50, 93, 0.342) 0px 50px 100px -20px, rgba(0, 0, 0, 0.397) 0px 30px 60px -30px;
-                            z-index: 0;
-                            visibility: visible;
-                            transition: background-image 5s;
-                            
-    
-                            .line {
-                                width: 60px;
-                                height: 30%;
-                                position: absolute;
-                                img {
-                                   width: 100%;
-                                   margin-top: 2vh;
-                                   margin-left: 270px;
-                                
-                                }
-    
-                                .chip {
-                                    position: absolute;
-                                    margin-top: 60px;
-                                    margin-left: 4vh;
-                                }
-    
-                                .contorno {
-                                    position: absolute;
-                                    width: 130px;
-                                    height: 70px;
-                                    margin-top: 130px;
-                                    border-top-right-radius: 45px;
-                                    border-bottom-left-radius: 15px;
-
-
-                                    img {
-                                        width: 100%;
-                                        margin-left: 20px;
-                                        margin-top: -15px;
-                                    }
-    
-                                    .contorno-interno {
-    
-                                        width: 200px;
-                                        margin-left: 130px;
-                                        margin-top: -5vh;
-                           
-                                        h2 {
-                                            margin-top: 0px;
-                                            margin-left: 20px;
-                                            color: rgb(238, 232, 232);
-                                            font-weight: 400;
-                                            font-size: 15px;
-                                        }
-                                    }
-                                    .circle-master {
-                                        width: 60px;
-                                        height: 30px;
-                                        position: absolute;
-                                        z-index: 1;
-                                        margin-left: 190px;
-                                        margin-top: 2vh;
-                                        border-radius: 50%;
-    
-                                        img {
-                                            width: 100%;
-                                            height: 100%;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                     .box-f-nu:hover {
-                        
-                         .cartao {
-                             background-image: linear-gradient(to right top, #3b3f42, #28424b, #0a2928, #193425, #2e3718);  
-                             
-                         }
-                    } 
-                    .box-f-it {
-                        width: 30%;
-                        margin: auto;
-                        height: 100%;
-                        cursor: pointer;
-                        z-index: 15;
-
-                        .bankimage {
-                            height: 17vh;
-                            width: 100%;
-                            background-color: black;
-
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        .bankname {
-                            width: 100%;
-                            height: auto;
-                            background-color: rgba(36, 34, 34, 0.911);
-                            display: flex;
-                            text-align: left;
-                            color: whitesmoke;
-
-                            h2 {
-                                width: 100%;
-                                margin-top: 2vh;
-                                margin-left: 1vh;
-                                font-size: 25px;
-                                
-                            }
-                        }
-
-                        .cartao {
-
-                            position: absolute;
-                            width: 355px;
-                            height: 200px;
-                            margin-top: 50px;
-                            margin-left: -50vh;
-                            border-radius: 15px;
-                            box-shadow: rgba(50, 50, 93, 0.247) 0px 50px 100px -20px, rgba(0, 0, 0, 0.397) 0px 30px 60px -30px;
-                            z-index: 0;
-                            visibility: hidden;
-                            transition: background-image 5s ease-in-out;
-    
-                            .line {
-                                height: 30%;
-                                img {
-                                    margin-top: 2vh;
-                                    margin-left: 2vh;
-                                    width: 50px;
-                                    height: 50px;
-                                }
-    
-                                .chip {
-                                    margin-left: 250px;
-                                }
-    
-                                .contorno {
-                                    width: 100px;
-                                    height: 80px;
-                                    border-top-right-radius: 45px;
-                                    border-bottom-left-radius: 15px;
-                                    background-color: rgba(0, 0, 0, 0.281);
-    
-                                    .contorno-interno {
-    
-                                        width: 140px;
-                                        height: 55px;
-                                        border-top-right-radius: 35px;
-                                        border-bottom-left-radius: 15px;
-                                        margin-top: 25px;
-                                        position: absolute;
-                                        background-color: rgba(0, 0, 0, 0.555);
-    
-                                        h2 {
-                                            margin-top: 10px;
-                                            margin-left: 20px;
-                                            color: rgb(238, 232, 232);
-                                            font-weight: 400;
-                                        }
-                                    }
-                                    .circle-master {
-                                        width: 60px;
-                                        height: 30px;
-                                        position: absolute;
-                                        z-index: 1;
-                                        margin-left: 230px;
-                                        margin-top: 2vh;
-                                        border-radius: 50%;
-    
-                                        img {
-                                            width: 100%;
-                                            height: 100%;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .box-f-it:hover {
-                        z-index: 25;
-
-                        .cartao {
-                            background-image: linear-gradient(to right top, #ff4700, #fa4a06, #f54c0c, #f04f12, #eb5116, #e9551c, #e85922, #e65c27, #e7622f, #e86837, #e86e3f, #e97447);
-                            z-index: 15;
-                            visibility: visible;
-                        }
-                    }
-                    .box-f-br {
-                        width: 30%;
-                        margin: auto;
-                        height: 100%;
-                        cursor: pointer;
-                        z-index: 30;
-
-                        .bankimage {
-                            height: 17vh;
-                            width: 100%;
-                            background-color: black;
-
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                        .bankname {
-                            width: 100%;
-                            height: auto;
-                            background-color: rgba(36, 34, 34, 0.911);
-                            display: flex;
-                            text-align: left;
-                            color: whitesmoke;
-
-                            h2 {
-                                width: 100%;
-                                margin-top: 2vh;
-                                margin-left: 1vh;
-                                font-size: 25px;
-                            }
-                        }
-
-                        .cartao {
-
-                            position: absolute;
-                            width: 360px;
-                            height: 200px;
-                            margin-top: 50px;
-                            margin-left: -75vh;
-                            border-radius: 15px;
-                            background-image: linear-gradient(to right top, #0a2d7e, #442d7f, #642c7d, #7e2c79, #942e73, #a42a6d, #b32865, #c0285c, #cc1d4d, #d6173c, #dc1a26, #de2702);                            visibility: visible;
-                            box-shadow: rgba(50, 50, 93, 0.342) 0px 50px 100px -20px, rgba(0, 0, 0, 0.397) 0px 30px 60px -30px;
-                            z-index: 0;
-                            visibility: hidden;
-    
-                            .line {
-                                width: 120px;
-                                height: 30%;
-                                position: absolute;
-                                img {
-                                   width: 100%;
-                                   margin-top: 2vh;
-                                   margin-left: 3vh;
-                                
-                                }
-
-                            }
-                            .line-chip {
-                                width: 50px;
-                                position: absolute;
-                                margin-top: 80px;
-                                margin-left: 4vh;
-
-                                img {
-                                    width: 100%;
-                                }
-                                
-                            }
-                        }
-                        
-                    }
-                    .box-f-br:hover {
-                        z-index: 25;
-
-                        .cartao {
-                            visibility: visible;
-                            background-image: linear-gradient(to right top, #0a2d7e, #442d7f, #642c7d, #7e2c79, #942e73, #a42a6d, #b32865, #c0285c, #cc1d4d, #d6173c, #dc1a26, #de2702);                            visibility: visible;
-                        }
-                    }
-                }
             }
 
             .bx_box {
@@ -492,7 +144,6 @@
                         font-size: 16px;
                         font-weight: 300;
                     }
-
                 }
                 .bx:hover {
                     background-color: rgba(39, 38, 38, 0.897);
@@ -510,8 +161,6 @@
 
 
 @media (max-width: 1440px) {
-    
-
     .filterFinanceiro {
         .container-financeiro {
             .text {
@@ -525,40 +174,6 @@
                     height: auto;
                     width: 100%;
                     display: inline-block;
-                
-                    .text-f {
-                        width: 90%;
-                        margin-top: 5vh;
-                        
-                        h2 {
-                            font-size: 40px;
-                        }
-                    }
-                    .cards {
-                        width: 500px;
-                        margin: auto;
-                        margin-top: 5vh;
-                        margin-bottom: 10vh;
-                        margin-left: 40vh;
-    
-                        .box-f-nu {
-                            .cartao {
-                                margin-left: -45vh;
-                            }
-                        }
-                  
-                        .box-f-it {
-                            .cartao {
-                                margin-left: -50vh;
-                            }
-                        }
-                        .box-f-br {
-                            .cartao {
-                                margin-top: 10vh;
-                                margin-left: -80vh;
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -571,7 +186,6 @@
     .filterFinanceiro {
         .header_financeiro {
             .container-filter {
-
                 h1 {
                     width: 100%;
                     font-size: 35px;
@@ -587,7 +201,6 @@
             }
         }
         .container-financeiro {
-         
             .text {
                 .menu {
                     width: 200px;
@@ -595,92 +208,21 @@
                     margin-left: 16vh;
                 }
             }
-    
-            .box {
-                .cards-financiamento {
-                    .cards {
-                       
-                        margin-left: 30vh;
-                        margin-top: 0;
-    
-                        .box-f-nu {
-                        
-                            .cartao {
-                                width: 300px;
-                                height: 200px;
-                                margin-left: -35vh;
-        
-                                .line {
-                            
-                                    img {
-                                        margin-left: 200px;
-                                    }
-                                }
-                            }
-                        }
-                  
-                        .box-f-it {
-                     
-    
-                            .cartao {
-                                width: 300px;
-                                height: 200px;
-                                margin-left: -40vh;
-                                margin-top: 10vh;
-        
-                                .line {
-        
-                                    .chip {
-                                        margin-left: 200px;
-                                    }
-        
-                                    .contorno {
-                                       
-                                        .circle-master {
-                                            
-        
-                                            img {
-                                                margin-left: 0;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .box-f-br {
-                         
-    
-                            .cartao {
-                                width: 300px;
-                                height: 200px;
-                                margin-left: -65vh;
-        
-                            }
-                            
-                        }
-                    }
-                }
-            }
         }
-    
     }
 }
 
 
 @media (max-width: 900px) {
-    
-
     .filterFinanceiro {
         .header_financeiro {
             .container-filter {
-            
                 h1 {
                     width: 100%;
                     font-size: 35px;
                 }
                 ul {
                     width: 100%;
-    
                     li {
                       width: 200px;
                       margin-left: 2vh;
@@ -689,119 +231,18 @@
             }
         }
         .container-financeiro {
-         
             .text {
                 .menu {
                     width: 200px;
                     margin-left: 10vh;
                 }
             }
-    
             .box {
-    
                 .cards-financiamento {
-              
                     height: 85vh;
-                    
-                    .text-f {
-                        height: 40vh;
-                        display: inline-block;
-                        h2 {
-                            width: 80%;
-                            font-size: 30px;
-                            margin-top: 0;
-                        }
-    
-                    }
-                    .cards {
-
-                        margin-left: 0vh;
-                        margin-top: -25vh;
-    
-                        .box-f-nu {
-                           
-                            .bankname {
-                            
-                                h2 {
-                                 font-size: 20px;
-                                }
-                            }
-    
-                            .cartao {
-                                width: 300px;
-                                height: 200px;
-                                margin-left: 5vh;
-                                margin-top: 32vh;
-        
-                                .line {
-                            
-                                    img {
-                                        margin-left: 200px;
-                                    }
-                                }
-                            }
-                        }
-                  
-                        .box-f-it {
-                     
-                            .bankname {
-                                h2 {
-                                    font-size: 20px;
-                                    
-                                }
-                            }
-    
-                            .cartao {
-                                width: 300px;
-                                height: 200px;
-                                margin-left: 0vh;
-                                margin-top: 34vh;
-        
-                                .line {
-                            
-                                    .chip {
-                                        margin-left: 200px;
-                                    }
-        
-                                    .contorno {
-                                       
-                                        .circle-master {
-                                            
-        
-                                            img {
-                                                margin-left: 0;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    
-                        .box-f-br {
-                         
-                            .bankname {
-                               
-    
-                                h2 {
-                                    font-size: 20px;
-                                }
-                            }
-    
-                            .cartao {
-                                width: 300px;
-                                height: 200px;
-                                margin-left: -25vh;
-                                margin-top: 35vh;
-    
-                            }
-                            
-                        }
-                   
-                    }
                 }
             }
         }
-    
     }
 }
 
@@ -810,18 +251,13 @@
     
 
     .filterFinanceiro {
-       
-    
         .header_financeiro {
-            
             h1 {
                 width: 80%;
-        
             }
             .container-filter {
                 width: 80%;
-                margin-left: 0;
-                
+                margin-left: 0; 
             }
         }
         .container-financeiro {
@@ -830,112 +266,14 @@
                     margin-top: 10vh;
                     width: 200px;
                     margin-left: 7vh;
-    
                 }
             }
-    
-            .box {
-            
+            .box {   
                 .cards-financiamento {
-              
                     height: 85vh;
-                    
-                    .text-f {
-                        height: 40vh;
-                        display: inline-block;
-                        h2 {
-                            width: 80%;
-                            font-size: 30px;
-                            margin-top: 0;
-                        }
-    
-                    }
-                    .cards {
-                        height:  auto;
-                        margin-left: -2vh;
-                        margin-top: -25vh;
-                        display: flex;
-                        flex-wrap: wrap;
-                        width: 100%;
-    
-                        .box-f-nu {
-                            
-                            .bankname {
-                            
-                                h2 {
-                                 font-size: 20px;
-                                }
-                            }
-    
-                            .cartao {
-                                width: 300px;
-                                height: 200px;
-                                margin-left: 2vh;
-                                margin-top: 32vh;
-        
-                                .line {
-                            
-                                    img {
-                                        margin-left: 200px;
-                                    }
-                        
-                                }
-                            }
-                        }
-                  
-                        .box-f-it {
-                            .bankname {
-                            
-                                h2 {
-                                    font-size: 20px;   
-                                }
-                            }
-    
-                            .cartao {
-                                width: 300px;
-                                height: 200px;
-                                margin-left: -15vh;
-                                margin-top: 34vh;
-        
-                                .line {
-
-                                    .chip {
-                                        margin-left: 200px;
-                                    }
-        
-                                    .contorno {
-                                    
-                                        .circle-master {
-                                            img {
-                                                margin-left: 0;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        
-                        .box-f-br {
-                         
-                            .bankname {
-                            
-                                h2 {
-                                    font-size: 11px;
-                                }
-                            }
-    
-                            .cartao {
-                                width: 300px;
-                                height: 200px;
-                                margin-left: -25vh;
-                                margin-top: 35vh;
-                            }
-                        }
-                    }
                 }
             }
         }
-    
     }
 }
 
@@ -943,16 +281,8 @@
     
 
     .filterFinanceiro {
-    
         .header_financeiro {
- 
             .container-filter {
-              
-                h1 {
-                  
-                }
-    
-            
                 ul {
                     margin-top: 15px;
                     display: inline-block;
@@ -968,195 +298,25 @@
                     margin-left: 5vh;
                 }
             }
-    
             .box {
-            
                 .cards-financiamento {
                     display: inline-block;
                     height: 85vh;
-                    
-                    .text-f {
-                        height: 40vh;
-                        display: inline-block;
-                        h2 {
-                            width: 80%;
-                            font-size: 25px;
-                            margin-top: 0;
-                        }
-    
-                    }
-                    .cards {
-                        height:  60vh;
-                        width: 100%;
-                        margin-left: 0;
-                        margin-top: -25vh;  
-                        display: inline-block;
-    
-                        .box-f-nu {
-                            width: 200px;
-                            height: 100px;
-
-                            .bankname {
-                                visibility: hidden;
-                                h2 {
-                                 font-size: 0;
-                                }
-                            }
-    
-                            .cartao {
-                                width: 250px;
-                                height: 170px;
-                                margin-left: -2vh;
-                                margin-top: 40vh;
-        
-                                .line {
-                            
-                                    img {
-                                        margin-left: 160px;
-                                    }
-
-                                    .chip {
-                                        width: 50px;
-                                        margin-top: 6vh;
-                                        img {
-                                            width: 20px;
-                                        }
-                                    }
-
-                                    .contorno {
-                                        margin-top: 110px;
-                                        img {
-                                            width: 120px;
-                                        }
-
-                                        .contorno-interno {
-                                            h2 {
-                                                margin-left: 1vh;
-                                            }
-                                        }
-                                    }
-                        
-                                }
-                            }
-                        }
-                  
-                        .box-f-it {
-                            width: 200px;
-                            height: 100px;
-
-                            .bankname {
-                                visibility: hidden;
-                                h2 {
-                                    font-size: 0px;   
-                                }
-                            }
-    
-                            .cartao {
-                                width: 250px;
-                                height: 170px;
-                                margin-left: 0vh;
-                                margin-top: 34vh;
-        
-                                .line {
-
-                                    .chip {
-                                        margin-left: 180px;
-                                    }
-        
-                                    .contorno {
-                                        height: 7.5vh;
-                                        .circle-master {
-                                            img {
-                                                margin-left: -6vh;
-                                            }
-                                        }
-
-                                        .contorno-interno {
-                                            height: 5vh;
-
-                                            h2 {
-                                                margin-top: 1vh;
-                                                font-size: 23px;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        
-                        .box-f-br {
-                            width: 200px;
-                            height: 100px;
-
-                            .bankname {
-                                visibility: hidden;
-                                h2 {
-                                    font-size: 0px;
-                                    margin-left: 0;
-                                    visibility: hidden;
-                                }
-                            }
-    
-                            .cartao {
-                                width: 250px;
-                                height: 170px;
-                                margin-left: 0vh;
-                                margin-top: 20vh;
-                            }
-                        }
-                    }
                 }
             }
         }
-    
     }
 }
 
 
 @media (max-width: 375px) {
-    
-
     .filterFinanceiro {
-
         .container-financeiro {
-        
             .box {
-            
                 .cards-financiamento {
                     height: 120vh;
-
-                    .cards {
-                        margin-left: -5vh ;
-                        margin-top: -20vh;
-                 
-                        .box-f-nu {
-                    
-                            .cartao {
-                                margin-top: 50vh;
-                            }
-                        }
-                  
-                        .box-f-it {
-                        
-                            .cartao {
-                                
-                                margin-top: 40vh;
-                                .line {
-        
-                                    .contorno {
-                                        height: 10vh;
-
-                                        .contorno-interno {
-                                            height: 6.5vh;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
-    
     }
 }

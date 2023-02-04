@@ -1,8 +1,9 @@
 
 .duvidas {
+
     .container-duvidas {
         width: 80%;
-        height: 50vh;
+        height: auto;
         margin: auto;
         margin-top: 10vh;
         margin-bottom: 20vh;
@@ -49,10 +50,48 @@
                 h3 {
                     width: 90%;
                     margin: auto;
+                    font-size: 18px;
                     margin-bottom: 15px;
                     font-weight: 200;
                 }
 
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .duvidas {
+        .container-duvidas {
+          
+            
+            h2 {
+               
+            }
+
+            h3 {
+               
+            }
+
+            .acordion {
+                
+                .ac {
+                    
+
+                    .head {
+                        
+                        .h {
+                           font-size: 15px;
+                        }
+                        .h:hover {
+                         
+                        }
+                    }
+                    h3 {
+                       font-size: 16px;
+                    }
+
+                }
             }
         }
     }

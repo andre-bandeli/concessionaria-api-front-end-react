@@ -20,6 +20,7 @@ import {
     Financiamento,
 } from './data';
 import FilterList from './FilterList';
+import Cartoes from './Cartoes';
 
 export default function Produtos() {
 
@@ -87,97 +88,8 @@ export default function Produtos() {
                         <h2>{d.title}</h2>
                         <h3>{d.paragrafo_1}</h3>
 
-                        <div className="cards-financiamento">
-                            <div className="text-f">
-                                <h2>
-                                    TRABALHAMOS COM OS <br/><span>PRINCIPAIS BANCOS</span>
-                                </h2>
+                        <Cartoes/>
 
-                            </div>
-                            <div className="cards">
-                               
-                                    <div className="box-f-nu">
-
-                                        <div className="cartao">
-                                            <div className="line">
-                                                <img src={mastercard} alt="" />
-                                            </div>
-                                            <div className="line">
-                                                <img src={chip} alt="" className='chip'/>
-                                            </div>
-                                            <div className="line">
-                                                <div className="contorno">
-                                                    <img src={nubank} alt="" />
-                                                    <div className="contorno-interno">
-                                                        <h2>João J. Silva</h2>
-                                                    </div>
-                                                   
-                                                </div>  
-                                            </div>
-                                        </div>
-
-                                        <div className="bankimage">
-                                            <img src={Nubank} alt="" />
-                                        </div>
-                                        <div className="bankname">
-                                            <h2>Nubank <br /> Seguros</h2>
-                                        </div>
-                                       
-                                    </div>
-                                <div className="box-f-it">
-
-                                        <div className="cartao">
-                                            <div className="line">
-                                                <img src={itau} alt="" />
-                                            </div>
-                                            <div className="line">
-                                                <img src={chip} alt="" className='chip'/>
-                                            </div>
-                                            <div className="line">
-                                                <div className="contorno">
-                                                    <div className="contorno-interno">
-                                                        <h2>Click</h2>
-                                                    </div>
-                                                    <div className="circle-master">
-                                                        <img src={mastercard} alt="" />
-                                                    </div>
-                                                </div>  
-                                            </div>
-                                        </div>
-                            
-                                    <div className="bankimage">
-                                        <img src={Itau} alt="" />
-                                    </div>
-                                    <div className="bankname">
-                                        <h2>Linha de Crédito Itau</h2>
-                                    </div>
-                                    <div className="banktext">
-
-                                    </div>        
-
-                                </div>
-                                <div className="box-f-br">
-                                    <div className="cartao">
-                                                <div className="line">
-                                                    <img src={bradesco} alt="" />
-                                                </div>
-                                                <div className="line-chip">
-                                                    <img src={chip} alt=""/>
-                                                </div>
-                                               
-                                            </div>
-                                    <div className="bankimage">
-                                        <img src={Bradesco} alt="" />
-                                    </div>
-                                    <div className="bankname">
-                                        <h2>Bradesco Financiamentos</h2>
-                                    </div>
-                                    <div className="banktext">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <h3>{d.paragrafo_2}</h3>
                         <FormularioFinanciamento/>
                     </div>

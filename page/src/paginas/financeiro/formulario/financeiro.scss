@@ -6,19 +6,20 @@
     margin-bottom: 10vh;
     margin-top: 10vh;
 
-    .title {
+    .title-financeiro {
         width: 100%;
         margin: auto;
 
         h2 {
-            margin-left: 0vh;
             font-size: 30px;
             font-weight: bold;
-        }
-        h3 {
-            font-size: 20px;
-            margin-left: 0vh;
-            width: 80%;
+            text-align: left;
+
+            .spn-financeiro-title {
+                width: 100%;
+                font-weight: 300;
+                font-size: 22px;
+            }
         }
     }
 
@@ -27,6 +28,7 @@
         width: 100%;
         height: auto;
         margin: auto;
+        margin-top: 5vh;
 
 
         .forms-financeiro {
