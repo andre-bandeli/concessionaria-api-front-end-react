@@ -1,7 +1,7 @@
 
 import primeiraImagem from '../../../components/assets/images//primeiraImagemSlider.webp'
 import segundaImagem from '../../../components/assets/images/segundaImagemSlider.webp'
-import terceiraimagem from '../../../components/assets/images/terceiraImagemSlider.jpg'
+import terceiraimagem from '../../../components/assets/images/terceiraImagemSlider.webp'
 
 export const primeiroSlide = [
     {

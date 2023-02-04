@@ -58,12 +58,14 @@
     .footer .containerFooter {
             width: 100%;
             display: inline-block;
+            
     }
     .footer .containerFooter .boxFooter {
             width: 90%;
             height: auto;
             margin: auto;
-            margin-top: 5vh;
+            margin-top: 2vh;
+            padding-bottom: 10px;
     }
 }
     

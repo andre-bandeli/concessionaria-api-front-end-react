@@ -48,8 +48,8 @@
 }
 
 .box img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     display: block;
     margin: 2vh auto;
 }
@@ -67,4 +67,48 @@
     background-color: rgb(177, 169, 169);
     transition: .4s ease-in-out;
     font-weight: bolder;
+}
+
+@media (max-width: 1024px) {
+    
+    .contato-single .container-contato {
+        width: 100%;
+        height: auto;
+    }
+
+    .contato-single .container-contato .box {
+        width: 27%;
+        height: auto;
+
+    }
+
+    .box h3 {
+        min-height: 17vh;
+
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .contato-single .container-contato {
+        width: 95%;
+        margin: auto;
+        margin-top: 10vh;
+    }
+
+    .contato-single .container-contato .box {
+        width: 27%;
+        height: auto;
+    }
+
+    .box h3 {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+        min-height: 25vh;
+    }
+
+    .btn-contato {
+        width: 170px;
+    }
 }

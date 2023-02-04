@@ -27,3 +27,16 @@
 .box_sobre .box_info:hover {
         opacity: .85;
 }
+
+@media (max-width: 550px) {
+        .box_sobre {
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+        }
+        .box_sobre .box_info {
+                width: 30%;
+                margin-top: 2vh;
+                border-radius: 5px;
+        }
+}
