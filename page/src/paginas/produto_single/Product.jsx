@@ -49,19 +49,19 @@ export default function Product() {
         </div>
         <div className="especificacoes">
             <div className="box-esp"> 
-                <h3> Quilometragem: </h3>
+                <h3> Quilometragem: {produto.quilometragem} </h3>
             </div>
             <div className="box-esp">
-              <h3> Ano: </h3>
+              <h3> Ano: {produto.ano} </h3>
             </div>
             <div className="box-esp">
-              <h3> Injeção Eletrônica: </h3>
+              <h3> Injeção Eletrônica: {produto.injecao_eletronica} </h3>
             </div>
             <div className="box-esp">
-              <h3> Freio: </h3>
+              <h3> Freio: {produto.freio} </h3>
             </div>
             <div className="box-esp">
-              <h3> Cilindrada: </h3>
+              <h3> Cilindrada: {produto.cilindradas}</h3>
             </div>
         </div>
 
