@@ -2,6 +2,7 @@ import React from 'react'
 import './product.scss'
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
+import Typed from 'react-typed';
 
 
 import mt1 from '../../components/assets/images/mt-5.webp'
@@ -39,6 +40,16 @@ export default function Product() {
                     {produto.nome_modelo}
                 </h1>
                 <h2>por apenas<span>R$ {produto.preco}</span></h2>
+                <div className="typed-div">
+                {produto && produto.nome_modelo &&
+                  <Typed
+                      className='typed'
+                      strings={[produto.descricao]}
+                      typeSpeed={40}
+                  />}
+                </div>
+                <br/>
+                
                 <div className='btn'>
                   <button>
                     ver ficha técnica
@@ -49,19 +60,22 @@ export default function Product() {
         </div>
         <div className="especificacoes">
             <div className="box-esp"> 
-                <h3> Quilometragem: {produto.quilometragem} </h3>
+                <h3> Quilometragem: <span>{produto.quilometragem}</span> </h3>
             </div>
             <div className="box-esp">
-              <h3> Ano: {produto.ano} </h3>
+              <h3> Ano: <span>{produto.ano}</span></h3>
             </div>
             <div className="box-esp">
-              <h3> Injeção Eletrônica: {produto.injecao_eletronica} </h3>
+              <h3> Injeção Eletrônica: <span>{produto.injecao}</span></h3>
             </div>
             <div className="box-esp">
-              <h3> Freio: {produto.freio} </h3>
+              <h3> Freio: <span>{produto.freio}</span> </h3>
             </div>
             <div className="box-esp">
-              <h3> Cilindrada: {produto.cilindradas}</h3>
+              <h3> Cilindrada: <span>{produto.cilindradas}</span></h3>
+            </div>
+            <div className="box-esp">
+              <h3> Valor: <span>{produto.preco}</span></h3>
             </div>
         </div>
 
@@ -87,8 +101,16 @@ export default function Product() {
         <div className="descricao">
           <div className="container-descricao">
             <div className="box-text">
-
-            </div>
+                  <div className="typed-div">
+                      {produto && produto.nome_modelo &&
+                        <Typed
+                            className='typed2'
+                            strings={['Economia', 'Praticidade', 'Rapidez']}
+                            typeSpeed={40}
+                        />}
+                  </div>
+                  <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error itaque iure fugiat nesciunt omnis doloremque! Velit quos blanditiis dolores neque nihil perferendis repudiandae reprehenderit, alias, veritatis unde nostrum eligendi minima?</h2>
+              </div>
             <div className="box-imagem">
 
             </div>

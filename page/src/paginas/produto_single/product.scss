@@ -45,9 +45,26 @@
                     padding: 1%; padding-right: 5%;
                 }
             }
-            h3 {
-                font-weight: 200;
+
+            .typed-div {
+                width: 80%;
+                margin: auto;
+                margin-top: 5vh;
                 margin-left: 10vh;
+
+                .typed {
+                    margin: auto;
+                    margin-left: 0vh;
+                    color: rgb(68, 64, 64);
+                }
+            }
+           
+            h3 {
+                font-size: 20px;
+                font-weight: 300;
+                margin-left: 10vh;
+                margin-top: 5vh;
+                text-align: justify;
                 width: 70%;
             }
 
@@ -58,13 +75,12 @@
                     height: 50px;
                     margin-top: 5vh;
                     margin-left: 10vh;
-                    background-color: red;
                     font-weight: 500;
                     border: transparent;
                     border-radius: 5px;
                 }
                 button:hover {
-                    background-color: rgb(31, 28, 28);
+                    background-color: rgb(65, 61, 61);
                     color: whitesmoke;
                     font-weight: bolder;
                     transition: .4s ease-in-out;
@@ -136,6 +152,14 @@
                 font-size: 18px;
                 text-align: center;
                 margin-left: 2vh;
+                font-weight: 200;
+
+                span {
+                    color: rgb(20, 19, 19);
+                    font-weight: bolder;
+                    font-style: italic;
+                    margin-left: 3vh;
+                }
             }
         }
 
@@ -184,6 +208,31 @@
             .box-text {
                 width: 50%;
                 height: 100%;
+
+                .typed-div {
+                    width: 80%;
+                    margin: auto;
+                    margin-top: 15vh;
+                    margin-left: 10vh;
+                    font-family: 'Allerta Stencil', sans-serif;    
+                    .typed2 {
+                        margin: auto;
+                        margin-left: 0vh;
+                    
+                        color: rgb(68, 64, 64);
+
+                        font-size: 50px;
+                    }
+                }
+
+                h2 {
+                    font-size: 20px;
+                    font-weight: 300;
+                    width: 70%;
+                    margin-left: 10vh;
+                    margin-top: 2vh;
+                    line-height: 30px;
+                }
             }
             .box-imagem {
                 width: 50%;
@@ -196,22 +245,50 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
     
     .product {
         .container-single {
+          
             .dados {
+            
                 h1 {
-                    font-size: 70px;
+                   font-size: 50px;
+                   margin-top: 20vh;
                 }   
                 h2 {
                     span {
-                       font-size: 30px;
+                      
                     }
                 }
                 .btn {
                     button {
-                      width: 150px;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    
+    .product {
+        .container-single {
+          
+            .dados {
+                width: 90%;
+                margin: auto;
+                h1 {
+
+                }   
+                h2 {
+                    span {
+                   
+                    }
+                }
+                .btn {
+                    button {
+       
                     }
                 }
             }
@@ -225,12 +302,30 @@
     .product {
         
         .container-single {
-            
+            height: auto;
+            display: inline-block;
+
+            .imagem_produto {
+                width: 100%;
+                height: 70vh;
+            }
             .dados {
-               
-                h1 {
+
+                .typed-div {
+                    width: 80%;
+                    margin: auto;
+                    margin-top: 5vh;
                     margin-left: 5vh;
-                    font-size: 70px;
+    
+                    .typed {
+                        margin: auto;
+                        margin-left: 0vh;
+                        color: rgb(68, 64, 64);
+                    }
+                }
+                h1 {
+                    margin-top: 5vh;
+                    margin-left: 5vh;
                 }   
                 h2 {
                     margin-left: 5vh;
@@ -248,6 +343,27 @@
                 }
             }
         }
+
+        .especificacoes {
+          
+    
+            .box-esp {
+               
+    
+    
+                h3 {
+                    width: auto;
+                    text-align: left;
+                    font-size: 16px;
+                    margin-left: .5vh;
+                    span {
+                  
+                    }
+                }
+            }
+    
+        }
+    
 
         .fotos {
             height: auto;
@@ -285,11 +401,35 @@
                 }
             }
         }
+        .especificacoes {
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            margin-top: 5vh;
+    
+            .box-esp {
+
+                width: 50%;
+                border: .5px solid rgb(207, 196, 196);
+               
+    
+                h3 {
+                    width: auto;
+                    text-align: left;
+                    font-size: 16px;
+                    margin-left: .5vh;
+                    span {
+                  
+                    }
+                }
+            }
+    
+        }
 
         .fotos {
            
             .box {
-                width: 47.5%;
+                width: 100%;
             }
         }
     }
