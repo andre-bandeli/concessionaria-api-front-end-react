@@ -2,7 +2,6 @@ import React from 'react'
 import './product.scss'
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
-import Typed from 'react-typed';
 
 
 import mt1 from '../../components/assets/images/mt-5.webp'
