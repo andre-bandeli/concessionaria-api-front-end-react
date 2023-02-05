@@ -31,7 +31,7 @@ const Navbar = () => {
                 </li>
                 <li className='login'>
                 <Link to="/login">
-                    <img src={login}></img></Link>
+                    <img src={login} alt="botão para acesso da tela de login"></img></Link>
                 </li>
             </ul>
 
