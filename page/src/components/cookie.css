@@ -3,15 +3,16 @@
 
 .cookie_button {
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     position: fixed;
     background-color: rgb(63, 60, 60);
-    margin-top: -25vh;
+    margin-top: -20vh;
     z-index: 100;
     transition: .5s;
     transition: opacity 2s ease-in-out;
     display: flex;
     font-family: 'Montserrat', sans-serif;
+    animation: moveInBottom 1s ease-out;
 
 }
 
@@ -23,7 +24,7 @@
 }
 
 .cookie_button .container_cookie h2 {
-
+    margin-top: 2vh;
    color: whitesmoke;
 }
 .cookie_button .container_cookie h3 {
@@ -49,4 +50,93 @@
     color: white;
     font-weight: 500;
     background-color: rgb(248, 22, 22);
+}
+
+
+@keyframes moveInBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+    .cookie_button {
+        height: 30vh;
+        margin-top: -0vh;
+    }
+    .cookie_button .container_cookie h2 {
+       margin-top: 0;
+    }
+
+    .cookie_button .container_cookie .accept, .cookie_button .container_cookie .decline {
+        margin-top: 2vh;
+    } 
+}
+@media (max-width:1024px) and (max-height: 600px) {
+    .cookie_button {
+        height: 40vh;
+        margin-top: -30vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .cookie_button {
+        height: 40vh;
+        margin-top: 0vh;
+    }
+    .cookie_button .container_cookie h2 {
+       margin-top: 0;
+    }
+
+    .cookie_button .container_cookie .accept, .cookie_button .container_cookie .decline {
+        width: 200px;
+        margin-top: 3vh;
+    } 
+}
+
+@media (max-width: 550px) {
+    .cookie_button {
+        height: 50vh;
+        margin-top: -10vh;
+    }
+    .cookie_button .container_cookie h2 {
+       margin-top: 0;
+    }
+
+    .cookie_button .container_cookie h3 {
+        margin-top: 0;
+        font-size: 15px;
+     }
+
+    .cookie_button .container_cookie .accept, .cookie_button .container_cookie .decline {
+        width: 200px;
+        margin-top: 3vh;
+        margin-left: 0;
+    } 
+}
+
+
+@media (max-width: 400px) {
+    .cookie_button {
+      margin-top: -15vh;
+      height: 55vh;
+    }
+
+    .cookie_button .container_cookie h3 {
+        font-size: 13px;
+     }
+
+}
+
+@media (max-width: 300px) {
+    .cookie_button {
+      margin-top: -25vh;
+      height: 65vh;
+    }
+    .cookie_button .container_cookie  {
+        margin-top: 2vh;
+     }
 }

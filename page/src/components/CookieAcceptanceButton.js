@@ -4,17 +4,16 @@ const CookieAcceptanceButton = () => {
   const [accepted, setAccepted] = useState(false);
   const [showButton, setShowButton] = useState(false);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setShowButton(true);
+    }, 100);
+  }, []);
+
   const handleClick = () => {
     setAccepted(true);
-    localStorage.setItem('acceptedCookies', true);
+    // Armazene o estado de aceitação dos cookies aqui (por exemplo, usando "localStorage")
   };
-  
-  useEffect(() => {
-    const accepted = localStorage.getItem('acceptedCookies');
-    if (accepted) {
-      setAccepted(accepted === 'true');
-    }
-  }, []);
 
   return (
     <>
