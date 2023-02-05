@@ -41,12 +41,7 @@ export default function Product() {
                 </h1>
                 <h2>por apenas<span>R$ {produto.preco}</span></h2>
                 <div className="typed-div">
-                {produto && produto.nome_modelo &&
-                  <Typed
-                      className='typed'
-                      strings={[produto.descricao]}
-                      typeSpeed={40}
-                  />}
+                    <h3>{produto.descricao}</h3>
                 </div>
                 <br/>
                 
@@ -102,12 +97,7 @@ export default function Product() {
           <div className="container-descricao">
             <div className="box-text">
                   <div className="typed-div">
-                      {produto && produto.nome_modelo &&
-                        <Typed
-                            className='typed2'
-                            strings={['Economia', 'Praticidade', 'Rapidez']}
-                            typeSpeed={40}
-                        />}
+                      <h2>Economia</h2>
                   </div>
                   <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error itaque iure fugiat nesciunt omnis doloremque! Velit quos blanditiis dolores neque nihil perferendis repudiandae reprehenderit, alias, veritatis unde nostrum eligendi minima?</h2>
               </div>
