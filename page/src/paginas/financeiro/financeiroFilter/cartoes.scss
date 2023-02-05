@@ -525,35 +525,6 @@
     }
 }
 
-@media (max-width: 820px) and (max-height: 1180px) {
-    .cartoes {
-        .cards-financiamento {
-            .cart {
-
-                .banks {
-          
-                    .box-cartoes {
-                        .itau {
-                            .cartao-principal {
-                          
-
-                                .line-3-itau {
-                                    height: 60px;
-                                    margin-top: 0;
-
-                                    .line-3-itau-dark {
-                                        height: 40px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 
 @media (max-width: 768px) {
     .cartoes {
@@ -588,10 +559,10 @@
                             .cartao-principal {
 
                                 .line-3-itau {
-                                    height: 68px;
+                                    height: 72px;
 
                                     .line-3-itau-dark {
-                                        height: 49px;
+                                        height: 52px;
                                     }
                                 }
                             }
@@ -712,10 +683,10 @@
                                 }
                                 .line-3-itau {
                                     margin-top: 0;
-                                    height: 75px;
+                                    height: 66px;
 
                                     .line-3-itau-dark {
-                                        height: 57px;
+                                        height: 47px;
                                     }
                                 }
                             }
@@ -774,155 +745,7 @@
                                    height: 65px;
 
                                     .line-3-itau-dark {
-                                        height: 49px;
-                                        margin-top: 1.7vh;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 400px) {
-    .cartoes {
-       height: 100vh;
-        .cards-financiamento {
-
-            .cart {
-            
-                .banks {
-                   
-                    .box-cartoes {
-    
-                        .nubank {
-                        
-                            .cartao-principal {
-
-                                width: 250px;
-                                height: 180px;
-
-                               
-
-                                .line-1-nu {
-                                    margin-left: 170px;
-                                }
-                                .line-2-nu {
-                                    margin-left: 0;
-                                    img {
-                                        margin-top: 0;
-                                        width: 30px;
-                                        height: 30px;
-                                    }
-                                }
-                            }
-                        }
-                        .itau {
-                        
-                            .cartao-principal {
-                                width: 250px;
-                                height: 180px;
-
-                                .line-2-itau {
-                                    margin-left: 170px;
-                                }
-                                .line-3-itau {
-                                    height: 50px;
-
-                                    .line-3-itau-dark {
-                                        height: 40px;
-                                        margin-top: 1vh;
-
-                                        h2 {
-                                            margin-top: 1vh;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .bradesco {
-                  
-                            .cartao-principal {
-                                width: 250px;
-                                height: 180px;
-                                margin-left: 27vh;
-    
-
-                                .line-1-br {
-                                    img {
-                                        width: 80px;
-                                        height: 30px;
-                                    }
-                                }
-                                .line-2-br {
-                                    img {
-                                        width: 40px;
-                                        height: 40px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .box-cartoes .bradesco:hover {
-                        .cartao-principal {
-                            margin-left: 25vh;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 393px) {
-    .cartoes {
-        .cards-financiamento {
-
-            .cart { 
-                .banks {            
-                    .box-cartoes {
-    
-                        .itau {
-                        
-                            .cartao-principal {
-    
-                                .line-3-itau {
-                                   height: 50px;
-
-                                    .line-3-itau-dark {
-                                        height: 35px;
-                                        margin-top: 1.7vh;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width: 390px) {
-    .cartoes {
-        .cards-financiamento {
-
-            .cart { 
-                .banks {            
-                    .box-cartoes {
-    
-                        .itau {
-                        
-                            .cartao-principal {
-    
-                                .line-3-itau {
-                                   height: 50px;
-
-                                    .line-3-itau-dark {
-                                        height: 35px;
+                                        height: 50px;
                                         margin-top: 1.8vh;
                                     }
                                 }
@@ -934,8 +757,186 @@
         }
     }
 }
-@media (max-width: 375px) {
+
+// @media (max-width: 400px) {
+//     .cartoes {
+//        height: 100vh;
+//         .cards-financiamento {
+
+//             .cart {
+            
+//                 .banks {
+                   
+//                     .box-cartoes {
+    
+//                         .nubank {
+                        
+//                             .cartao-principal {
+
+//                                 width: 250px;
+//                                 height: 180px;
+
+                               
+
+//                                 .line-1-nu {
+//                                     margin-left: 170px;
+//                                 }
+//                                 .line-2-nu {
+//                                     margin-left: 0;
+//                                     img {
+//                                         margin-top: 0;
+//                                         width: 30px;
+//                                         height: 30px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                         .itau {
+                        
+//                             .cartao-principal {
+//                                 width: 250px;
+//                                 height: 180px;
+
+//                                 .line-2-itau {
+//                                     margin-left: 170px;
+//                                 }
+//                                 .line-3-itau {
+//                                     height: 50px;
+
+//                                     .line-3-itau-dark {
+//                                         height: 40px;
+//                                         margin-top: 1vh;
+
+//                                         h2 {
+//                                             margin-top: 1vh;
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                         .bradesco {
+                  
+//                             .cartao-principal {
+//                                 width: 250px;
+//                                 height: 180px;
+//                                 margin-left: 27vh;
+    
+
+//                                 .line-1-br {
+//                                     img {
+//                                         width: 80px;
+//                                         height: 30px;
+//                                     }
+//                                 }
+//                                 .line-2-br {
+//                                     img {
+//                                         width: 40px;
+//                                         height: 40px;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+
+//                     .box-cartoes .bradesco:hover {
+//                         .cartao-principal {
+//                             margin-left: 25vh;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 393px) {
+//     .cartoes {
+//         .cards-financiamento {
+
+//             .cart { 
+//                 .banks {            
+//                     .box-cartoes {
+    
+//                         .itau {
+                        
+//                             .cartao-principal {
+    
+//                                 .line-3-itau {
+//                                    height: 50px;
+
+//                                     .line-3-itau-dark {
+//                                         height: 35px;
+//                                         margin-top: 1.7vh;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (max-width: 390px) {
+//     .cartoes {
+//         .cards-financiamento {
+
+//             .cart { 
+//                 .banks {            
+//                     .box-cartoes {
+    
+//                         .itau {
+                        
+//                             .cartao-principal {
+    
+//                                 .line-3-itau {
+//                                    height: 50px;
+
+//                                     .line-3-itau-dark {
+//                                         height: 35px;
+//                                         margin-top: 1.8vh;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (max-width: 375px) {
+//     .cartoes {
+//         .cards-financiamento {
+
+//             .cart { 
+//                 .banks {            
+//                     .box-cartoes {
+    
+//                         .itau {
+                        
+//                             .cartao-principal {
+    
+//                                 .line-3-itau {
+//                                    height: 60px;
+
+//                                     .line-3-itau-dark {
+//                                         height: 53px;
+//                                         margin-top: 1vh;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media (max-width: 393px) {
     .cartoes {
+        height: 100vh;
         .cards-financiamento {
 
             .cart { 
@@ -947,39 +948,10 @@
                             .cartao-principal {
     
                                 .line-3-itau {
-                                   height: 60px;
+                                   height: 70px;
 
                                     .line-3-itau-dark {
-                                        height: 53px;
-                                        margin-top: 1vh;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 360px) {
-    .cartoes {
-        .cards-financiamento {
-
-            .cart { 
-                .banks {            
-                    .box-cartoes {
-    
-                        .itau {
-                        
-                            .cartao-principal {
-    
-                                .line-3-itau {
-                                   height: 55px;
-
-                                    .line-3-itau-dark {
-                                        height: 45px;
+                                        height: 58px;
                                         margin-top: 1.5vh;
                                     }
                                 }
@@ -1005,10 +977,10 @@
                             .cartao-principal {
     
                                 .line-3-itau {
-                                   height: 62px;
+                                   height: 80px;
 
                                     .line-3-itau-dark {
-                                        height: 50px;
+                                        height: 70px;
                                         margin-top: 1.7vh;
                                     }
                                 }
