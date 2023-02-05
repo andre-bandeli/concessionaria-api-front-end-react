@@ -57,7 +57,7 @@ export default function Veiculos() {
                       });
                     break;
             case "honda":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list/honda')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/honda')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -72,7 +72,7 @@ export default function Veiculos() {
                   });
                 break;
             case "audi":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list/audi')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/audi')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -87,7 +87,7 @@ export default function Veiculos() {
                   });
                 break;
             case "bmw":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list/bmw')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/bmw')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);

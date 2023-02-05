@@ -51,21 +51,21 @@ export default function Produtos() {
         })
                 break;
             case "honda":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/honda')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/honda')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "audi":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/audi')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/audi')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "bmw":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/bmw')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/bmw')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
