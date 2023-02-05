@@ -2,9 +2,6 @@ import React from 'react'
 import './filter.scss'
 import { useEffect, useState } from 'react';
 import FormularioFinanciamento from '../formulario/FormularioFinanciamento'
-import iconarrow from '../../../components/produtos/arrow.png'
-import { Link } from "react-router-dom";
-
 
 
 import {
