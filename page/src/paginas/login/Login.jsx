@@ -1,5 +1,6 @@
 import {React, useState} from 'react'
 import Navbar from '../../components/Nav/Navbar'
+import Footer from '../../components/footer/Footer'
 
 import {useLocalState} from './useLocalState'
 
@@ -40,35 +41,40 @@ export default function Usuario() {
   }
 
   return (
-    <div className='login'>
-        <Navbar/>
+    <div>
+        <div className='login'>
+            <Navbar/>
 
-        <div className="container-text">
-            <h1>Faça login para acessar a área de clientes.</h1>
-            <h2>Caso não tenha uma, considere criar uma para ficar por dentro de todas as novidades.</h2>
-        </div>
-        <div className="container-forms">
-          <div className="title">
-            <h1>Login</h1>
-            <h2>Cadastrar-se</h2>
-          </div>
+            <div className="container-text">
+                <h1>Faça login para acessar a área de clientes.</h1>
+                <h2>Caso não tenha uma, considere criar uma para ficar por dentro de todas as novidades.</h2>
+            </div>
+            <div className="container-forms">
+              <div className="title">
+                <h1>Login</h1>
+                <h2>Cadastrar-se</h2>
+              </div>
 
-          <div className="forms">
-            <div className="username">
-              <label htmlFor="username">Username</label>
-              <input type="username" id='username' value={username} onChange={(event) => setUsername(event.target.value)} />
-            </div>
-            <div className="password">
-              <label htmlFor="password">Senha</label>
-              <input type="password" id='password' value={password} onChange={(event) => setPassword(event.target.value)} />
-            </div>
+              <div className="forms">
+                <div className="username">
+                  <label htmlFor="username">Username</label> 
+                  <br />
+                  <input type="username" id='username' value={username} onChange={(event) => setUsername(event.target.value)} />
+                </div>
+                <div className="password">
+                  <label htmlFor="password">Senha</label>
+                  <br />
+                  <input type="password" id='password' value={password} onChange={(event) => setPassword(event.target.value)} />
+                </div>
+                
+                <button id="submit" type='button' onClick={() => sendLoginRequest()}>
+                    Login
+                </button>
             
-            <button id="submit" type='button' onClick={() => sendLoginRequest()}>
-                Login
-            </button>
-        
-          </div>
+              </div>
+            </div>
         </div>
+        <Footer/>
     </div>
   )
 }

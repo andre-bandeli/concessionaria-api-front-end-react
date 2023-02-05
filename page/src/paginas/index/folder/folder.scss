@@ -93,9 +93,10 @@
         .container-folder {
             width: 70%;
             margin: auto;
-            margin-top: 10vh;
             margin-left: 10vh;
+            margin-top: 10vh;
             h2 {
+                margin-top: 2vh;
                 width: 100%;
               font-size: 30px;
               line-height: normal;
@@ -113,12 +114,9 @@
         .container-folder {
             width: 80%;
             margin: auto;
-            margin-top: 5vh;
             margin-left: 5vh;
+            margin-top: 10vh;
     
-            button {
-                width: 220px;
-            }
         }
     }
 }

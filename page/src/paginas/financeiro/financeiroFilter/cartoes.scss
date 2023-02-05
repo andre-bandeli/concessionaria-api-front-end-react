@@ -412,51 +412,6 @@
 @media (max-width: 1024px) and (max-height: 600px) {
     .cartoes {
         height: 120vh;
-        .cards-financiamento {
-            .text-f {
-            
-            }
-            .cart {
-
-            
-                .banks {
-                  
-                    .box-cartoes {
-                  
-                        .nubank {
-                            h2 {
-                                
-                            }
-                            .cartao-principal {
-                               
-                            }
-                        }
-                        .itau {
-                            h2 {
-                                
-                            }
-                            .cartao-principal {
-                             
-                            }
-                        }
-                        
-                        .bradesco {
-                            h2 {
-                               
-                            }
-                            .cartao-principal {
-                               
-                            }
-                        }
-                    }
-                    .box-cartoes .itau:hover {
-                        .cartao-principal {
-                         
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -528,13 +483,6 @@
                             }
                         }
 
-                        .itau {
-
-                            .cartao-principal {
-
-                            }
-                        }
-                        
                         .bradesco {
                             
                             .cartao-principal {
@@ -709,13 +657,9 @@
                 .banks {
                    
                     .box-cartoes {
-                       
+    
                         .nubank {
-                            
-
-                            h2 {
-                             
-                            }
+                        
                             .cartao-principal {
 
                                 width: 250px;
@@ -725,9 +669,6 @@
 
                                 .line-1-nu {
                                     margin-left: 170px;
-                                    img {
-                                       
-                                    }
                                 }
                                 .line-2-nu {
                                     margin-left: 0;
@@ -737,23 +678,10 @@
                                         height: 30px;
                                     }
                                 }
-
-                                .line-3-nu {
-                                   
-                                    img {
-                                       
-                                    }
-                                }
                             }
                         }
                         .itau {
-                          
-
-                          
-                            h2 {
-                                
-                            }
-    
+                        
                             .cartao-principal {
                                 width: 250px;
                                 height: 180px;
@@ -775,12 +703,7 @@
                             }
                         }
                         .bradesco {
-                            
-                           
-                            h2 {
-                             
-                            }
-    
+                  
                             .cartao-principal {
                                 width: 250px;
                                 height: 180px;
@@ -802,18 +725,7 @@
                             }
                         }
                     }
-    
-                    .box-cartoes .itau:hover {
-                        .cartao-principal {
-                          
-                           
-                    }
-                    .box-cartoes .nubank:hover {
-                        .cartao-principal {
-                           
-                         
-                        }
-                    }
+
                     .box-cartoes .bradesco:hover {
                         .cartao-principal {
                             margin-left: 25vh;
@@ -823,5 +735,4 @@
             }
         }
     }
-}
 }

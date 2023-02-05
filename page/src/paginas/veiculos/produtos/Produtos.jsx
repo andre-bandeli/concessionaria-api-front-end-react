@@ -16,7 +16,7 @@ export default function Produtos() {
     const imagens = [carro, carro3, carro4, carro5, carro6, carro7];
 
     const[produto,setProduto]=useState([])
-    const [selected, setSelected] = useState("motos");
+    const [selected, setSelected] = useState("carros");
 
     const [currentPage, setCurrentPage] = useState(1);
     const [perPage] = useState(12);
@@ -24,8 +24,8 @@ export default function Produtos() {
 
     const list = [
         {
-        id: "motos",
-        title: "Todas as categorias",
+        id: "carros",
+        title: "Todos os veículos",
         },
         {
         id: "honda",
@@ -43,36 +43,36 @@ export default function Produtos() {
 
     useEffect(() => {
         switch (selected) {
-            case "motos":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
-                    .then(response => response.json())
-                    .then((result)=>{
-          setProduto(result);
-        })
-                break;
-            case "yamaha":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/yamaha')
+            case "carros":
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "honda":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/honda')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list')
+                    .then(response => response.json())
+                    .then((result)=>{
+          setProduto(result);
+        })
+                break;
+            case "audi":
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "bmw":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/bmw')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             default:
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);

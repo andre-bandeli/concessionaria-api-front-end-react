@@ -29,4 +29,12 @@ public class VeiculoService {
     public List<Veiculo> veiculosByMarca() {
         return veiculosRepository.findByMarca("Honda");
     }
+
+    public List<Veiculo> veiculosByMarca_bmw() {
+        return veiculosRepository.findByMarca("bmw");
+    }
+
+    public List<Veiculo> veiculosByMarca_audi() {
+        return veiculosRepository.findByMarca("audi");
+    }
 }

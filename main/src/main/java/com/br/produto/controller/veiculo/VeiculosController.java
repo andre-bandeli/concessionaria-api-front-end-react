@@ -35,5 +35,15 @@ public class VeiculosController {
         return veiculosService.veiculosByMarca();
     }
 
+    @GetMapping("/marca/bmw")
+    public List<Veiculo> getVeiculosByMarca_bmw() {
+        return veiculosService.veiculosByMarca_bmw();
+    }
+
+    @GetMapping("/marca/audi")
+    public List<Veiculo> getVeiculosByMarca_audi() {
+        return veiculosService.veiculosByMarca_audi();
+    }
+
 
 }

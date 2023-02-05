@@ -1,17 +1,19 @@
 
 .login {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
+    display: flex;
 
     .container-forms {
         width: 50%;
         height: 50vh;
-        margin-top: 25vh; margin-left: 50%;
-        position: absolute;
+        margin-top: 25vh;
         backdrop-filter: blur( 13.5px );
         -webkit-backdrop-filter: blur( 10.5px );
-        border-radius: 10px;
-        background-color: rgb(27, 29, 29);
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        background-color: rgb(40, 41, 41);
+        background-image: linear-gradient(to right top, #1c1d1f, #1a1e22, #162025, #112127, #0b2327);
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
         .title {
@@ -27,7 +29,7 @@
                 font-size: 25px;
                 color: rgb(97, 95, 91);
                 margin-left: 5vh;
-                margin-top: 2.5vh;
+                margin-top: .5vh;
             }
             h2:hover {
                 color: whitesmoke;
@@ -39,20 +41,42 @@
             .username {
                 margin-top: 5vh;
                 width: 90%;
-                height: 5vh;
+                height: 10vh;
                 margin: auto;
                 color: white;
                 font-size: 22px;
 
                 input {
-                    margin-left: 5vh;
+                    margin-left: 0vh;
                     width: 400px;
                     height: 30px;
                     border: none;
                     border-radius: 5px;
                     background-color: transparent;
                     border: 2px solid rgb(243, 185, 60);
+                    margin-top: 2vh;
                     color: whitesmoke;
+                }
+
+                @media (max-width: 1024px) {
+                    input {
+                        width: 300px;
+                    }
+                }
+                @media (max-width: 550px) {
+                    label {
+                        margin-left: 3vh;
+                        font-size: 18px;
+                    }
+                    input {
+                        margin-left: 3vh;
+                        font-size: 15px;
+                    }
+                }
+                @media (max-width: 450px) {
+                    input {
+                        width: 200px;
+                    }
                 }
             }
             .password {
@@ -64,21 +88,41 @@
                 font-size: 22px;
 
                 input {
-                    margin-left: 5vh;
+                    margin-left: 0vh;
                     width: 400px;
                     height: 30px;
                     border: none;
-                    margin-left: 9vh;
                     border-radius: 5px;
                     background-color: transparent;
                     border: 2px solid rgb(243, 185, 60);
+                    margin-top: 2vh;
                     color: whitesmoke;
+                }
+                @media (max-width: 1024px) {
+                    input {
+                        width: 300px;
+                    }
+                }
+                @media (max-width: 550px) {
+                    label {
+                        margin-left: 3vh;
+                        font-size: 18px;
+                    }
+                    input {
+                        margin-left: 3vh;
+                        font-size: 15px;
+                    }
+                }
+                @media (max-width: 450px) {
+                    input {
+                        width: 200px;
+                    }
                 }
             }
 
             button {
                 margin-left: 5vh;
-                margin-top: 3vh;
+                margin-top: 7vh;
                 width: 170px;
                 height: 30px;
                 border: 2px solid white;
@@ -95,60 +139,130 @@
 
         
     }
+    @media (max-width: 1024px) and (max-height: 600px) {
+        .container-forms {
+            height: 68vh;
+        
+            .forms {
+
+                .username {
+                    height: auto;
+                    input {
+                        font-size: 16px;
+                    }
+                }
+                .password {
+                    input {
+                        font-size: 16px;
+                    }
+                }
+                button {
+                    margin-top: 15vh;
+                }
+            }
+        }
+    }
 
     .container-text {
         width: 50%;
         height: 80vh;
         margin-top: 15vh;
-        position: absolute;
-
         h1 {
             margin-left: 20vh;
-            margin-top: 10vh;
+            margin-top: 20vh;
             width: 60%;
             font-size: 50px;
 
         }
         h2 {
             margin-left: 20vh;
-            width: 40%;
+            margin-top: 2vh;
+            width: 60%;
+            font-size: 25px;
+            font-weight: 300;
         }
 
 
         
     }
     
+}
+
+@media (max-width: 1440px) {
+    
+.login {
+
+    .container-text {
+
+        h1 {
+            margin-top: 15vh;
+
+        }
+    }
+}
+}
+
+@media (max-width: 1024px) {
+    
+    .login {
+    
+        .container-text {
+    
+            h1 {
+                margin-left: 5vh;
+                margin-top: 17vh;
+    
+            }
+            h2 {
+                width: 80%;
+                margin-top: 5vh;
+                margin-left: 5vh;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
     
 .login {
     display: inline-block;
+    height: auto;
     .container-forms {
         position: relative;
         width: 80%;
         margin: auto;
-        margin-top: 10vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
 
-        
+        .title {
+            h1 {
+                margin-top: 1vh;
+            }
+            h2 {
+                margin-top: 2vh;
+            }
+        }
     }
 
     .container-text {
         width: 100%;
         height: auto;
-        margin-top: 25vh;
+        margin-top: 15vh;
         position: relative;
 
 
         h1 {
             margin-left: 5vh;
-            margin-top: 10vh;
+            margin-top: 5vh;
             width: 80%;
-            font-size: 40px;
+            font-size: 30px;
 
         }
         h2 {
             margin-left: 5vh;
+            margin-top: 1vh;
+            font-size: 18px;
+            font-weight: 200;
             width: 80%;
         }
 
@@ -157,4 +271,88 @@
     }
     
 }
+}
+
+
+@media (max-width: 550px) {
+    
+    .login {
+
+        .container-forms {
+
+            .forms {
+
+                button {
+                    margin-top: 15vh;
+                }
+            }
+        }
+    
+        .container-forms {
+           
+            width: 70%;
+            height: 60vh;
+            
+            .title {
+                h1 {
+                    margin-top: 5vh;
+                }
+                h2 {
+                    margin-top: 5.5vh;
+                    margin-left: 2vh;
+                }
+            }
+        }
+    
+        .container-text {
+           
+    
+            h1, h2 {
+                margin-left: 7vh;
+               
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .login {
+    
+        .container-forms {
+           height: 55vh;
+
+           .forms {
+
+                .password {
+                    margin-top: 2vh;
+                }
+
+                button {
+                    margin-top: 10vh;
+                }
+           }
+    
+            .title {
+                h1 {
+                
+                }
+                h2 {
+                    font-size: 18px;
+                    margin-top: 7vh;
+                }
+            }
+        }
+    
+        .container-text {
+           
+    
+            h1, h2 {
+                margin-left: 7vh;
+               
+            }
+        }
+        
+    }
 }

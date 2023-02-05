@@ -10,6 +10,7 @@ import Marca from './marcas/Marca'
 import Veiculos from '../../components/produtos/Veiculos'
 import PageTitle from './PageTitle'
 import Folder from './folder/Folder'
+import CookieAcceptanceButton from '../../components/CookieAcceptanceButton'
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     <div>
       <Navbar/>
       <Header/>
+      <CookieAcceptanceButton/>
       <PageTitle/>
       <Card/>
       <Folder/>

@@ -61,35 +61,7 @@
             height: 5vh;
             background-color: rgba(12, 12, 12, 0.89);
 
-            .menu {
-                height: 40px;
-                margin: auto;
-                margin-left: 19vh;
-                position: absolute;
-                margin-top: 80px;
-                display: flex;
-
-                a {
-                    text-decoration: none;
-                    color: rgb(36, 33, 33);
-                }
-                h2 {
-                    width: auto;
-                    text-align: left;
-                    margin-left: 5px;
-                    font-size: 16px;
-                    font-weight: 300;
-                    color: black;
-                }
-                img {
-                    margin-left: 1vh;
-                    margin-right: calc(1vh - 5px);
-                    width: 10px;
-                    height: 10px;
-                    margin-top: 1.5vh;
-                }
-            }
-
+            
             h2 {
                 width: 15%;
                 height: calc(5vh - 10px);
@@ -163,12 +135,6 @@
 @media (max-width: 1440px) {
     .filterFinanceiro {
         .container-financeiro {
-            .text {
-                .menu {
-                    width: 50%;
-                    margin-left: 15vh;
-                }
-            }
             .box {
                 .cards-financiamento {
                     height: auto;
@@ -200,15 +166,6 @@
                 }
             }
         }
-        .container-financeiro {
-            .text {
-                .menu {
-                    width: 200px;
-                    margin-top: 50px;
-                    margin-left: 16vh;
-                }
-            }
-        }
     }
 }
 
@@ -231,12 +188,6 @@
             }
         }
         .container-financeiro {
-            .text {
-                .menu {
-                    width: 200px;
-                    margin-left: 10vh;
-                }
-            }
             .box {
                 .cards-financiamento {
                     height: 85vh;
@@ -261,13 +212,6 @@
             }
         }
         .container-financeiro {
-            .text {
-                .menu {
-                    margin-top: 10vh;
-                    width: 200px;
-                    margin-left: 7vh;
-                }
-            }
             .box {   
                 .cards-financiamento {
                     height: 85vh;
@@ -293,11 +237,6 @@
             }
         }
         .container-financeiro {
-            .text {
-                .menu {
-                    margin-left: 5vh;
-                }
-            }
             .box {
                 .cards-financiamento {
                     display: inline-block;

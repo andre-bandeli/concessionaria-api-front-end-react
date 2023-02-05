@@ -14,22 +14,22 @@ import PortfolioList from './ProdutosCategoriaList';
 export default function Veiculos() {
 
     const[produto,setProduto]=useState([])
-    const [selected, setSelected] = useState("motos");
+    const [selected, setSelected] = useState("carros");
 
     const imagens = [carro, carro3, carro4, carro5, carro6, carro7];
 
 
     const list = [
         {
-        id: "motos",
-        title: "Carros",
-        },
-        {
-        id: "yamaha",
-        title: "Honda",
+        id: "carros",
+        title: "Todos os veículos",
         },
         {
         id: "honda",
+        title: "Honda",
+        },
+        {
+        id: "audi",
         title: "Audi",
         },
         {
@@ -41,8 +41,8 @@ export default function Veiculos() {
 
     useEffect(() => {
         switch (selected) {
-            case "motos":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
+            case "carros":
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list')
                     .then(response => {
                         if (!response.ok) {
                             throw new Error(response.statusText);
@@ -56,8 +56,8 @@ export default function Veiculos() {
                         console.error(error);
                       });
                     break;
-            case "yamaha":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
+            case "honda":
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list/honda')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -71,8 +71,8 @@ export default function Veiculos() {
                     console.error(error);
                   });
                 break;
-            case "honda":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
+            case "audi":
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list/audi')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -87,7 +87,7 @@ export default function Veiculos() {
                   });
                 break;
             case "bmw":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list/bmw')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -102,7 +102,7 @@ export default function Veiculos() {
                   });
                 break;
             default:
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
+                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);

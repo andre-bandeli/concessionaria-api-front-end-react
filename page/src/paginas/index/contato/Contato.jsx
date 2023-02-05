@@ -26,7 +26,7 @@ export default function Contato() {
     e.preventDefault()
     const lead = {nome, email, mensagem}
     console.log(lead)
-    fetch("http://127.0.0.1:8085/api/v1/lead/add",{
+    fetch("https://springboot-api-crud-java-react-production.up.railway.app/api/v1/lead/add",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(lead)
