@@ -20,7 +20,7 @@ export default function Contato() {
                   <img src={insta} alt="" />
                   <h2>Instagram</h2>
                   <h3>Siga-nos no Instagram para ficar por dentro de tudo o que acontece na 
-                    concessionária. Novidades, atualizações e muito mais. Clique abaixo e nos acompanhe agora</h3>
+                    concessionária. Novidades, atualizações e muito mais.</h3>
                     <button className='btn-contato'>
                       acessar
                     </button>

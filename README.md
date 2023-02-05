@@ -76,16 +76,29 @@ Objeto JSON para autenticação/criação de usuário no banco de dados:
         "nome_modelo": " ",
         "marca": "",
         "preco" : "",
-        "descricao": ""
+        "descricao": "",
+        "quilometragem": ""
+        "ano" : "",
+        "injecao": "",
+        "freio": ""
+        "cilindrada": ""
     }
 
-Criar nova conta de usuário:
+GET Motos:
 
     GET: localhost:8085/api/v1/moto/list
-
-Autenticar-se:
-
+    GET: localhost:8085/api/v1/moto/list/marca/{marca}
     GET: localhost:8085/api/v1/moto/list/{id}
+
+GET Veiculos :
+
+    GET: localhost:8085/api/v1/veiculo/list/
+    GET: localhost:8085/api/v1/moto/list/marca/{marca}
+    GET: localhost:8085/api/v1/veiculo/list/{id}
+
+GET API Deploy:
+
+    GET: https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list
 
 
 

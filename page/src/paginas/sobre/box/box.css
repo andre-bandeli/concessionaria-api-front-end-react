@@ -4,6 +4,8 @@
     height: 30vh;
     display: flex;
     margin-top: 5vh;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .box_sobre .box_info {

@@ -2,11 +2,11 @@ import MobileNavgation from './MobileNavigation'
 import { Link } from "react-router-dom";
 import {CgLogIn, CgSearch} from 'react-icons/cg'
 import './Navbar.modules.scss'
+import login from '../assets/icones/enter.webp'
 
 const Navbar = () => {
 
-    const logIn = <CgLogIn className='icon'size='40px' color='black'/>
-    const serchIcon = <CgSearch className='icone'size='30px'  color='whitesmoke'/>
+    const serchIcon = <CgSearch className='icone'size='23px'  color='rgba(255, 255, 255, 0.89)'/>
 
 
     return (
@@ -30,8 +30,8 @@ const Navbar = () => {
                     
                 </li>
                 <li className='login'>
-                    {logIn}
-                    
+                <Link to="/login">
+                    <img src={login}></img></Link>
                 </li>
             </ul>
 

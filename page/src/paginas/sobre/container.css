@@ -1,9 +1,12 @@
+
 .container_sobre {
     width: 70%;
     height: auto;
     margin-left: 15%;
     margin-top: 10vh;
     margin-bottom: 10vh;
+    font-family: 'Montserrat', sans-serif;
+
 
 }
 .container_sobre .text {
