@@ -48,6 +48,7 @@
                     width: 60%;
                 }
 
+
                 @media (max-width: 550px) {
                     h3 {
                         line-height: normal;
@@ -158,7 +159,28 @@
         }    
     }
 }
+@media (max-width: 550px) {
+    .headerContainer {
+        height: 70vh;
+        .carouselContainer {
+            height: 70vh;
+            .carouselBootstrap {
+                .carouselItem {
+                    height: 70vh;
+               
+                    .carouselItemContent{
 
+                        button {
+                            width: 150px;
+                            height: 30px;
+                            margin-top: 0;
+                        }
+                    }   
+                }   
+            }
+        }    
+    }
+}
 @media (max-width: 350px) {
     .headerContainer {
 

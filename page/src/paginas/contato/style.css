@@ -74,10 +74,7 @@
 }
 
 @media (max-width: 1440px) {
-    
-    h3 {
-        margin-top: 25vh;
-    }
+
     .contato-single .container-contato .box h3  {
         min-height: 20vh;
     }
@@ -98,10 +95,7 @@
 
 @media (max-width: 768px) {
 
-    h3 {
-        margin-top: 15vh;
-    }
-    
+
     .contato-single .container-contato {
         width: 80%;
         margin: auto;

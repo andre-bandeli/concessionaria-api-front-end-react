@@ -112,14 +112,14 @@
      }
 
     .cookie_button .container_cookie .accept, .cookie_button .container_cookie .decline {
-        width: 200px;
-        margin-top: 3vh;
+        width: 250px;
+        margin-top: 2vh;
         margin-left: 0;
     } 
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .cookie_button {
       margin-top: -15vh;
       height: 55vh;
@@ -131,7 +131,7 @@
 
 }
 
-@media (max-width: 300px) {
+@media (max-width: 380px) {
     .cookie_button {
       margin-top: -25vh;
       height: 65vh;
