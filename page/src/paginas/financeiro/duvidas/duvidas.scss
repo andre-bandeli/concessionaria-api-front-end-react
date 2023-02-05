@@ -54,6 +54,7 @@
                     font-size: 18px;
                     margin-bottom: 15px;
                     font-weight: 200;
+                    text-align: left;
                 }
 
             }
@@ -69,6 +70,26 @@
                     .head {
                         .h {
                            font-size: 15px;
+                        }
+                    }
+                    h3 {
+                       font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .duvidas {
+        .container-duvidas {
+            .acordion {
+                .ac {
+                    .head {
+                        height: 7vh;
+                        .h {
+                           font-size: 14px;
                         }
                     }
                     h3 {

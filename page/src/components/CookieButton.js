@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './cookie.css'
-const CookieAcceptanceButton = () => {
+const CookieButton = () => {
   const [accepted, setAccepted] = useState(false);
   const [showButton, setShowButton] = useState(false);
 
@@ -12,7 +12,6 @@ const CookieAcceptanceButton = () => {
 
   const handleClick = () => {
     setAccepted(true);
-    // Armazene o estado de aceitação dos cookies aqui (por exemplo, usando "localStorage")
   };
 
   return (
@@ -39,4 +38,4 @@ const CookieAcceptanceButton = () => {
   );
 };
 
-export default CookieAcceptanceButton;
+export default CookieButton;

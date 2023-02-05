@@ -89,16 +89,17 @@ export default function Product() {
         </div>
 
         <div className="iframe">
-        <iframe src="https://www.youtube.com/embed/lGbla9PCJN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/lGbla9PCJN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div className="descricao">
           <div className="container-descricao">
             <div className="box-text">
-                  <div className="typed-div">
-                      <h2>Economia</h2>
-                  </div>
-                  <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error itaque iure fugiat nesciunt omnis doloremque! Velit quos blanditiis dolores neque nihil perferendis repudiandae reprehenderit, alias, veritatis unde nostrum eligendi minima?</h2>
+
+                  <h2>Economia</h2>
+                  <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error itaque iure fugiat nesciunt omnis doloremque! Velit quos blanditiis dolores neque nihil perferendis repudiandae reprehenderit, alias, veritatis unde nostrum eligendi minima?</h3>
+                  <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error itaque iure fugiat nesciunt omnis doloremque! Velit quos blanditiis dolores neque nihil perferendis repudiandae reprehenderit, alias, veritatis unde nostrum eligendi minima?</h3>
+                  
               </div>
             <div className="box-imagem">
 

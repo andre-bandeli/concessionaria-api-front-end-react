@@ -18,11 +18,13 @@ export default function Card() {
                     <h2>Motocicletas</h2>
                     <h3>Motocicletas 0 km e seminovas</h3>
                     <h4>Com pós venda e garantia de 2 anos, incluso revisões semenstrais</h4>
-                    <button className='btn'>
+                    
                         <Link to="/motocicletas">
+                        <button className='btn'>
                                 ver motociletas
+                                </button>
                         </Link>
-                    </button>
+                    
                 </div>
 
             </div>
@@ -32,11 +34,13 @@ export default function Card() {
                     <h2>Automoveis</h2>
                     <h3>Automoveis 0 km e seminovos</h3>
                     <h4>Com pós venda e garantia de 2 anos, incluso revisões semenstrais</h4>
-                    <button className='btn'>
+                   
                     <Link to="/veiculos">
+                    <button className='btn'>
                                 ver automoveis
+                                </button>
                         </Link>
-                    </button>
+                    
                 </div>
                 <div className="vehicleImg">
                         <img src={carro} alt="" />

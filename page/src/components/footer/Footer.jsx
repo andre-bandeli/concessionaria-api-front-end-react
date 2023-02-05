@@ -3,6 +3,8 @@ import './style.css'
 import instagran from '../assets/icones/insta.webp'
 import linkedin from '../assets/icones/in.webp'
 import twitter from '../assets/icones/twitter.webp'
+import { Link } from "react-router-dom";
+
 
 export default function Footer() {
   return (
@@ -16,25 +18,25 @@ export default function Footer() {
             <h2>Instituccional</h2>
             <ul>
                     <li>
-                        Home
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        Login
+                        <Link to="/login">Login</Link>
                     </li>
                     <li>
-                        Motocicletas
+                        <Link to="/sobre">Sobre</Link>
                     </li>
                     <li>
-                        Automoveis
+                        <Link to="/financiamentos">Financiamentos</Link>
                     </li>
                     <li>
-                        Licenciamento
+                        <Link to="/contato">Contatos</Link>
                     </li>
                     <li>
-                        Sobre
+                        <Link to="/motocicletas">Motocicletas</Link>
                     </li>
                     <li>
-                        Contato
+                        <Link to="/veiculos">Veículos</Link>
                     </li>
             </ul>
 
@@ -43,25 +45,26 @@ export default function Footer() {
             <h2>Produtos</h2>
            <ul>
                     <li>
-                        Home
+                    <Link to="/motocicletas">Motocicletas</Link>
+                 
                     </li>
                     <li>
-                        Login
+                        <Link to="/veiculos">Veículos</Link>
                     </li>
                     <li>
-                        Motocicletas
+                        <Link to="/">Veículos 0km</Link>
                     </li>
                     <li>
-                        Automoveis
+                        <Link to="/financiamentos">Simulações</Link>
                     </li>
                     <li>
-                        Licenciamento
+                        <Link to="/">Condições especiais</Link>
                     </li>
                     <li>
-                        Sobre
+                        <Link to="/">Produtos e acessórios</Link>
                     </li>
                     <li>
-                        Contato
+                    <Link to="/">Manutenções</Link>
                     </li>
             </ul>
 

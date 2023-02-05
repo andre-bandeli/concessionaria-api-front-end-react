@@ -242,6 +242,7 @@
         .container-financeiro-forms {
             .forms-financeiro {
                 .form {
+                    width: 100%;
                     .telefone {
                         h3 {
                             margin-top: 2vh;
@@ -259,6 +260,15 @@
                         }
                         .standard-basic-email {     
                             margin-left: 0vh;
+                        }
+                    }
+
+                    .informacoes {
+
+                        .standard-basic {
+   
+                            width: 90%;
+
                         }
                     }
                 }
