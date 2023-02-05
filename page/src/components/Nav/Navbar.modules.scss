@@ -39,7 +39,7 @@
             width: 20%;
             height: 40px;
             margin-left: 20px;
-            margin-top: 3vh;
+            margin-top: 2vh;
             border-radius: 5px;
             background-color: rgba(31, 29, 29, 0.411);
             border: 1px solid rgba(15, 14, 14, 0.185);
@@ -82,7 +82,7 @@
             img {
                 width: 30px;
                 margin-left: 0vh;
-                margin-top: 1vh;
+                margin-top: 0vh;
             }
             .icon {
               margin-left:  5vh;
@@ -172,13 +172,7 @@
 //responsivo
 
 @media (max-width: 1440px) {
-    .Navbar {
-        ul {
-            .pesquisa {
-                margin-top: 3vh;
-            }
-        }
-    }
+
     .Navbar .mob {
         width: 60vh;
     }
