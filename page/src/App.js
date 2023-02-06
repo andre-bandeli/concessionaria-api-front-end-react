@@ -21,25 +21,25 @@ function App() {
     let title = '';
     switch (location.pathname) {
       case '/sobre':
-        title = 'WM Sobre Nós';
+        title = 'WS Sobre Nós';
         break;
       case '/financiamentos':
-        title = 'WM Financiamentos';
+        title = 'WS Financiamentos';
         break;
       case '/motocicletas':
-        title = 'WM Motocicletas';
+        title = 'WS Motocicletas';
         break;
       case '/veiculos':
-        title = 'WM Veículos';
+        title = 'WS Veículos';
         break;
       case '/login':
-        title = 'WM Login';
+        title = 'WS Login';
         break;
       case '/contato':
-        title = 'WM Contato';
+        title = 'WS Contato';
         break;
       default:
-        title = 'WebMotors';
+        title = 'WebStore';
         break;
     }
     document.title = title;
