@@ -10,7 +10,7 @@ Este é um site institucional para concessionária, com funcionalidades de captu
 ## Website Status
 ![BADGE](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)
 
-- Deploy frontend (host Vercel): [vercel app](https://webmotors.vercel.app/)
+- Deploy frontend (host Vercel): [vercel app](https://webstorecar.vercel.app/)
 - Deploy backend (host Railway): [railway app](https://springboot-api-crud-java-react-production.up.railway.app/)
 
 
