@@ -9,7 +9,7 @@ export const primeiroSlide = [
       imgSrc: primeiraImagem,
       imgAlt: 'Primeiro slider: imagem de um carro cinza em uma estrada como background',
       primeiroTexto: 'WEB',
-      span: "MOTORS",
+      span: "STORE",
       segundoTexto: 'Experimente a liberdade da estrada com um carro ou moto novo.'
     },
     {
@@ -17,7 +17,7 @@ export const primeiroSlide = [
         imgSrc: segundaImagem,
         imgAlt: 'Segundo slider: imagem de um carro preto em uma estrada como background',
         primeiroTexto: 'WEB',
-        span: "MOTORS",
+        span: "STORE",
         segundoTexto: 'Dirija o futuro. Descubra uma ampla variedade de opções de carros e motos à sua disposição'
     },
     {
@@ -25,7 +25,7 @@ export const primeiroSlide = [
         imgSrc:terceiraimagem,
         imgAlt: 'Terceiro slider: imagem de um carro branco em uma estrada como background',
         primeiroTexto: 'WEB',
-        span: "MOTORS",
+        span: "STORE",
         segundoTexto: 'Transforme sua viagem em uma experiência única com um carro de alta qualidade.'
     }
 ];

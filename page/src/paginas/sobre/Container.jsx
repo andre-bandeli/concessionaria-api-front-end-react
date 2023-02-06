@@ -8,7 +8,7 @@ export default function Container() {
       <div className='text'>
             <h2>Sobre Nós</h2>
             <p>
-              Nós da concessionária WebMotors somos especialistas em veículos, oferecendo uma ampla variedade de carros 
+              Nós da concessionária WebStore somos especialistas em veículos, oferecendo uma ampla variedade de carros 
               e motos de alta qualidade. Estamos comprometidos em fornecer aos nossos clientes uma experiência de compra excepcional, 
               com atendimento personalizado e um amplo conhecimento sobre nossos produtos.
             </p>

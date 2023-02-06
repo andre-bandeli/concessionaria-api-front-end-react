@@ -23,7 +23,7 @@ const CookieButton = () => {
                     Este site utiliza Cookies!
                 </h2>
                 <h3>
-                    Nós, da WebMotors, entendemos a importância de uma experiência de 
+                    Nós, da WebStore, entendemos a importância de uma experiência de 
                     navegação rápida e eficiente para nossos usuários. Para garantir isso, utilizamos o 
                     cache de dados em nossos servidores e na aplicação. Cache de dados é uma forma de armazenar informações 
                     temporariamente em um dispositivo, como 
