@@ -27,7 +27,7 @@ De que coisas você precisa para instalar o software e como instalá-lo?
 node.js: v12.22.9
 ```
 ```
-jdk: 11.0.17
+jdk: 18
 ```
 ```
 Maven
@@ -109,7 +109,7 @@ GET API Deploy:
 
 ## 🛠️ Construído com
 
-* [Java 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html) - Linguagem backend
+* [Java](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html) - Linguagem backend
 * [Spring Boot](https://spring.io/projects/spring-boot) - Framework Web Java
 * [Maven](https://maven.apache.org/) - Gerenciador de Dependência
 * [React JS](https://pt-br.reactjs.org/) - Biblioteca JavaScript
