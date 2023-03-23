@@ -1,7 +1,0 @@
-
-spring.profiles.active=prod
-PROD_DB_HOST =containers-us-west-126.railway.app
-PROD_DB_PORT =5698
-PROD_DB_NAME =RAILWAY
-PROD_DB_PASSWORD=6zUlB60B7JkQa8KVsN7c
-PROD_DB_USERNAME =root
