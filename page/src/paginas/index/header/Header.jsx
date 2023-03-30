@@ -1,5 +1,6 @@
 import React from 'react'
-import './header.scss'
+import './header.css'
+import './responsive.css'
 import './variables.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';

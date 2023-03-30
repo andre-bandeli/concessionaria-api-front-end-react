@@ -1,0 +1,113 @@
+@media (max-width: 1024px) {
+    .headerContainer {
+        height: 70vh;
+    }
+
+    .headerContainer .carouselContainer {
+        height: 70vh;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem {
+        height: 70vh;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent {
+        margin: 20vh 15vh;
+        width: calc(100% - 15vh);
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent h2 {
+        width: 50%;
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+    .headerContainer {
+        height: 90vh;
+    }
+
+    .headerContainer .carouselContainer {
+        height: 90vh;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem {
+        height: 90vh;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent {
+        margin: 30vh 20vh;
+        width: calc(100% - 20vh);
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent h2 {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerContainer {
+        height: 60vh;
+    }
+
+    .headerContainer .carouselContainer {
+        height: 60vh;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem {
+        height: 60vh;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent {
+        margin: 20vh 10vh;
+        width: calc(100% - 10vh);
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent h2 {
+        font-size: 40px;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+    .headerContainer {
+        height: 70vh;
+    }
+
+    .headerContainer .carouselContainer {
+        height: 70vh;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap {
+        height: 70vh;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem {
+        height: 70vh;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem img {
+        width: auto;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent {
+        margin-top: 20vh;
+    }
+
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent button {
+        width: 150px;
+        height: 30px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .headerContainer .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent button {
+        width: 150px;
+        height: 30px;
+        margin-top: 0;
+    }
+}

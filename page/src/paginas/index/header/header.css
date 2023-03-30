@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,600;0,700;1,200;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,800&display=swap');
+
+.carouselContainer {
+    height: 85vh;
+    width: 100%;
+    top: 0;
+}
+
+.carouselContainer .carouselBootstrap {
+    height: 85vh;
+    width: 100%;
+}
+
+.carouselContainer .carouselBootstrap .carouselItem {
+    height: 85vh;
+    width: 100%;
+    color: var(--secondary-color);
+}
+
+.carouselContainer .carouselBootstrap .carouselItem img {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.carouselContainer .carouselBootstrap .carouselItem .carouselItemContent {
+    height: 50%;
+    margin: 20vh 25vh;
+    position: absolute;
+    top: 0;
+    width: 45%;
+    z-index: 0;
+}
+
+.carouselContainer .carouselBootstrap .carouselItem .carouselItemContent h2 {
+    color: var(--primary-color);
+    font-size: 90px;
+    width: 50%;
+    font-weight: 600;
+    font-family: var(--font-primary);
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cinzel', serif;
+    margin-left: 0vh;
+    font-style: italic;
+}
+
+.carouselContainer .carouselBootstrap .carouselItem .carouselItemContent h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(194, 192, 192);
+    font-size: 25px;
+    margin-left: 1vh;
+    font-weight: 500;
+    line-height: 35px;
+    width: 70%;
+}
+
+.carouselContainer .carouselBootstrap .carouselItem .carouselItemContent button {
+    background-color: var(--background-color);
+    border: none;
+    border-radius: 2px;
+    color: var(--color-font-button-white);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    height: 50px;
+    margin-top: 5vh;
+    width: 250px;
+    -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(6.5px);
+}
+
+.carouselContainer .carouselBootstrap .carouselItem .carouselItemContent button a {
+    color: var(--light-color);
+    font-weight: bolder;
+    text-decoration: none;
+    font-family: var(--font-primary);
+}
+
+@media (max-width: 550px) {
+    .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent h3 {
+        line-height: normal;
+    }
+}
+
+@media (max-width: 300px) {
+    .carouselContainer .carouselBootstrap .carouselItem .carouselItemContent button {
+        width: 150px;
+    }
+}
+
+.carouselContainer .carouselBootstrap .carouselItem .carouselItemContent button:hover {
+    background-color: var(--background-hover-dark-button);
+    color: var(--light-color);
+    transition: .4s ease;
+}
