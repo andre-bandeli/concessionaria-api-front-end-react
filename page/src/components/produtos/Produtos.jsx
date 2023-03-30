@@ -22,7 +22,7 @@ export default function Produtos() {
     const list = [
         {
         id: "motos",
-        title: "Motocicletas",
+        title: "Todas as motos",
         },
         {
         id: "yamaha",
