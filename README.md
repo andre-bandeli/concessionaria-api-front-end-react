@@ -129,6 +129,8 @@ GET API Deploy:
 * [Docker](https://www.docker.com/) - Virtualização open source
 
 ---
-![](../../../../Downloads/03.jpg)
-![](../../../../Downloads/02.jpg)
-![](../../../../Downloads/01.jpg)
+![03](https://user-images.githubusercontent.com/87938869/228785095-3a4cf560-00fc-45a9-96f8-ff46579af646.jpg)
+![02](https://user-images.githubusercontent.com/87938869/228785118-032736b7-dacc-41f4-bcef-1212e01c9696.jpg)
+![01](https://user-images.githubusercontent.com/87938869/228785148-27a7da15-e35f-4b90-8712-6509efabc92b.jpg)
+
+
