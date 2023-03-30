@@ -2,7 +2,6 @@ import React from 'react'
 import '../../../components/produtos/produtos.css'
 import { useEffect, useState } from 'react';
 import moto from '../../../components/produtos/assets/moto.webp'
-import moto1 from '../../../components/produtos/assets/moto1.webp'
 import moto4 from '../../../components/produtos/assets/moto4.webp'
 import { Link } from "react-router-dom";
 
@@ -14,7 +13,7 @@ export default function Produtos() {
     const[produto,setProduto]=useState([])
     const [selected, setSelected] = useState("motos");
 
-    const imagens = [moto, moto1, moto4];
+    const imagens = [moto, moto4];
 
     const [currentPage, setCurrentPage] = useState(1);
     const [perPage] = useState(12);

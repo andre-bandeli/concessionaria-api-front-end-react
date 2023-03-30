@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './produtos.css';
-import './responsive.css';
+import './produtos.css'
+import './responsive.css'
 import carro from './assets/carro.webp';
 import carro3 from './assets/carro3.webp';
 import carro4 from './assets/carro4.webp';

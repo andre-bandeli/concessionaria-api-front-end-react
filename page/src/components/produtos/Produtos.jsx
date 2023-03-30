@@ -1,10 +1,10 @@
 import React from 'react'
 import './produtos.css'
+import './responsive.css'
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 
 import moto from './assets/moto.webp'
-import moto1 from './assets/moto1.webp'
 import moto4 from './assets/moto4.webp'
 
 
@@ -16,7 +16,7 @@ export default function Produtos() {
     const[produto,setProduto]=useState([])
     const [selected, setSelected] = useState("motos");
 
-    const imagens = [moto, moto1, moto4];
+    const imagens = [moto, moto4];
 
 
     const list = [
