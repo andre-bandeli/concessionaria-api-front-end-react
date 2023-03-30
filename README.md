@@ -11,7 +11,7 @@ Este é um site institucional para concessionária, com funcionalidades de captu
 ![BADGE](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)
 
 - Deploy frontend (host Vercel): [vercel app](https://webstorecar.vercel.app/)
-- Deploy backend (host Railway): [railway app](https://springboot-api-crud-java-react-production.up.railway.app/)
+- Deploy backend (host Railway): [railway app](https://concessionaria-spring-boot-production.up.railway.app/)
 
 
 ## Começando
@@ -24,7 +24,7 @@ Os comandos a seguir são realizados em ambiente linux ubuntu 20 (consulte os co
 De que coisas você precisa para instalar o software e como instalá-lo?
 
 ```
-node.js: v12.22.9
+node.js: > v12.22.9
 ```
 ```
 jdk: 18
@@ -41,11 +41,15 @@ docker:  20.10.17
 
 Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
+Os passos a seguir é destinado ao deploy local da api de back-end [clique aqui para ver a api](https://github.com/andre-bandeli/concessionaria-api-back-end-springboot/tree/main/main)
 ```
- git clone https://github.com/andre-bandeli/springboot-api-crud-java-react.git
+ git clone https://github.com/andre-bandeli/concessionaria-api-back-end-springboot.git
 ```
 ```
- cd springboot-api-crud-java-react/main
+ cd concessionaria-api-back-end-springboot
+```
+```
+ cd main
 ```
 ```
  mvn clean install
@@ -58,8 +62,17 @@ seguido dos logs
 ![springboot_logs](https://user-images.githubusercontent.com/87938869/212789258-d7ac1cb6-3907-4583-857c-f48479c605ee.png)
 
 Nesse momento, estamos com nossa aplicação backend (server) disponivel em nosso servidor local. Precisamos agora iniciar nosso projeto frontend (client) 
+
+Clone a api de front-end em um diretório separado (seguindo boas práticas). 
+
 ```
- cd springboot-api-crud-java-react/page
+ git clone https://github.com/andre-bandeli/concessionaria-api-front-end-react.git
+```
+```
+ cd concessionaria-api-front-end-react
+```
+```
+ cd page
 ```
 ```
  npm install
@@ -116,11 +129,6 @@ GET API Deploy:
 * [Docker](https://www.docker.com/) - Virtualização open source
 
 ---
-![readme1](https://user-images.githubusercontent.com/87938869/216533301-b2e188f1-da7b-48c4-8f33-5af86097eb75.jpg)
-![readme2](https://user-images.githubusercontent.com/87938869/216533290-1836046c-b056-427f-9f4c-814fd9e38d57.jpg)
-![readme3](https://user-images.githubusercontent.com/87938869/216533342-bcd23629-cd13-42d9-9618-62084b97aad1.jpg)
-
-
-
-
-
+![](../../../../Downloads/03.jpg)
+![](../../../../Downloads/02.jpg)
+![](../../../../Downloads/01.jpg)
