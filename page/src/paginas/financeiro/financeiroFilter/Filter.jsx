@@ -81,7 +81,7 @@ export default function Produtos() {
                         <div className="box">
                             <h2>{d.title}</h2>
                             <h3>{d.paragrafo_1}</h3>
-                            <h3>{d.paragrafo_2}</h3>
+
 
                             <div className='bx_box'>
                                <div className='bx'>

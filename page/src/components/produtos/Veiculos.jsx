@@ -42,7 +42,7 @@ export default function Veiculos() {
     useEffect(() => {
         switch (selected) {
             case "carros":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/veiculo/list')
                     .then(response => {
                         if (!response.ok) {
                             throw new Error(response.statusText);
@@ -57,7 +57,7 @@ export default function Veiculos() {
                       });
                     break;
             case "honda":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/honda')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/veiculo/marca/honda')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -72,7 +72,7 @@ export default function Veiculos() {
                   });
                 break;
             case "audi":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/audi')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/veiculo/marca/audi')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -87,7 +87,7 @@ export default function Veiculos() {
                   });
                 break;
             case "bmw":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/bmw')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/veiculo/marca/bmw')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -102,7 +102,7 @@ export default function Veiculos() {
                   });
                 break;
             default:
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/veiculo/list')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);

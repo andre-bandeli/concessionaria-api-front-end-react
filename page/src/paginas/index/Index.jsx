@@ -11,6 +11,7 @@ import Veiculos from '../../components/produtos/Veiculos'
 import PageTitle from './PageTitle'
 import Folder from './folder/Folder'
 import CookieButton from '../../components/CookieButton'
+import MarcasHeader from './marcas-header/MarcasHeader'
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Header/>
       <CookieButton/>
       <PageTitle/>
+      <MarcasHeader/>
       <Card/>
       <Folder/>
       <Produtos/>

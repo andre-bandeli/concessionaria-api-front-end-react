@@ -43,7 +43,7 @@ export default function Produtos() {
     useEffect(() => {
         switch (selected) {
             case "motos":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/moto/list')
                     .then(response => {
                         if (!response.ok) {
                             throw new Error(response.statusText);
@@ -58,7 +58,7 @@ export default function Produtos() {
                       });
                     break;
             case "yamaha":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/yamaha')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/moto/list/yamaha')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -73,7 +73,7 @@ export default function Produtos() {
                   });
                 break;
             case "honda":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/honda')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/moto/list/honda')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -88,7 +88,7 @@ export default function Produtos() {
                   });
                 break;
             case "bmw":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/bmw')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/moto/list/bmw')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
@@ -103,7 +103,7 @@ export default function Produtos() {
                   });
                 break;
             default:
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/list')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/moto/list/list')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(response.statusText);

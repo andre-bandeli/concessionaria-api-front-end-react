@@ -42,35 +42,35 @@ export default function Produtos() {
     useEffect(() => {
         switch (selected) {
             case "motos":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/moto/list')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "yamaha":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/yamaha')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/moto/list/yamaha')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "honda":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/honda')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/moto/list/honda')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "bmw":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list/bmw')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/moto/list/bmw')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             default:
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/moto/list')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/moto/list')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);

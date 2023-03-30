@@ -1,7 +1,7 @@
 
-import primeiraImagem from '../../../components/assets/images//primeiraImagemSlider.webp'
-import segundaImagem from '../../../components/assets/images/segundaImagemSlider.webp'
-import terceiraimagem from '../../../components/assets/images/terceiraImagemSlider.webp'
+import primeiraImagem from '../../../components/assets/images/01.webp'
+import segundaImagem from '../../../components/assets/images/02.webp'
+import terceiraimagem from '../../../components/assets/images/03.webp'
 
 export const primeiroSlide = [
     {
@@ -18,7 +18,7 @@ export const primeiroSlide = [
         imgAlt: 'Segundo slider: imagem de um carro preto em uma estrada como background',
         primeiroTexto: 'WEB',
         span: "STORE",
-        segundoTexto: 'Dirija o futuro. Descubra uma ampla variedade de opções de carros e motos à sua disposição'
+        segundoTexto: 'Transforme sua viagem em uma experiência única com um carro de alta qualidade.'
     },
     {
         id: 3,

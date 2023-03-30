@@ -44,35 +44,35 @@ export default function Produtos() {
     useEffect(() => {
         switch (selected) {
             case "carros":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/veiculo/list')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "honda":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/honda')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/veiculo/marca/honda')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "audi":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/audi')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/veiculo/marca/audi')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             case "bmw":
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/marca/bmw')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/veiculo/marca/bmw')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
         })
                 break;
             default:
-                fetch('https://springboot-api-crud-java-react-production.up.railway.app/api/v1/veiculo/list')
+                fetch('https://concessionaria-spring-boot-production.up.railway.app/api/v1/veiculo/list')
                     .then(response => response.json())
                     .then((result)=>{
           setProduto(result);
