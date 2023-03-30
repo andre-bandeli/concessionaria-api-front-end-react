@@ -145,62 +145,55 @@
         margin-top: 0;
     }
 }
-
 @media (max-width: 500px) {
     .Navbar {
-        height: 10vh;
+    height: 10vh;
     }
-
     .Navbar ul .menu .MobileNavigation .Hamburguer {
-        margin-top: 0;
-        margin-left: 0;
+    margin-top: 0;
+    margin-left: 0;
     }
-
     .Navbar .mob {
-        width: 40vh;
+    width: 40vh;
     }
-
     .Navbar .mob li {
-        height: 12vh;
+    height: 12vh;
     }
-
-    .Navbar .mob li a {
-        margin-left: 3vh;
-    }
-}
-
-@media (max-width: 400px) {
-    .Navbar ul li a {
-        font-size: 25px;
-        margin-left: 7vh;
-    }
-
-    .Navbar .mob li a {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 393px) {
-    .Navbar {
-        height: 10vh;
-    }
-
-    .Navbar .mob {
-        width: 35vh;
-    }
-}
-
-@media (max-width: 300px) {
-
-    .Navbar ul .login,
-    .Navbar ul .pesquisa {
-        width: 0;
-        visibility: hidden;
-        position: absolute;
-    }
-
-    .Navbar ul li a {
-        font-size: 20px;
+    .Navbar .mob li .icon {
         margin-left: 5vh;
     }
-}
+    .Navbar .mob li a {
+    margin-left: 3vh;
+    }
+    }
+    
+    @media (max-width: 400px) {
+    .Navbar ul li a {
+    font-size: 25px;
+    margin-left: 7vh;
+    }
+    .Navbar .mob li a {
+    font-size: 12px;
+    }
+    }
+    
+    @media (max-width: 393px) {
+    .Navbar {
+    height: 10vh;
+    }
+    .Navbar .mob {
+    width: 35vh;
+    }
+    }
+    
+    @media (max-width: 300px) {
+    .Navbar ul .login, .Navbar ul .pesquisa {
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+    }
+    .Navbar ul li a {
+    font-size: 20px;
+    margin-left: 5vh;
+    }
+    }

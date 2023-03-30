@@ -2,6 +2,7 @@ import MobileNavgation from './MobileNavigation'
 import { Link } from "react-router-dom";
 import {CgLogIn, CgSearch} from 'react-icons/cg'
 import './navbar.css'
+import './responsive.css'
 import login from '../assets/icones/enter.webp'
 
 const Navbar = () => {
