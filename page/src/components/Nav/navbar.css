@@ -131,31 +131,28 @@
     display: flex;
     border-bottom: 1px solid rgb(96, 99, 102);
     text-align: left;
-
-    .icon {
-        width: 50px;
-        margin-top: 0px;
-        margin-left: 50px;
-
-        img {
-            margin-top: 0;
-        }
-    }
-
-    a {
-        color: rgb(170, 166, 166);
-        text-decoration: none;
-        margin-top: 10px;
-        margin-left: 8vh;
-        font-size: 20px;
-        text-align: left;
-    }
-
-    a:hover {
-        color: rgb(126, 122, 122);
-    }
+}
+.icon {
+    width: 50px;
+    margin-top: 0px;
+    margin-left: 50px;
+}
+.icon img {
+    margin-top: 0;
+    width: 50px;
+}
+.Navbar .mob li a {
+    color: rgb(170, 166, 166);
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 8vh;
+    font-size: 20px;
+    text-align: left;
+}
+.Navbar .mob li .icon a:hover {
+    color: rgb(126, 122, 122);
 }
 
-.Navbar .mob li.active a {
+.Navbar ul .mob li.active a {
     color: rgb(15, 204, 218);
 }
