@@ -1,14 +1,13 @@
-import React from 'react'
-import './produtos.scss'
-import { useEffect, useState } from 'react';
-import carro from './assets/carro.webp'
-import carro3 from './assets/carro3.webp'
-import carro4 from './assets/carro4.webp'
-import carro5 from './assets/carro5.webp'
-import carro6 from './assets/carro6.webp'
-import carro7 from './assets/carro7.webp'
-import { Link } from "react-router-dom";
-
+import React, { useEffect, useState } from 'react';
+import './produtos.css';
+import './responsive.css';
+import carro from './assets/carro.webp';
+import carro3 from './assets/carro3.webp';
+import carro4 from './assets/carro4.webp';
+import carro5 from './assets/carro5.webp';
+import carro6 from './assets/carro6.webp';
+import carro7 from './assets/carro7.webp';
+import { Link } from 'react-router-dom';
 import PortfolioList from './ProdutosCategoriaList';
 
 export default function Veiculos() {

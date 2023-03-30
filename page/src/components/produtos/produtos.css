@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,600;0,700;1,200;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,800&display=swap');
+
+.produtosIndex {
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.produtosIndex .containerProdutosIndex {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 0vh;
+}
+
+.produtosIndex .containerProdutosIndex .pagination {
+    margin-top: 5vh;
+}
+
+.produtosIndex .containerProdutosIndex .pagination ul {
+    width: auto;
+    margin: auto;
+    display: flex;
+}
+
+.produtosIndex .containerProdutosIndex .pagination ul li {
+    margin-left: 0vh;
+    list-style: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.produtosIndex .containerProdutosIndex .filterProdutos {
+    width: 90%;
+    margin: auto;
+}
+
+.produtosIndex .containerProdutosIndex .filterProdutos h2 {
+    margin-left: 3vh;
+    font-size: 40px;
+}
+
+.produtosIndex .containerProdutosIndex .filterProdutos .menu {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.produtosIndex .containerProdutosIndex .filterProdutos .menu a {
+    text-decoration: none;
+    color: rgb(36, 33, 33);
+}
+
+.produtosIndex .containerProdutosIndex .filterProdutos .menu h2 {
+    text-align: left;
+    margin-left: 3vh;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.produtosIndex .containerProdutosIndex .filterProdutos .menu h2 .spn img {
+    margin-left: 1vh;
+    margin-right: calc(1vh - 5px);
+    width: 10px;
+}
+
+.produtosIndex .containerProdutosIndex .filterProdutos .menu h4 {
+    font-size: 15px;
+}
+
+.produtosIndex .containerProdutosIndex .filterProdutos ul {
+    width: 100%;
+    margin: auto;
+    margin-top: 5vh;
+    margin-left: 0;
+    display: flex;
+    text-align: left;
+}
+
+.produtosIndex .containerProdutosIndex .filterProdutos ul h4 {
+    margin-top: 1.5vh;
+    margin-left: 0;
+    font-size: 18px;
+    color: rgba(34, 35, 36, 0.938);
+}
+
+.produtosIndex .containerProdutosIndex .filterProdutos ul li {
+    margin-left: 0vh;
+    list-style: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.produtosIndex .containerProdutosIndex .titleProdutosIndex {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+.produtosIndex .containerProdutosIndex .titleProdutosIndex h2 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 3vh;
+}
+
+.produtosIndex .containerProdutosIndex .titleProdutosIndex h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 3vh;
+}
+
+.produtosIndex .containerProdutosIndex .busca {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+.produtosIndex .containerProdutosIndex .busca .btn {
+    margin-left: 10vh;
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+}
+
+.produtosIndex .containerProdutosIndex .productIndex {
+    width: 90%;
+    margin: auto;
+}
+
+.produtosIndex .containerProdutosIndex .productIndex img {
+    width: 100%;
+    height: auto;
+}
+
+.produtosIndex .containerProdutosIndex .productIndex h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.produtosIndex .containerProdutosIndex .productIndex p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.produtosIndex .containerProdutosIndex .productIndex a {
+    display: block;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.produtosIndex .containerProdutosIndex .productIndex a:hover {
+    background-color: #2980b9;
+}

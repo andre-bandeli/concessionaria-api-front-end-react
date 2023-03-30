@@ -1,4 +1,4 @@
-import './produtosCategoriaList.scss'
+import './produtosCategoriaList.css'
 
 
 export default function ProdutosCategoriaList({ id, title, active, setSelected }) {

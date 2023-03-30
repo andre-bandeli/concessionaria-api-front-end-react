@@ -1,0 +1,59 @@
+@media (max-width: 1440px) {
+    .produtosIndex .containerProdutosIndex .filterProdutos ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5vh;
+    }
+
+    .produtosIndex .containerProdutosIndex .filterProdutos ul li {
+        margin-left: 0;
+    }
+
+    .produtosIndex .containerProdutosIndex .productIndex .boxIndex {
+        width: 250px;
+        margin-top: 5vh;
+    }
+
+    .produtosIndex .containerProdutosIndex .productIndex .boxIndex .imagem img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+    .produtosIndex .containerProdutosIndex .productIndex .boxIndex {
+        height: 370px;
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 550px) {
+    .produtosIndex .containerProdutosIndex .filterProdutos ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .produtosIndex .containerProdutosIndex .filterProdutos ul li {
+        margin-left: 0;
+        margin-top: 0;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .produtosIndex .containerProdutosIndex .productIndex .boxIndex {
+        width: 250px;
+        margin-top: 2vh;
+    }
+
+    .produtosIndex .containerProdutosIndex .productIndex .boxIndex .infos {
+        margin-top: 0vh;
+    }
+
+    .produtosIndex .containerProdutosIndex .productIndex .boxIndex .infos .marca h3 {
+        margin-top: 1vh;
+    }
+
+    .produtosIndex .containerProdutosIndex .productIndex .boxIndex .imagem img {
+        width: 250px;
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../components/produtos/produtos.scss'
+import '../../../components/produtos/produtos.css'
 import { useEffect, useState } from 'react';
 import carro from '../../../components/produtos/assets/carro.webp'
 import carro3 from '../../../components/produtos/assets/carro3.webp'
