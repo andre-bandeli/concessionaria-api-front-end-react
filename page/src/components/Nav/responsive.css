@@ -1,0 +1,206 @@
+@media (max-width: 1440px) {
+    .Navbar .mob {
+        width: 60vh;
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+    .Navbar .mob {
+        width: 70vh;
+    }
+
+    .Navbar .mob li a {
+        font-size: 14px;
+    }
+
+    .Navbar .mob .icon {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .Navbar .mob .icon img {
+        width: 30px;
+        margin-left: 0;
+        margin-top: -1vh;
+    }
+}
+
+@media (max-width: 912px) and (max-height: 1368px) {
+    .Navbar .mob {
+        width: 40vh;
+    }
+
+    .Navbar .mob .icon {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .Navbar .mob .icon img {
+        width: 30px;
+        margin-left: 0;
+        margin-top: -1vh;
+    }
+
+    .Navbar .mob li {
+        height: 12.8vh;
+    }
+
+    .Navbar .mob li a {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 820px) and (max-height: 1180px) {
+    .Navbar .mob {
+        width: 40vh;
+    }
+
+    .Navbar .mob .icon {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .Navbar .mob .icon img {
+        width: 30px;
+        margin-left: 0;
+        margin-top: -1vh;
+    }
+
+    .Navbar .mob li {
+        height: 11.5vh;
+    }
+
+    .Navbar .mob li a {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .Navbar ul .menu .MobileNavigation .Hamburguer {
+        margin-left: 50px;
+    }
+
+    .Navbar ul .pesquisa {
+        margin-left: 0;
+    }
+
+    .Navbar ul .login {
+        width: 0;
+        margin-left: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .Navbar ul li h1 {
+        margin-left: 10vh;
+        margin-top: 2vh;
+    }
+
+    .Navbar .mob {
+        width: 50vh;
+    }
+
+    .Navbar .mob li {
+        margin-top: 1.2vh;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .Navbar ul .login,
+    .Navbar ul .pesquisa {
+        width: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .Navbar ul li h1 {
+        margin-left: 10vh;
+        margin-top: 2vh;
+    }
+}
+
+@media (max-width: 540px) and (max-height: 720px) {
+    .Navbar .mob {
+        width: 55vh;
+    }
+
+    .Navbar .mob .icon {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .Navbar .mob .icon img {
+        width: 30px;
+        height: 30px;
+        margin-left: 0;
+        margin-top: -1vh;
+    }
+
+    .Navbar .mob li {
+        height: 11.5vh;
+    }
+
+    .Navbar .mob li a {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .Navbar {
+        height: 10vh;
+    }
+
+    .Navbar ul .menu .MobileNavigation .Hamburguer {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .Navbar .mob {
+        width: 40vh;
+    }
+
+    .Navbar .mob li {
+        height: 12vh;
+    }
+
+    .Navbar .mob li a {
+        margin-left: 3vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .Navbar ul li a {
+        font-size: 25px;
+        margin-left: 7vh;
+    }
+
+    .Navbar .mob li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 393px) {
+    .Navbar {
+        height: 10vh;
+    }
+
+    .Navbar .mob {
+        width: 35vh;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .Navbar ul .login,
+    .Navbar ul .pesquisa {
+        width: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .Navbar ul li a {
+        font-size: 20px;
+        margin-left: 5vh;
+    }
+}
